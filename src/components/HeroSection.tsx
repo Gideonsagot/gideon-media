@@ -11,42 +11,74 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="gradient-hero min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
-        <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-2000"></div>
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+          poster="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&h=1080"
+        >
+          <source
+            src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69fabf212b2e5325d5b14dff6c5ba0b41&profile_id=164&oauth2_token_id=57447761"
+            type="video/mp4"
+          />
+          {/* Fallback for browsers that don't support video */}
+          <div 
+            className="w-full h-full bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: "url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&h=1080')"
+            }}
+          />
+        </video>
+        
+        {/* Video Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-blue-600/80 z-10"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-8 animate-fade-in-up">
-            <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-            Digital Marketing & Web Development Agency
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
+        <div className="max-w-5xl mx-auto">
+          {/* Company Name */}
+          <div className="mb-4">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-2 tracking-tight animate-fade-in-up">
+              Gideon Media
+            </h1>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up">
-            We Build.{' '}
-            <span className="block text-blue-200">We Advertise.</span>
-            <span className="block text-yellow-300">You Grow.</span>
-          </h1>
+          {/* Main Tagline */}
+          <div className="mb-6">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-fade-in-up">
+              We Build.{' '}
+              <span className="block text-blue-200">We Advertise.</span>
+              <span className="block text-yellow-300">You Grow.</span>
+            </h2>
+          </div>
 
-          {/* Subheading */}
-          <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-            Transform your business with our expert digital marketing strategies and cutting-edge web development solutions. From Meta Ads to Shopify stores, we help businesses thrive online.
-          </p>
+          {/* Services Subheading */}
+          <div className="mb-6">
+            <p className="text-lg md:text-xl text-blue-100 font-medium animate-fade-in-up">
+              Meta Ads | Shopify & Small Business Websites | Pinterest Setup | Ad Strategy & Launch
+            </p>
+          </div>
+
+          {/* Guarantee Statement */}
+          <div className="mb-8">
+            <p className="text-xl md:text-2xl text-white font-semibold bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 inline-block animate-fade-in-up">
+              "We guarantee results or we work until you get them."
+            </p>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in-up">
             <Button 
               onClick={scrollToContact}
               size="lg"
-              className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-2xl hover:scale-105 group"
+              className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-2xl hover:scale-105 group text-lg"
             >
-              Get a Free Quote
+              Get a Free Strategy Call
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
@@ -54,10 +86,10 @@ const HeroSection = () => {
               variant="outline"
               size="lg"
               onClick={() => document.querySelector('#services')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-2xl group"
+              className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-2xl group text-lg"
             >
               <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              View Our Services
+              Start Growing Now
             </Button>
           </div>
 
@@ -80,7 +112,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>

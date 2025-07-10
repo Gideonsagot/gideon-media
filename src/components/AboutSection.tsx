@@ -1,5 +1,5 @@
 
-import { CheckCircle, Users, Award, TrendingUp } from 'lucide-react';
+import { CheckCircle, Users, Award, TrendingUp, Shield, Star, Clock } from 'lucide-react';
 
 const AboutSection = () => {
   const achievements = [
@@ -32,6 +32,24 @@ const AboutSection = () => {
     'Competitive pricing with exceptional value'
   ];
 
+  const trustBadges = [
+    {
+      icon: Shield,
+      title: 'Certified Professionals',
+      description: 'Meta & Google Certified'
+    },
+    {
+      icon: Star,
+      title: '5-Star Reviews',
+      description: 'Client Satisfaction Guaranteed'
+    },
+    {
+      icon: Clock,
+      title: '24/7 Support',
+      description: 'Always Here When You Need Us'
+    }
+  ];
+
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,7 +72,7 @@ const AboutSection = () => {
             </p>
 
             {/* Values */}
-            <div className="space-y-3">
+            <div className="space-y-3 mb-8">
               {values.map((value, index) => (
                 <div key={index} className="flex items-start">
                   <CheckCircle className="text-primary w-5 h-5 mr-3 mt-0.5 flex-shrink-0" />
@@ -62,10 +80,39 @@ const AboutSection = () => {
                 </div>
               ))}
             </div>
+
+            {/* Trust Badges */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {trustBadges.map((badge, index) => (
+                <div 
+                  key={index}
+                  className="text-center p-4 bg-gray-50 rounded-lg border hover:shadow-md transition-shadow"
+                >
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                    <badge.icon className="text-white" size={20} />
+                  </div>
+                  <h4 className="font-semibold text-gray-900 text-sm mb-1">
+                    {badge.title}
+                  </h4>
+                  <p className="text-xs text-gray-600">
+                    {badge.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Right Column - Stats */}
+          {/* Right Column - Stats and Trust Image */}
           <div className="lg:pl-8">
+            {/* Trust Image */}
+            <div className="mb-8 rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1553484771-371a605b060b?auto=format&fit=crop&w=800&h=600" 
+                alt="Professional team meeting discussing digital marketing strategies"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+
             <div className="grid grid-cols-1 gap-8">
               {achievements.map((achievement, index) => (
                 <div 
