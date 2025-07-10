@@ -1,12 +1,11 @@
-
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const services = [
     'Meta Ads Setup',
-    'Shopify Development',
+    'Shopify Development', 
     'Website Development',
     'Pinterest Setup',
     'Ads Strategy',
