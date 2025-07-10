@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { 
   Mail, 
@@ -39,20 +38,20 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      content: 'info@gideonmedia.com',
-      action: 'mailto:info@gideonmedia.com'
+      content: 'Gideonmedia@hotmail.com',
+      action: 'mailto:Gideonmedia@hotmail.com'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+1 (555) 123-4567',
-      action: 'tel:+15551234567'
+      content: '+234 706 713 3828',
+      action: 'tel:+2347067133828'
     },
     {
       icon: MessageCircle,
       title: 'WhatsApp',
       content: 'Chat with us instantly',
-      action: 'https://wa.me/15551234567?text=Hi, I\'m interested in your digital marketing services'
+      action: 'https://wa.me/2347067133828?text=Hi, I\'m interested in your digital marketing services'
     }
   ];
 
@@ -101,7 +100,7 @@ const ContactSection = () => {
     const message = encodeURIComponent(
       `Hi Gideon Media! I'm interested in your digital marketing services. I'd like to discuss: ${formData.service || 'various services'}`
     );
-    window.open(`https://wa.me/15551234567?text=${message}`, '_blank');
+    window.open(`https://wa.me/2347067133828?text=${message}`, '_blank');
   };
 
   return (

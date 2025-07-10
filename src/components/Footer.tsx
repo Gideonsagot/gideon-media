@@ -23,10 +23,26 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' }
+    { 
+      icon: Facebook, 
+      href: 'https://www.facebook.com/share/1CpvVeypZy/', 
+      label: 'Facebook' 
+    },
+    { 
+      icon: Instagram, 
+      href: 'https://www.instagram.com/pegotgideon', 
+      label: 'Instagram' 
+    },
+    { 
+      icon: Linkedin, 
+      href: 'https://www.linkedin.com/in/elakpa-gideon-0675112b9', 
+      label: 'LinkedIn' 
+    },
+    { 
+      icon: Twitter, 
+      href: 'https://www.upwork.com/freelancers/~0168e372c5f516c460', 
+      label: 'Upwork' 
+    }
   ];
 
   const scrollToSection = (href: string) => {
@@ -55,11 +71,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center text-gray-300">
                 <Mail className="w-5 h-5 mr-3 text-primary" />
-                <span>info@gideonmedia.com</span>
+                <span>Gideonmedia@hotmail.com</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Phone className="w-5 h-5 mr-3 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+234 706 713 3828</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <MapPin className="w-5 h-5 mr-3 text-primary" />
@@ -115,6 +131,8 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
                   aria-label={social.label}
                 >
@@ -123,13 +141,16 @@ const Footer = () => {
               ))}
             </div>
 
-            {/* CTA */}
-            <button 
-              onClick={() => scrollToSection('#contact')}
-              className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg"
+            {/* WhatsApp CTA */}
+            <a
+              href="https://wa.me/2347067133828?text=Hi, I'm interested in your digital marketing services"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg inline-flex items-center"
             >
-              Get Started Today
-            </button>
+              <MessageCircle className="w-4 h-4 mr-2" />
+              WhatsApp Us
+            </a>
           </div>
         </div>
       </div>
