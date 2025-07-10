@@ -144,7 +144,7 @@ const ShopifyServicesSection = () => {
                 <Button 
                   variant="ghost" 
                   className="w-full text-primary hover:bg-primary hover:text-white transition-all duration-300 group"
-                  onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=gideonmedia@hotmail.com&su=Quote Request for ' + service.title, '_blank')}
                 >
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -163,7 +163,7 @@ const ShopifyServicesSection = () => {
             <Button 
               variant="secondary"
               size="lg"
-              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=gideonmedia@hotmail.com&su=Custom Shopify Solution Request', '_blank')}
               className="bg-white text-primary hover:bg-gray-100"
             >
               Get Custom Quote

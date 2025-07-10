@@ -91,6 +91,7 @@ const ServicesSection = () => {
                 <Button 
                   variant="ghost" 
                   className="w-full text-primary hover:bg-primary hover:text-white transition-all duration-300 group"
+                  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=gideonmedia@hotmail.com&su=Quote Request for ' + service.title, '_blank')}
                 >
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

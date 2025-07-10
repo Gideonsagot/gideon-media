@@ -163,7 +163,7 @@ const AllServicesSection = () => {
                     <Button 
                       variant="ghost" 
                       className="w-full text-primary hover:bg-primary hover:text-white transition-all duration-300 group"
-                      onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+                      onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=gideonmedia@hotmail.com&su=Quote Request for ' + service.title, '_blank')}
                     >
                       Get Quote
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -178,7 +178,7 @@ const AllServicesSection = () => {
         <div className="text-center mt-16">
           <Button 
             size="lg"
-            onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=gideonmedia@hotmail.com&su=Project Inquiry', '_blank')}
             className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105"
           >
             Start Your Project Today
