@@ -1,4 +1,3 @@
-
 import { ArrowRight, CheckCircle, Globe, Smartphone, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -16,7 +15,7 @@ const HeroSection = () => {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover opacity-10"
+          className="w-full h-full object-cover opacity-30"
           poster="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&h=1080"
         >
           <source
@@ -25,7 +24,7 @@ const HeroSection = () => {
           />
           {/* Fallback for browsers that don't support video */}
           <div 
-            className="w-full h-full bg-cover bg-center bg-no-repeat opacity-10"
+            className="w-full h-full bg-cover bg-center bg-no-repeat opacity-30"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&h=1080')"
             }}
