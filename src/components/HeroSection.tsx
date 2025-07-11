@@ -16,7 +16,7 @@ const HeroSection = () => {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover opacity-10"
           poster="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&h=1080"
         >
           <source
@@ -25,7 +25,7 @@ const HeroSection = () => {
           />
           {/* Fallback for browsers that don't support video */}
           <div 
-            className="w-full h-full bg-cover bg-center bg-no-repeat opacity-60"
+            className="w-full h-full bg-cover bg-center bg-no-repeat opacity-10"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&h=1080')"
             }}
@@ -38,38 +38,38 @@ const HeroSection = () => {
         <div className="space-y-8">
           {/* Headline */}
           <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tight drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black leading-tight tracking-tight">
               We Build.{' '}
               <span className="block">We Advertise.</span>
-              <span className="block text-gray-100">You Grow.</span>
+              <span className="block text-gray-800">You Grow.</span>
             </h1>
           </div>
 
           {/* Services Subheading */}
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm md:text-lg text-white font-medium drop-shadow-md">
+            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm md:text-lg text-gray-600 font-medium">
               <div className="flex items-center gap-2">
-                <Smartphone className="h-5 w-5 text-white" />
+                <Smartphone className="h-5 w-5 text-primary" />
                 <span>Meta Ads</span>
               </div>
-              <span className="text-gray-200">•</span>
+              <span className="text-gray-400">•</span>
               <div className="flex items-center gap-2">
-                <Globe className="h-5 w-5 text-white" />
+                <Globe className="h-5 w-5 text-primary" />
                 <span>Shopify & Small Business Websites</span>
               </div>
-              <span className="text-gray-200">•</span>
+              <span className="text-gray-400">•</span>
               <div className="flex items-center gap-2">
-                <TrendingUp className="h-5 w-5 text-white" />
+                <TrendingUp className="h-5 w-5 text-primary" />
                 <span>Pinterest Setup</span>
               </div>
-              <span className="text-gray-200">•</span>
+              <span className="text-gray-400">•</span>
               <span>Ad Strategy & Launch</span>
             </div>
           </div>
 
           {/* Guarantee Section */}
           <div className="max-w-2xl mx-auto">
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg border border-white/20">
+            <div className="bg-gray-50 rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
               <p className="text-lg md:text-xl text-gray-800 font-semibold">
                 "We guarantee results — or we work until you get them."
               </p>
@@ -81,32 +81,32 @@ const HeroSection = () => {
             <Button 
               onClick={openWhatsApp}
               size="lg"
-              className="bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-xl hover:scale-105 group shadow-lg"
+              className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-105 group"
             >
               Start My Free Strategy Call
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
 
             {/* Trust Indicator */}
-            <div className="flex items-center justify-center gap-3 text-white drop-shadow-md">
-              <CheckCircle className="h-5 w-5 text-green-400" />
+            <div className="flex items-center justify-center gap-3 text-gray-600">
+              <CheckCircle className="h-5 w-5 text-green-600" />
               <span className="font-medium">100+ Projects Completed — Trusted by Global Businesses</span>
             </div>
           </div>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-white/30">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-gray-200">
             <div className="text-center space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">100+</div>
-              <div className="text-gray-100 font-medium drop-shadow-md">Projects Completed</div>
+              <div className="text-3xl md:text-4xl font-bold text-black">100+</div>
+              <div className="text-gray-600 font-medium">Projects Completed</div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">50+</div>
-              <div className="text-gray-100 font-medium drop-shadow-md">Happy Clients</div>
+              <div className="text-3xl md:text-4xl font-bold text-black">50+</div>
+              <div className="text-gray-600 font-medium">Happy Clients</div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">2x</div>
-              <div className="text-gray-100 font-medium drop-shadow-md">Average ROI Growth</div>
+              <div className="text-3xl md:text-4xl font-bold text-black">2x</div>
+              <div className="text-gray-600 font-medium">Average ROI Growth</div>
             </div>
           </div>
         </div>
@@ -114,8 +114,8 @@ const HeroSection = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
-        <div className="w-6 h-10 border-2 border-white/70 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+        <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>
