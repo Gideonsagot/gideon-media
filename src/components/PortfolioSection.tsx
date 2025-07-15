@@ -1,7 +1,6 @@
 
-import { ExternalLink, Globe, ShoppingCart, TrendingUp } from 'lucide-react';
+import { Globe, ShoppingCart, TrendingUp } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
 const PortfolioSection = () => {
@@ -93,14 +92,6 @@ const PortfolioSection = () => {
                       </Badge>
                     ))}
                   </div>
-
-                  <Button 
-                    variant="outline" 
-                    className="w-full group-hover:bg-primary group-hover:text-white transition-colors"
-                  >
-                    View Case Study
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </Button>
                 </div>
               </CardContent>
             </Card>
