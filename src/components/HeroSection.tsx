@@ -15,7 +15,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
@@ -40,16 +40,16 @@ const HeroSection = () => {
       </div>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-10"></div>
+      <div className="absolute inset-0 bg-black/70 z-10"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20 max-w-6xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20 max-w-6xl py-20">
         {/* Main Content */}
-        <div className="space-y-12">
+        <div className="space-y-16">
           {/* Headline */}
-          <div className="space-y-6">
+          <div className="space-y-8 pt-8">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight tracking-tight">
               We Advertise.{' '}
-              <span className="block text-transparent bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text hover:scale-105 transition-transform duration-300 cursor-default relative">
+              <span className="block text-transparent bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text hover:scale-105 transition-transform duration-300 cursor-default relative group">
                 You Grow.
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </span>
@@ -58,23 +58,23 @@ const HeroSection = () => {
 
           {/* Services Section */}
           <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg hover:shadow-xl hover:bg-white/15 transition-all duration-300 hover:scale-105 border border-white/20"
+                  className="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:-translate-y-2 border border-white/20 group cursor-pointer"
                 >
-                  <div className="flex flex-col items-center space-y-3">
-                    <div className="bg-primary/20 p-3 rounded-full">
-                      <service.icon className="h-8 w-8 text-primary" />
+                  <div className="flex flex-col items-center space-y-4">
+                    <div className="bg-primary/20 p-4 rounded-full group-hover:bg-primary/30 transition-colors duration-300">
+                      <service.icon className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <h3 className="text-white font-semibold text-lg text-center">{service.name}</h3>
-                    <p className="text-gray-200 text-sm text-center">{service.description}</p>
+                    <h3 className="text-white font-semibold text-lg text-center group-hover:text-blue-200 transition-colors duration-300">{service.name}</h3>
+                    <p className="text-gray-200 text-sm text-center group-hover:text-gray-100 transition-colors duration-300">{service.description}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <div className="mt-6">
+            <div className="mt-8">
               <Badge variant="secondary" className="bg-white/10 text-white border-white/20 backdrop-blur-md">
                 Ad Strategy & Launch
               </Badge>
@@ -82,26 +82,26 @@ const HeroSection = () => {
           </div>
 
           {/* Guarantee Section */}
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-gradient-to-r from-white/15 to-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-10 shadow-2xl border border-white/20">
-              <div className="flex items-start space-x-4">
-                <Quote className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
-                <div className="text-left">
-                  <p className="text-xl md:text-2xl text-white font-medium leading-relaxed">
-                    We <span className="font-bold text-primary">guarantee</span> <span className="font-bold text-primary">results</span> — or we work until you get them.
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-white/15 to-white/10 backdrop-blur-lg rounded-3xl p-10 md:p-12 shadow-2xl border border-white/20">
+              <div className="flex items-start justify-center space-x-6">
+                <Quote className="h-10 w-10 text-blue-400 flex-shrink-0 mt-1" />
+                <div className="text-center flex-1">
+                  <p className="text-2xl md:text-3xl text-white font-medium leading-relaxed">
+                    We <span className="font-bold text-blue-400">guarantee</span> <span className="font-bold text-blue-400">results</span> — or we work until you get them.
                   </p>
                 </div>
-                <Quote className="h-8 w-8 text-primary flex-shrink-0 mt-1 rotate-180" />
+                <Quote className="h-10 w-10 text-blue-400 flex-shrink-0 mt-1 rotate-180" />
               </div>
             </div>
           </div>
 
           {/* CTA Button */}
-          <div className="space-y-8">
+          <div className="space-y-10">
             <Button 
               onClick={openWhatsApp}
               size="lg"
-              className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-500 text-white px-10 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:shadow-2xl hover:scale-110 group border-2 border-primary/20"
+              className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-500 text-white px-12 py-8 rounded-full font-bold text-xl transition-all duration-300 hover:shadow-2xl hover:scale-110 group border-2 border-primary/20"
             >
               <Phone className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform" />
               Start My Free Strategy Call
@@ -109,29 +109,29 @@ const HeroSection = () => {
             </Button>
 
             {/* Trust Indicator */}
-            <div className="flex items-center justify-center gap-3 text-gray-200">
+            <div className="flex items-center justify-center gap-4 text-gray-200">
               <CheckCircle className="h-6 w-6 text-green-400" />
               <span className="font-semibold text-lg">100+ Projects Completed — Trusted by Global Businesses</span>
             </div>
 
             {/* Client Credibility Strip */}
             <div className="max-w-4xl mx-auto">
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-70">
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-80">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-white">50+</div>
+                    <div className="text-3xl font-bold text-white">50+</div>
                     <div className="text-gray-300 text-sm">Happy Clients</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-white">2x</div>
+                    <div className="text-3xl font-bold text-white">2x</div>
                     <div className="text-gray-300 text-sm">Average ROI</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-white">95%</div>
+                    <div className="text-3xl font-bold text-white">95%</div>
                     <div className="text-gray-300 text-sm">Success Rate</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-white">24/7</div>
+                    <div className="text-3xl font-bold text-white">24/7</div>
                     <div className="text-gray-300 text-sm">Support</div>
                   </div>
                 </div>
