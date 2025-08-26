@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { SidebarTrigger } from '@/components/ui/sidebar';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import { useTranslation } from 'react-i18next';
@@ -37,9 +36,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Sidebar Trigger & Logo */}
-          <div className="flex items-center gap-4">
-            <SidebarTrigger />
+          {/* Logo */}
+          <div className="flex items-center">
             <div className="text-2xl font-bold text-primary">
               Gideon Media
             </div>

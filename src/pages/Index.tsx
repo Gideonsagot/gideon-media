@@ -11,29 +11,26 @@ import { ReviewsSection } from '@/components/ReviewsSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import { AppSidebar } from '@/components/AppSidebar';
-import { SidebarInset } from '@/components/ui/sidebar';
+import { ReviewWidget } from '@/components/ReviewWidget';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen w-full">
-      <AppSidebar />
-      <SidebarInset className="flex-1">
-        <Header />
-        <main>
-          <HeroSection />
-          <ServicesSection />
-          <AllServicesSection />
-          <ShopifyServicesSection />
-          <PortfolioSection />
-          <AboutSection />
-          <TestimonialsSection />
-          <ReviewsSection />
-          <FAQSection />
-          <ContactSection />
-          <Footer />
-        </main>
-      </SidebarInset>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <HeroSection />
+        <ServicesSection />
+        <AllServicesSection />
+        <ShopifyServicesSection />
+        <PortfolioSection />
+        <AboutSection />
+        <TestimonialsSection />
+        <ReviewsSection />
+        <FAQSection />
+        <ContactSection />
+        <Footer />
+      </main>
+      <ReviewWidget />
     </div>
   );
 };
