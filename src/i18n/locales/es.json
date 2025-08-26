@@ -1,0 +1,50 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "portfolio": "Portafolio", 
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "help": "Ayuda",
+    "getQuote": "Obtener Cotización"
+  },
+  "hero": {
+    "title": "Transforma Tu Presencia Digital",
+    "subtitle": "Soluciones profesionales de desarrollo web y marketing digital que generan resultados",
+    "cta": "Comenzar"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "webDev": "Desarrollo Web",
+    "digitalMarketing": "Marketing Digital",
+    "ecommerce": "Soluciones E-commerce"
+  },
+  "about": {
+    "title": "Acerca de Gideon Media",
+    "description": "Somos un equipo apasionado de expertos digitales dedicados a ayudar a las empresas a prosperar en línea."
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "name": "Nombre",
+    "email": "Correo",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje"
+  },
+  "help": {
+    "title": "¿Cómo Podemos Ayudarte?",
+    "subtitle": "Obtén soporte y respuestas a tus preguntas",
+    "subject": "Asunto",
+    "description": "Descripción",
+    "submit": "Enviar Solicitud"
+  },
+  "chatbot": {
+    "title": "Chatea con nosotros",
+    "placeholder": "Escribe tu mensaje...",
+    "send": "Enviar"
+  },
+  "reviews": {
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "writeReview": "Escribir Reseña"
+  }
+}
