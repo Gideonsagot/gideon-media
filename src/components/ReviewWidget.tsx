@@ -16,27 +16,26 @@ interface Review {
 }
 
 const quickReviews: Review[] = [
-  {
-    id: 1,
-    name: "Alex M.",
-    rating: 5,
-    comment: "Amazing service! Highly recommend.",
-    date: "2024-01-20"
-  },
-  {
-    id: 2,
-    name: "Sarah K.",
-    rating: 5,
-    comment: "Professional team, great results!",
-    date: "2024-01-18"
-  },
-  {
-    id: 3,
-    name: "John D.",
-    rating: 4,
-    comment: "Very satisfied with the work done.",
-    date: "2024-01-15"
-  }
+  { id: 1, name: "Alex M.", rating: 5, comment: "Amazing service! Highly recommend.", date: "2024-01-20" },
+  { id: 2, name: "Sarah K.", rating: 5, comment: "Professional team, great results!", date: "2024-01-18" },
+  { id: 3, name: "John D.", rating: 4, comment: "Very satisfied with the work done.", date: "2024-01-15" },
+  { id: 4, name: "Maria L.", rating: 5, comment: "Outstanding digital marketing strategy!", date: "2024-01-12" },
+  { id: 5, name: "David R.", rating: 5, comment: "Exceptional web design and development.", date: "2024-01-10" },
+  { id: 6, name: "Lisa T.", rating: 4, comment: "Great SEO results, traffic increased significantly.", date: "2024-01-08" },
+  { id: 7, name: "Michael B.", rating: 5, comment: "Fantastic social media management!", date: "2024-01-05" },
+  { id: 8, name: "Emma W.", rating: 5, comment: "Professional branding services, love the new logo.", date: "2024-01-03" },
+  { id: 9, name: "James H.", rating: 4, comment: "Solid e-commerce platform development.", date: "2024-01-01" },
+  { id: 10, name: "Sophie C.", rating: 5, comment: "Excellent customer service and support.", date: "2023-12-28" },
+  { id: 11, name: "Robert F.", rating: 5, comment: "Great content creation and copywriting.", date: "2023-12-25" },
+  { id: 12, name: "Amanda G.", rating: 4, comment: "Good PPC campaign management.", date: "2023-12-22" },
+  { id: 13, name: "Kevin P.", rating: 5, comment: "Amazing mobile app development!", date: "2023-12-20" },
+  { id: 14, name: "Rachel N.", rating: 5, comment: "Professional video production services.", date: "2023-12-18" },
+  { id: 15, name: "Thomas A.", rating: 4, comment: "Efficient project management and delivery.", date: "2023-12-15" },
+  { id: 16, name: "Jessica V.", rating: 5, comment: "Excellent graphic design work!", date: "2023-12-12" },
+  { id: 17, name: "Daniel K.", rating: 5, comment: "Great email marketing campaigns.", date: "2023-12-10" },
+  { id: 18, name: "Nicole S.", rating: 4, comment: "Solid digital strategy consulting.", date: "2023-12-08" },
+  { id: 19, name: "Mark E.", rating: 5, comment: "Outstanding analytics and reporting.", date: "2023-12-05" },
+  { id: 20, name: "Catherine J.", rating: 5, comment: "Perfect website optimization results!", date: "2023-12-03" }
 ];
 
 export function ReviewWidget() {
@@ -127,7 +126,7 @@ export function ReviewWidget() {
             <div className="flex gap-1">
               {renderStars(5)}
             </div>
-            <span className="text-muted-foreground">4.9/5 ({reviews.length} reviews)</span>
+            <span className="text-muted-foreground">4.8/5 ({reviews.length} reviews)</span>
           </div>
         </CardHeader>
 
@@ -137,7 +136,7 @@ export function ReviewWidget() {
               <>
                 {/* Reviews List */}
                 <div className="flex-1 overflow-y-auto p-4 space-y-3 max-h-48">
-                  {reviews.slice(0, 3).map((review) => (
+                  {reviews.slice(0, 5).map((review) => (
                     <div key={review.id} className="border-b border-border pb-3 last:border-b-0">
                       <div className="flex items-center justify-between mb-1">
                         <span className="font-medium text-sm">{review.name}</span>

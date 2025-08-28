@@ -1,0 +1,50 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "services": "Servizi",
+    "portfolio": "Portfolio",
+    "testimonials": "Testimonianze",
+    "contact": "Contatti",
+    "help": "Aiuto",
+    "getQuote": "Ottieni Preventivo"
+  },
+  "common": {
+    "back": "Indietro",
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo"
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "subtitle": "La tua agenzia digitale di fiducia",
+    "mission": {
+      "title": "La Nostra Missione",
+      "description": "Aiutare le aziende a crescere attraverso soluzioni digitali innovative e strategie di marketing efficaci."
+    },
+    "vision": {
+      "title": "La Nostra Visione",
+      "description": "Essere leader nel settore digitale, fornendo risultati eccezionali e costruendo relazioni durature."
+    },
+    "story": {
+      "title": "La Nostra Storia",
+      "paragraph1": "Gideon Media è nata dalla passione per il digitale e dall'esperienza nel marketing.",
+      "paragraph2": "Con anni di esperienza nel settore, abbiamo aiutato centinaia di aziende a raggiungere i loro obiettivi.",
+      "paragraph3": "Oggi siamo un team di esperti dedicati al successo dei nostri clienti."
+    }
+  },
+  "reviews": {
+    "writeReview": "Scrivi Recensione",
+    "submit": "Invia",
+    "cancel": "Annulla"
+  },
+  "chatbot": {
+    "title": "Assistente Virtuale",
+    "placeholder": "Scrivi il tuo messaggio...",
+    "send": "Invia"
+  },
+  "help": {
+    "title": "Centro Assistenza",
+    "subtitle": "Come possiamo aiutarti oggi?"
+  }
+}

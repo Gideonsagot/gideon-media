@@ -1,0 +1,50 @@
+{
+  "header": {
+    "home": "Koti",
+    "about": "Tietoa",
+    "services": "Palvelut",
+    "portfolio": "Portfolio",
+    "testimonials": "Suositukset",
+    "contact": "Yhteystiedot",
+    "help": "Apu",
+    "getQuote": "Pyydä Tarjous"
+  },
+  "common": {
+    "back": "Takaisin",
+    "loading": "Ladataan...",
+    "error": "Virhe",
+    "success": "Onnistui"
+  },
+  "about": {
+    "title": "Tietoa Meistä",
+    "subtitle": "Luotettava digitaalinen toimistosi",
+    "mission": {
+      "title": "Missiomme",
+      "description": "Autamme yrityksiä kasvamaan innovatiivisten digitaalisten ratkaisujen ja tehokkaiden markkinointistrategioiden avulla."
+    },
+    "vision": {
+      "title": "Visiomme",
+      "description": "Olla johtava digitaalisella alalla, tarjoten erinomaisia tuloksia ja rakentaen pitkäaikaisia suhteita."
+    },
+    "story": {
+      "title": "Tarinامme",
+      "paragraph1": "Gideon Media syntyi intohimosta digitaaliseen maailmaan ja markkinointikokemuksesta.",
+      "paragraph2": "Vuosien kokemuksella alalla olemme auttaneet satoja yrityksiä saavuttamaan tavoitteensa.",
+      "paragraph3": "Nykyään olemme asiantuntijatiimi, joka on omistautunut asiakkaidemme menestykselle."
+    }
+  },
+  "reviews": {
+    "writeReview": "Kirjoita Arvostelu",
+    "submit": "Lähetä",
+    "cancel": "Peruuta"
+  },
+  "chatbot": {
+    "title": "Virtuaalinen Avustaja",
+    "placeholder": "Kirjoita viestisi...",
+    "send": "Lähetä"
+  },
+  "help": {
+    "title": "Tukikeskus",
+    "subtitle": "Miten voimme auttaa sinua tänään?"
+  }
+}

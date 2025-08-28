@@ -1,0 +1,50 @@
+{
+  "header": {
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Serviços",
+    "portfolio": "Portfólio",
+    "testimonials": "Depoimentos",
+    "contact": "Contato",
+    "help": "Ajuda",
+    "getQuote": "Obter Orçamento"
+  },
+  "common": {
+    "back": "Voltar",
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso"
+  },
+  "about": {
+    "title": "Sobre Nós",
+    "subtitle": "Sua agência digital de confiança",
+    "mission": {
+      "title": "Nossa Missão",
+      "description": "Ajudar empresas a crescer através de soluções digitais inovadoras e estratégias de marketing eficazes."
+    },
+    "vision": {
+      "title": "Nossa Visão",
+      "description": "Ser líder no setor digital, fornecendo resultados excepcionais e construindo relacionamentos duradouros."
+    },
+    "story": {
+      "title": "Nossa História",
+      "paragraph1": "A Gideon Media nasceu da paixão pelo digital e da experiência em marketing.",
+      "paragraph2": "Com anos de experiência no setor, ajudamos centenas de empresas a alcançar seus objetivos.",
+      "paragraph3": "Hoje somos uma equipe de especialistas dedicados ao sucesso de nossos clientes."
+    }
+  },
+  "reviews": {
+    "writeReview": "Escrever Avaliação",
+    "submit": "Enviar",
+    "cancel": "Cancelar"
+  },
+  "chatbot": {
+    "title": "Assistente Virtual",
+    "placeholder": "Digite sua mensagem...",
+    "send": "Enviar"
+  },
+  "help": {
+    "title": "Central de Ajuda",
+    "subtitle": "Como podemos ajudá-lo hoje?"
+  }
+}

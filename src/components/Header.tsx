@@ -11,24 +11,17 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: t('header.home'), href: '#home' },
-    { label: t('header.about'), href: '#about' },
-    { label: t('header.services'), href: '#services' },
-    { label: t('header.portfolio'), href: '#portfolio' },
-    { label: t('header.testimonials'), href: '#testimonials' },
-    { label: t('header.contact'), href: '#contact' },
+    { label: t('header.home'), href: '/' },
+    { label: t('header.about'), href: '/about' },
+    { label: t('header.services'), href: '/services' },
+    { label: t('header.portfolio'), href: '/portfolio' },
+    { label: t('header.testimonials'), href: '/testimonials' },
+    { label: t('header.contact'), href: '/contact' },
     { label: t('header.help'), href: '/help' },
   ];
 
-  const scrollToSection = (href: string) => {
-    if (href.startsWith('#')) {
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      window.location.href = href;
-    }
+  const navigateToPage = (href: string) => {
+    window.location.href = href;
     setIsMenuOpen(false);
   };
 
@@ -48,7 +41,7 @@ const Header = () => {
             {navItems.map((item) => (
               <button
                 key={item.label}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => navigateToPage(item.href)}
                 className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
               >
                 {item.label}
@@ -61,7 +54,7 @@ const Header = () => {
             <ThemeToggle />
             <LanguageSelector />
             <Button 
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => navigateToPage('/contact')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg"
             >
               {t('header.getQuote')}
@@ -90,14 +83,14 @@ const Header = () => {
               {navItems.map((item) => (
                 <button
                   key={item.label}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => navigateToPage(item.href)}
                   className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-left"
                 >
                   {item.label}
                 </button>
               ))}
               <Button 
-                onClick={() => scrollToSection('#contact')}
+                onClick={() => navigateToPage('/contact')}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground w-full mt-4"
               >
                 {t('header.getQuote')}
