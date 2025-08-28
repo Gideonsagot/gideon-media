@@ -52,7 +52,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-card border-t text-card-foreground">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -61,22 +61,22 @@ const Footer = () => {
             <div className="text-2xl font-bold text-primary mb-4">
               Gideon Media
             </div>
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-muted-foreground mb-6 leading-relaxed">
               We Build. We Advertise. You Grow. Your trusted partner for digital 
               marketing and web development solutions that drive real results.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center text-gray-300">
+              <div className="flex items-center text-muted-foreground">
                 <Mail className="w-5 h-5 mr-3 text-primary" />
                 <span>Gideonmedia@hotmail.com</span>
               </div>
-              <div className="flex items-center text-gray-300">
+              <div className="flex items-center text-muted-foreground">
                 <Phone className="w-5 h-5 mr-3 text-primary" />
                 <span>+234 706 713 3828</span>
               </div>
-              <div className="flex items-center text-gray-300">
+              <div className="flex items-center text-muted-foreground">
                 <MapPin className="w-5 h-5 mr-3 text-primary" />
                 <span>Digital Marketing Hub, Online</span>
               </div>
@@ -85,13 +85,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.label}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-gray-300 hover:text-primary transition-colors duration-300"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
                   >
                     {link.label}
                   </button>
@@ -102,13 +102,13 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-4">Our Services</h3>
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service}>
                   <button
                     onClick={() => scrollToSection('#services')}
-                    className="text-gray-300 hover:text-primary transition-colors duration-300"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
                   >
                     {service}
                   </button>
@@ -119,8 +119,8 @@ const Footer = () => {
 
           {/* Newsletter & Social */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Stay Connected</h3>
-            <p className="text-gray-300 mb-4">
+            <h3 className="text-lg font-semibold text-foreground mb-4">Stay Connected</h3>
+            <p className="text-muted-foreground mb-4">
               Follow us on social media for digital marketing tips and updates.
             </p>
             
@@ -132,10 +132,10 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
+                  className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
                   aria-label={social.label}
                 >
-                  <social.icon className="w-5 h-5 text-gray-300 group-hover:text-white" />
+                  <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary-foreground" />
                 </a>
               ))}
             </div>
@@ -155,13 +155,13 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
+            <div className="text-muted-foreground text-sm mb-4 md:mb-0">
               © {currentYear} Gideon Media. All rights reserved.
             </div>
-            <div className="flex items-center space-x-6 text-gray-400 text-sm">
+            <div className="flex items-center space-x-6 text-muted-foreground text-sm">
               <button className="hover:text-primary transition-colors">
                 Privacy Policy
               </button>

@@ -51,21 +51,21 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               About Gideon Media
             </h2>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               We are a passionate team of digital marketing experts and web developers 
               dedicated to helping businesses thrive in the digital landscape. With years 
               of experience and a proven track record, we transform your online presence 
               into a powerful growth engine.
             </p>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Our mission is simple: to provide exceptional digital solutions that drive 
               real results. Whether you're a small local business or an international 
               company, we have the expertise and tools to help you succeed online.
@@ -76,7 +76,7 @@ const AboutSection = () => {
               {values.map((value, index) => (
                 <div key={index} className="flex items-start">
                   <CheckCircle className="text-primary w-5 h-5 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">{value}</span>
+                  <span className="text-muted-foreground">{value}</span>
                 </div>
               ))}
             </div>
@@ -86,15 +86,15 @@ const AboutSection = () => {
               {trustBadges.map((badge, index) => (
                 <div 
                   key={index}
-                  className="text-center p-4 bg-gray-50 rounded-lg border hover:shadow-md transition-shadow"
+                  className="text-center p-4 bg-muted rounded-lg border hover:shadow-md transition-shadow"
                 >
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
                     <badge.icon className="text-white" size={20} />
                   </div>
-                  <h4 className="font-semibold text-gray-900 text-sm mb-1">
+                  <h4 className="font-semibold text-foreground text-sm mb-1">
                     {badge.title}
                   </h4>
-                  <p className="text-xs text-gray-600">
+                  <p className="text-xs text-muted-foreground">
                     {badge.description}
                   </p>
                 </div>
@@ -127,12 +127,12 @@ const AboutSection = () => {
                       <div className="text-3xl font-bold text-primary">
                         {achievement.number}
                       </div>
-                      <div className="text-lg font-semibold text-gray-900">
+                      <div className="text-lg font-semibold text-foreground">
                         {achievement.label}
                       </div>
                     </div>
                   </div>
-                  <p className="text-gray-700">
+                  <p className="text-muted-foreground">
                     {achievement.description}
                   </p>
                 </div>
@@ -140,9 +140,9 @@ const AboutSection = () => {
             </div>
 
             {/* Mission Statement */}
-            <div className="mt-8 p-6 bg-gray-50 rounded-xl border-l-4 border-primary">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Our Mission</h3>
-              <p className="text-gray-700 italic">
+            <div className="mt-8 p-6 bg-muted rounded-xl border-l-4 border-primary">
+              <h3 className="text-xl font-bold text-foreground mb-2">Our Mission</h3>
+              <p className="text-muted-foreground italic">
                 "To empower businesses with exceptional digital solutions that drive 
                 growth, enhance brand visibility, and create lasting success in the online world."
               </p>

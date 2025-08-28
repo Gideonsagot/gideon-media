@@ -104,13 +104,13 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Let's Work Together
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to take your business to the next level? Get in touch with us today 
             for a free consultation and custom quote tailored to your needs.
           </p>
@@ -121,10 +121,10 @@ const ContactSection = () => {
           <div className="lg:col-span-2">
             <Card className="shadow-lg border-0">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-gray-900">
+                <CardTitle className="text-2xl font-bold text-foreground">
                   Get Your Free Quote
                 </CardTitle>
-                <p className="text-gray-600">
+                <p className="text-muted-foreground">
                   Fill out the form below and we'll get back to you within 24 hours.
                 </p>
               </CardHeader>
@@ -132,7 +132,7 @@ const ContactSection = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                         Full Name *
                       </label>
                       <Input
@@ -147,7 +147,7 @@ const ContactSection = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                         Email Address *
                       </label>
                       <Input
@@ -165,7 +165,7 @@ const ContactSection = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
                         Phone Number
                       </label>
                       <Input
@@ -179,7 +179,7 @@ const ContactSection = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
                         Company Name
                       </label>
                       <Input
@@ -195,7 +195,7 @@ const ContactSection = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
                       Service Interested In
                     </label>
                     <select
@@ -215,7 +215,7 @@ const ContactSection = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                       Project Details *
                     </label>
                     <Textarea
@@ -234,7 +234,7 @@ const ContactSection = () => {
                     <Button 
                       type="submit" 
                       disabled={isSubmitting}
-                      className="flex-1 bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg disabled:opacity-50"
+                      className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg disabled:opacity-50"
                     >
                       {isSubmitting ? (
                         <>
@@ -280,10 +280,10 @@ const ContactSection = () => {
                         <info.icon className="text-white" size={24} />
                       </div>
                       <div>
-                        <div className="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+                        <div className="font-semibold text-foreground group-hover:text-primary transition-colors">
                           {info.title}
                         </div>
-                        <div className="text-gray-600">
+                        <div className="text-muted-foreground">
                           {info.content}
                         </div>
                       </div>
@@ -297,15 +297,15 @@ const ContactSection = () => {
             <Card className="shadow-md">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center mr-4">
                     <Clock className="text-primary" size={24} />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">Business Hours</div>
-                    <div className="text-gray-600">We're here to help</div>
+                    <div className="font-semibold text-foreground">Business Hours</div>
+                    <div className="text-muted-foreground">We're here to help</div>
                   </div>
                 </div>
-                <div className="space-y-2 text-sm text-gray-700">
+                <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex justify-between">
                     <span>Monday - Friday</span>
                     <span>9:00 AM - 6:00 PM</span>
@@ -323,13 +323,13 @@ const ContactSection = () => {
             </Card>
 
             {/* Quick Response Guarantee */}
-            <Card className="shadow-md bg-green-50 border-green-200">
+            <Card className="shadow-md bg-green-50/50 border-green-200/50 dark:bg-green-950/20 dark:border-green-800/30">
               <CardContent className="p-6">
                 <div className="flex items-center mb-3">
-                  <CheckCircle className="text-green-600 mr-2" size={24} />
-                  <div className="font-semibold text-green-800">Quick Response Guarantee</div>
+                  <CheckCircle className="text-green-600 dark:text-green-400 mr-2" size={24} />
+                  <div className="font-semibold text-green-800 dark:text-green-300">Quick Response Guarantee</div>
                 </div>
-                <p className="text-green-700 text-sm">
+                <p className="text-green-700 dark:text-green-400 text-sm">
                   We respond to all inquiries within 24 hours. Need faster response? 
                   Use our WhatsApp for instant communication!
                 </p>

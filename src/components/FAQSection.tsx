@@ -46,26 +46,26 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-white">
+    <section id="faq" className="py-20 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Get answers to common questions about our digital marketing and web development services.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           {faqs.map((faq, index) => (
-            <Card key={index} className="mb-4 border border-gray-200 hover:shadow-md transition-shadow duration-300">
+            <Card key={index} className="mb-4 border border-border hover:shadow-md transition-shadow duration-300">
               <CardHeader 
                 onClick={() => toggleFAQ(index)}
-                className="cursor-pointer hover:bg-gray-50 transition-colors duration-200"
+                className="cursor-pointer hover:bg-muted/50 transition-colors duration-200"
               >
                 <div className="flex items-center justify-between">
-                  <CardTitle className="text-lg font-semibold text-gray-900 pr-4">
+                  <CardTitle className="text-lg font-semibold text-foreground pr-4">
                     {faq.question}
                   </CardTitle>
                   {openFAQ === index ? (
@@ -77,7 +77,7 @@ const FAQSection = () => {
               </CardHeader>
               {openFAQ === index && (
                 <CardContent className="pt-0">
-                  <CardDescription className="text-gray-700 leading-relaxed">
+                  <CardDescription className="text-muted-foreground leading-relaxed">
                     {faq.answer}
                   </CardDescription>
                 </CardContent>
@@ -87,14 +87,14 @@ const FAQSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">
+          <p className="text-muted-foreground mb-4">
             Still have questions? We're here to help!
           </p>
           <a
             href="https://wa.me/2347067133828?text=Hi, I have a question about your services"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg inline-block"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg inline-block"
           >
             Ask a Question
           </a>

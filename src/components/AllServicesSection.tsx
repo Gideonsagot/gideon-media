@@ -114,13 +114,13 @@ const AllServicesSection = () => {
   ];
 
   return (
-    <section id="all-services" className="py-20 bg-gray-50">
+    <section id="all-services" className="py-20 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Complete Service Portfolio
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Comprehensive digital marketing and development solutions to grow your business online.
           </p>
         </div>
@@ -128,10 +128,10 @@ const AllServicesSection = () => {
         {services.map((category, categoryIndex) => (
           <div key={categoryIndex} className="mb-16">
             <div className="flex items-center justify-center mb-8">
-              <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 ${category.color} mr-4`}>
+              <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-muted ${category.color} mr-4`}>
                 <category.icon size={24} />
               </div>
-              <h3 className="text-3xl font-bold text-gray-900">{category.category}</h3>
+              <h3 className="text-3xl font-bold text-foreground">{category.category}</h3>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -141,20 +141,20 @@ const AllServicesSection = () => {
                   className="gradient-card border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
                 >
                   <CardHeader className="text-center pb-4">
-                    <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 ${category.color} mb-4 mx-auto group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-muted ${category.color} mb-4 mx-auto group-hover:scale-110 transition-transform duration-300`}>
                       <service.icon size={32} />
                     </div>
-                    <CardTitle className="text-xl font-bold text-gray-900 mb-2">
+                    <CardTitle className="text-xl font-bold text-foreground mb-2">
                       {service.title}
                     </CardTitle>
-                    <CardDescription className="text-gray-600 leading-relaxed">
+                    <CardDescription className="text-muted-foreground leading-relaxed">
                       {service.description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2 mb-6">
                       {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-sm text-gray-700">
+                        <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
                           <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                           {feature}
                         </li>
@@ -162,7 +162,7 @@ const AllServicesSection = () => {
                     </ul>
                     <Button 
                       variant="ghost" 
-                      className="w-full text-primary hover:bg-primary hover:text-white transition-all duration-300 group"
+                      className="w-full text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 group"
                       onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=gideonmedia@hotmail.com&su=Quote Request for ' + service.title, '_blank')}
                     >
                       Get Quote
@@ -179,7 +179,7 @@ const AllServicesSection = () => {
           <Button 
             size="lg"
             onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=gideonmedia@hotmail.com&su=Project Inquiry', '_blank')}
-            className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105"
           >
             Start Your Project Today
             <ArrowRight className="ml-2 h-5 w-5" />
