@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Star, X, ChevronUp, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -41,6 +41,7 @@ const quickReviews: Review[] = [
 export function ReviewWidget() {
   const { t } = useTranslation();
   const { toast } = useToast();
+  const [isVisible, setIsVisible] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [isWritingReview, setIsWritingReview] = useState(false);
   const [reviews, setReviews] = useState<Review[]>(quickReviews);
@@ -49,6 +50,15 @@ export function ReviewWidget() {
     rating: 5,
     comment: ''
   });
+
+  // Auto-popup after 3 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleSubmitReview = () => {
     if (!newReview.name || !newReview.comment) {
@@ -90,8 +100,10 @@ export function ReviewWidget() {
     ));
   };
 
+  if (!isVisible) return null;
+
   return (
-    <div className="fixed right-4 top-1/2 -translate-y-1/2 z-40">
+    <div className="fixed left-4 bottom-4 z-40">
       <Card className={`w-80 shadow-lg transition-all duration-300 ${
         isExpanded ? 'h-96' : 'h-auto'
       }`}>
@@ -109,15 +121,13 @@ export function ReviewWidget() {
               >
                 {isExpanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
               </Button>
-              {isExpanded && (
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setIsExpanded(false)}
-                >
-                  <X className="h-4 w-4" />
-                </Button>
-              )}
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setIsVisible(false)}
+              >
+                <X className="h-4 w-4" />
+              </Button>
             </div>
           </div>
           
@@ -136,7 +146,7 @@ export function ReviewWidget() {
               <>
                 {/* Reviews List */}
                 <div className="flex-1 overflow-y-auto p-4 space-y-3 max-h-48">
-                  {reviews.slice(0, 5).map((review) => (
+                  {reviews.slice(0, 20).map((review) => (
                     <div key={review.id} className="border-b border-border pb-3 last:border-b-0">
                       <div className="flex items-center justify-between mb-1">
                         <span className="font-medium text-sm">{review.name}</span>
