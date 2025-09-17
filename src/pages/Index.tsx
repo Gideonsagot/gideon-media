@@ -12,6 +12,7 @@ import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import { ReviewWidget } from '@/components/ReviewWidget';
+import { PurchaseNotification } from '@/components/PurchaseNotification';
 
 const Index = () => {
   return (
@@ -31,6 +32,7 @@ const Index = () => {
         <Footer />
       </main>
       <ReviewWidget />
+      <PurchaseNotification />
     </div>
   );
 };
