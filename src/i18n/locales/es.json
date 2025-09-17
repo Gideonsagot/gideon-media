@@ -10,26 +10,127 @@
     "getQuote": "Obtener Cotización"
   },
   "hero": {
-    "title": "Transforma Tu Presencia Digital",
-    "subtitle": "Soluciones profesionales de desarrollo web y marketing digital que generan resultados",
-    "cta": "Comenzar"
+    "title": "Nosotros Anunciamos.",
+    "subtitle": "Tú Creces.",
+    "cta": "Comenzar Mi Llamada de Estrategia Gratuita",
+    "guarantee": "Garantizamos resultados — o trabajamos hasta que los obtengas.",
+    "trustIndicator": "100+ Proyectos Completados — Confiado por Empresas Globales",
+    "stats": {
+      "clients": "Clientes Felices",
+      "roi": "ROI Promedio",
+      "successRate": "Tasa de Éxito",
+      "support": "Soporte"
+    },
+    "services": {
+      "metaAds": "Meta Ads",
+      "metaDescription": "Facebook e Instagram",
+      "shopify": "Shopify y Sitios Web para Pequeñas Empresas",
+      "shopifyDescription": "Sitios de E-commerce y Negocios",
+      "pinterest": "Configuración de Pinterest",
+      "pinterestDescription": "Marketing Visual",
+      "badge": "Estrategia y Lanzamiento de Anuncios"
+    }
   },
   "services": {
-    "title": "Nuestros Servicios",
-    "webDev": "Desarrollo Web",
-    "digitalMarketing": "Marketing Digital",
-    "ecommerce": "Soluciones E-commerce"
+    "title": "Nuestros Servicios Expertos",
+    "subtitle": "Desde marketing digital hasta desarrollo web, proporcionamos soluciones integrales para ayudar a tu negocio a establecer una fuerte presencia en línea y impulsar el crecimiento.",
+    "cta": "Comenzar Hoy",
+    "learnMore": "Saber Más",
+    "metaAds": {
+      "title": "Configuración de Meta Ads",
+      "description": "Campañas publicitarias profesionales de Facebook e Instagram, incluyendo integración de WhatsApp Ads para máximo alcance y engagement.",
+      "features": ["Estrategia de Campaña", "Diseño Creativo de Anuncios", "Integración de WhatsApp", "Seguimiento de Rendimiento"]
+    },
+    "shopify": {
+      "title": "Desarrollo de Shopify",
+      "description": "Tiendas Shopify personalizadas que convierten visitantes en clientes con experiencia de usuario optimizada y procesos de checkout sin problemas.",
+      "features": ["Diseño Personalizado", "Integración de Pagos", "Optimización SEO", "Responsive Móvil"]
+    },
+    "website": {
+      "title": "Desarrollo de Sitios Web",
+      "description": "Sitios web modernos y responsivos para pequeñas empresas que establecen credibilidad e impulsan el crecimiento en el mercado digital.",
+      "features": ["Diseño Responsivo", "Carga Rápida", "Listo para SEO", "Gestión de Contenido"]
+    },
+    "pinterest": {
+      "title": "Configuración de Pinterest",
+      "description": "Configuración estratégica de presencia en Pinterest para impulsar tráfico e incrementar la visibilidad de marca através de contenido visual atractivo.",
+      "features": ["Optimización de Perfil", "Estrategia de Tableros", "Diseño de Pines", "Configuración de Analytics"]
+    },
+    "adsStrategy": {
+      "title": "Estrategia y Lanzamiento de Anuncios",
+      "description": "Desarrollo integral de estrategia publicitaria y gestión de campañas a través de múltiples plataformas digitales.",
+      "features": ["Investigación de Mercado", "Segmentación de Audiencia", "Gestión de Campañas", "Optimización de ROI"]
+    }
   },
   "about": {
     "title": "Acerca de Gideon Media",
-    "description": "Somos un equipo apasionado de expertos digitales dedicados a ayudar a las empresas a prosperar en línea."
+    "description1": "Somos un equipo apasionado de expertos en marketing digital y desarrolladores web dedicados a ayudar a las empresas a prosperar en el panorama digital.",
+    "description2": "Nuestra misión es simple: proporcionar soluciones digitales excepcionales que generen resultados reales.",
+    "values": [
+      "Enfoque orientado a resultados con resultados medibles",
+      "Comunicación transparente durante todo el proyecto",
+      "Tecnología de vanguardia y mejores prácticas",
+      "Soporte dedicado para el éxito a largo plazo",
+      "Soluciones personalizadas adaptadas a tu negocio",
+      "Precios competitivos con valor excepcional"
+    ],
+    "achievements": {
+      "clients": "Clientes Felices",
+      "clientsDesc": "Empresas que hemos ayudado a crecer",
+      "projects": "Proyectos Entregados",
+      "projectsDesc": "Campañas y sitios web exitosos",
+      "roi": "ROI Promedio",
+      "roiDesc": "Retorno de inversión para clientes"
+    },
+    "trustBadges": {
+      "certified": "Profesionales Certificados",
+      "certifiedDesc": "Certificados Meta y Google",
+      "reviews": "Reseñas de 5 Estrellas",
+      "reviewsDesc": "Satisfacción del Cliente Garantizada",
+      "support": "Soporte 24/7",
+      "supportDesc": "Siempre Aquí Cuando Nos Necesites"
+    },
+    "mission": "Empoderar a las empresas con soluciones digitales excepcionales que impulsen el crecimiento."
   },
   "contact": {
-    "title": "Ponte en Contacto",
-    "name": "Nombre",
-    "email": "Correo",
-    "message": "Mensaje",
-    "send": "Enviar Mensaje"
+    "title": "Trabajemos Juntos",
+    "subtitle": "¿Listo para llevar tu negocio al siguiente nivel?",
+    "formTitle": "Obtén Tu Cotización Gratuita",
+    "formSubtitle": "Completa el formulario a continuación y te responderemos dentro de 24 horas.",
+    "fullName": "Nombre Completo",
+    "email": "Dirección de Correo",
+    "phone": "Número de Teléfono",
+    "company": "Nombre de la Empresa",
+    "service": "Servicio de Interés",
+    "selectService": "Seleccionar un servicio",
+    "projectDetails": "Detalles del Proyecto",
+    "projectPlaceholder": "Cuéntanos sobre tu proyecto, objetivos y cualquier requisito específico...",
+    "send": "Enviar Mensaje",
+    "whatsapp": "WhatsApp",
+    "sending": "Enviando...",
+    "contactMethods": {
+      "email": "Escríbenos",
+      "phone": "Llámanos",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Chatea con nosotros al instante"
+    },
+    "businessHours": {
+      "title": "Horario de Atención",
+      "subtitle": "Estamos aquí para ayudar",
+      "monday": "Lunes - Viernes",
+      "mondayTime": "9:00 AM - 6:00 PM",
+      "saturday": "Sábado",
+      "saturdayTime": "10:00 AM - 4:00 PM",
+      "sunday": "Domingo",
+      "sundayTime": "Cerrado"
+    },
+    "guarantee": {
+      "title": "Garantía de Respuesta Rápida",
+      "description": "Respondemos a todas las consultas dentro de 24 horas."
+    },
+    "success": "¡Mensaje Enviado Exitosamente!",
+    "successDesc": "Te responderemos dentro de 24 horas.",
+    "error": "Error al enviar mensaje. Por favor inténtalo de nuevo."
   },
   "help": {
     "title": "¿Cómo Podemos Ayudarte?",

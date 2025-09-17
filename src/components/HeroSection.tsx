@@ -2,16 +2,18 @@
 import { ArrowRight, CheckCircle, Globe, Smartphone, TrendingUp, Phone, Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const openWhatsApp = () => {
     window.open('https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20start%20my%20free%20strategy%20call%20with%20Gideon%20Media', '_blank');
   };
 
   const services = [
-    { icon: Smartphone, name: 'Meta Ads', description: 'Facebook & Instagram' },
-    { icon: Globe, name: 'Shopify & Small Business Websites', description: 'E-commerce & Business Sites' },
-    { icon: TrendingUp, name: 'Pinterest Setup', description: 'Visual Marketing' },
+    { icon: Smartphone, name: t('hero.services.metaAds'), description: t('hero.services.metaDescription') },
+    { icon: Globe, name: t('hero.services.shopify'), description: t('hero.services.shopifyDescription') },
+    { icon: TrendingUp, name: t('hero.services.pinterest'), description: t('hero.services.pinterestDescription') },
   ];
 
   return (
@@ -48,9 +50,9 @@ const HeroSection = () => {
           {/* Headline */}
           <div className="space-y-8 pt-8">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight tracking-tight">
-              We Advertise.{' '}
+              {t('hero.title')}{' '}
               <span className="block text-transparent bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text hover:scale-105 transition-transform duration-300 cursor-default relative group">
-                You Grow.
+                {t('hero.subtitle')}
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </span>
             </h1>
@@ -76,7 +78,7 @@ const HeroSection = () => {
             </div>
             <div className="mt-8">
               <Badge variant="secondary" className="bg-white/10 text-white border-white/20 backdrop-blur-md">
-                Ad Strategy & Launch
+                {t('hero.services.badge')}
               </Badge>
             </div>
           </div>
@@ -88,7 +90,7 @@ const HeroSection = () => {
                 <Quote className="h-10 w-10 text-blue-400 flex-shrink-0 mt-1" />
                 <div className="text-center flex-1">
                   <p className="text-2xl md:text-3xl text-white font-medium leading-relaxed">
-                    We <span className="font-bold text-blue-400">guarantee</span> <span className="font-bold text-blue-400">results</span> — or we work until you get them.
+                    {t('hero.guarantee')}
                   </p>
                 </div>
                 <Quote className="h-10 w-10 text-blue-400 flex-shrink-0 mt-1 rotate-180" />
@@ -104,14 +106,14 @@ const HeroSection = () => {
               className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-500 text-white px-12 py-8 rounded-full font-bold text-xl transition-all duration-300 hover:shadow-2xl hover:scale-110 group border-2 border-primary/20"
             >
               <Phone className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform" />
-              Start My Free Strategy Call
+              {t('hero.cta')}
               <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
             </Button>
 
             {/* Trust Indicator */}
             <div className="flex items-center justify-center gap-4 text-gray-200">
               <CheckCircle className="h-6 w-6 text-green-400" />
-              <span className="font-semibold text-lg">100+ Projects Completed — Trusted by Global Businesses</span>
+              <span className="font-semibold text-lg">{t('hero.trustIndicator')}</span>
             </div>
 
             {/* Client Credibility Strip */}
@@ -120,19 +122,19 @@ const HeroSection = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-80">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-white">50+</div>
-                    <div className="text-gray-300 text-sm">Happy Clients</div>
+                    <div className="text-gray-300 text-sm">{t('hero.stats.clients')}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-white">2x</div>
-                    <div className="text-gray-300 text-sm">Average ROI</div>
+                    <div className="text-gray-300 text-sm">{t('hero.stats.roi')}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-white">95%</div>
-                    <div className="text-gray-300 text-sm">Success Rate</div>
+                    <div className="text-gray-300 text-sm">{t('hero.stats.successRate')}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-white">24/7</div>
-                    <div className="text-gray-300 text-sm">Support</div>
+                    <div className="text-gray-300 text-sm">{t('hero.stats.support')}</div>
                   </div>
                 </div>
               </div>

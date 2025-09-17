@@ -9,42 +9,44 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useTranslation } from 'react-i18next';
 
 const ServicesSection = () => {
+  const { t } = useTranslation();
   const services = [
     {
       icon: Facebook,
-      title: 'Meta Ads Setup',
-      description: 'Professional Facebook and Instagram advertising campaigns, including WhatsApp Ads integration for maximum reach and engagement.',
-      features: ['Campaign Strategy', 'Ad Creative Design', 'WhatsApp Integration', 'Performance Tracking'],
+      title: t('services.metaAds.title'),
+      description: t('services.metaAds.description'),
+      features: t('services.metaAds.features', { returnObjects: true }) as string[],
       color: 'text-blue-600'
     },
     {
       icon: ShoppingCart,
-      title: 'Shopify Development',
-      description: 'Custom Shopify stores that convert visitors into customers with optimized user experience and seamless checkout processes.',
-      features: ['Custom Design', 'Payment Integration', 'SEO Optimization', 'Mobile Responsive'],
+      title: t('services.shopify.title'),
+      description: t('services.shopify.description'),
+      features: t('services.shopify.features', { returnObjects: true }) as string[],
       color: 'text-green-600'
     },
     {
       icon: Globe,
-      title: 'Website Development',
-      description: 'Modern, responsive websites for small businesses that establish credibility and drive growth in the digital marketplace.',
-      features: ['Responsive Design', 'Fast Loading', 'SEO Ready', 'Content Management'],
+      title: t('services.website.title'),
+      description: t('services.website.description'),
+      features: t('services.website.features', { returnObjects: true }) as string[],
       color: 'text-purple-600'
     },
     {
       icon: MessageCircle,
-      title: 'Pinterest Setup',
-      description: 'Strategic Pinterest presence setup to drive traffic and increase brand visibility through engaging visual content.',
-      features: ['Profile Optimization', 'Board Strategy', 'Pin Design', 'Analytics Setup'],
+      title: t('services.pinterest.title'),
+      description: t('services.pinterest.description'),
+      features: t('services.pinterest.features', { returnObjects: true }) as string[],
       color: 'text-red-600'
     },
     {
       icon: Target,
-      title: 'Ads Strategy & Launch',
-      description: 'Comprehensive advertising strategy development and campaign management across multiple digital platforms.',
-      features: ['Market Research', 'Audience Targeting', 'Campaign Management', 'ROI Optimization'],
+      title: t('services.adsStrategy.title'),
+      description: t('services.adsStrategy.description'),
+      features: t('services.adsStrategy.features', { returnObjects: true }) as string[],
       color: 'text-orange-600'
     }
   ];
@@ -54,11 +56,10 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our Expert Services
+            {t('services.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From digital marketing to web development, we provide comprehensive solutions 
-            to help your business establish a strong online presence and drive growth.
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -93,7 +94,7 @@ const ServicesSection = () => {
                   className="w-full text-primary hover:bg-primary hover:text-white transition-all duration-300 group"
                   onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=gideonmedia@hotmail.com&su=Quote Request for ' + service.title, '_blank')}
                 >
-                  Learn More
+                  {t('services.learnMore')}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </CardContent>
@@ -107,7 +108,7 @@ const ServicesSection = () => {
             onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105"
           >
-            Get Started Today
+            {t('services.cta')}
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>

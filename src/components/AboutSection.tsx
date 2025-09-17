@@ -1,52 +1,47 @@
 
 import { CheckCircle, Users, Award, TrendingUp, Shield, Star, Clock } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const AboutSection = () => {
+  const { t } = useTranslation();
   const achievements = [
     {
       icon: Users,
       number: '50+',
-      label: 'Happy Clients',
-      description: 'Businesses we\'ve helped grow'
+      label: t('about.achievements.clients'),
+      description: t('about.achievements.clientsDesc')
     },
     {
       icon: Award,
       number: '100+',
-      label: 'Projects Delivered',
-      description: 'Successful campaigns and websites'
+      label: t('about.achievements.projects'),
+      description: t('about.achievements.projectsDesc')
     },
     {
       icon: TrendingUp,
       number: '2x',
-      label: 'Average ROI',
-      description: 'Return on investment for clients'
+      label: t('about.achievements.roi'),
+      description: t('about.achievements.roiDesc')
     }
   ];
 
-  const values = [
-    'Results-driven approach with measurable outcomes',
-    'Transparent communication throughout the project',
-    'Cutting-edge technology and best practices',
-    'Dedicated support for long-term success',
-    'Custom solutions tailored to your business',
-    'Competitive pricing with exceptional value'
-  ];
+  const values = t('about.values', { returnObjects: true }) as string[];
 
   const trustBadges = [
     {
       icon: Shield,
-      title: 'Certified Professionals',
-      description: 'Meta & Google Certified'
+      title: t('about.trustBadges.certified'),
+      description: t('about.trustBadges.certifiedDesc')
     },
     {
       icon: Star,
-      title: '5-Star Reviews',
-      description: 'Client Satisfaction Guaranteed'
+      title: t('about.trustBadges.reviews'),
+      description: t('about.trustBadges.reviewsDesc')
     },
     {
       icon: Clock,
-      title: '24/7 Support',
-      description: 'Always Here When You Need Us'
+      title: t('about.trustBadges.support'),
+      description: t('about.trustBadges.supportDesc')
     }
   ];
 
@@ -57,18 +52,13 @@ const AboutSection = () => {
           {/* Left Column - Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              About Gideon Media
+              {t('about.title')}
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              We are a passionate team of digital marketing experts and web developers 
-              dedicated to helping businesses thrive in the digital landscape. With years 
-              of experience and a proven track record, we transform your online presence 
-              into a powerful growth engine.
+              {t('about.description1')}
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our mission is simple: to provide exceptional digital solutions that drive 
-              real results. Whether you're a small local business or an international 
-              company, we have the expertise and tools to help you succeed online.
+              {t('about.description2')}
             </p>
 
             {/* Values */}
@@ -143,8 +133,7 @@ const AboutSection = () => {
             <div className="mt-8 p-6 bg-muted rounded-xl border-l-4 border-primary">
               <h3 className="text-xl font-bold text-foreground mb-2">Our Mission</h3>
               <p className="text-muted-foreground italic">
-                "To empower businesses with exceptional digital solutions that drive 
-                growth, enhance brand visibility, and create lasting success in the online world."
+                "{t('about.mission')}"
               </p>
             </div>
           </div>

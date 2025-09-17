@@ -13,8 +13,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { toast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,31 +28,31 @@ const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const services = [
-    'Meta Ads Setup',
-    'Shopify Development', 
-    'Website Development',
-    'Pinterest Setup',
-    'Ads Strategy & Launch',
+    t('services.metaAds.title'),
+    t('services.shopify.title'),
+    t('services.website.title'),
+    t('services.pinterest.title'),
+    t('services.adsStrategy.title'),
     'Full Digital Marketing Package'
   ];
 
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email Us',
+      title: t('contact.contactMethods.email'),
       content: 'Gideonmedia@hotmail.com',
       action: 'mailto:Gideonmedia@hotmail.com'
     },
     {
       icon: Phone,
-      title: 'Call Us',
+      title: t('contact.contactMethods.phone'),
       content: '+234 706 713 3828',
       action: 'tel:+2347067133828'
     },
     {
       icon: MessageCircle,
-      title: 'WhatsApp',
-      content: 'Chat with us instantly',
+      title: t('contact.contactMethods.whatsapp'),
+      content: t('contact.contactMethods.whatsappDesc'),
       action: 'https://wa.me/2347067133828?text=Hi, I\'m interested in your digital marketing services'
     }
   ];
@@ -72,8 +74,8 @@ const ContactSection = () => {
       await new Promise(resolve => setTimeout(resolve, 2000));
       
       toast({
-        title: "Message Sent Successfully!",
-        description: "We'll get back to you within 24 hours.",
+        title: t('contact.success'),
+        description: t('contact.successDesc'),
       });
 
       // Reset form
@@ -88,7 +90,7 @@ const ContactSection = () => {
     } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again.",
+        description: t('contact.error'),
         variant: "destructive"
       });
     } finally {
@@ -108,11 +110,10 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Let's Work Together
+            {t('contact.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to take your business to the next level? Get in touch with us today 
-            for a free consultation and custom quote tailored to your needs.
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -122,10 +123,10 @@ const ContactSection = () => {
             <Card className="shadow-lg border-0">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-foreground">
-                  Get Your Free Quote
+                  {t('contact.formTitle')}
                 </CardTitle>
                 <p className="text-muted-foreground">
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  {t('contact.formSubtitle')}
                 </p>
               </CardHeader>
               <CardContent>
@@ -133,7 +134,7 @@ const ContactSection = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                        Full Name *
+                        {t('contact.fullName')} *
                       </label>
                       <Input
                         id="name"
@@ -148,7 +149,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                        Email Address *
+                        {t('contact.email')} *
                       </label>
                       <Input
                         id="email"
@@ -166,7 +167,7 @@ const ContactSection = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                        Phone Number
+                        {t('contact.phone')}
                       </label>
                       <Input
                         id="phone"
@@ -180,7 +181,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                        Company Name
+                        {t('contact.company')}
                       </label>
                       <Input
                         id="company"
@@ -196,7 +197,7 @@ const ContactSection = () => {
 
                   <div>
                     <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
-                      Service Interested In
+                      {t('contact.service')}
                     </label>
                     <select
                       id="service"
@@ -205,7 +206,7 @@ const ContactSection = () => {
                       onChange={handleInputChange}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                     >
-                      <option value="">Select a service</option>
+                      <option value="">{t('contact.selectService')}</option>
                       {services.map((service) => (
                         <option key={service} value={service}>
                           {service}
@@ -216,7 +217,7 @@ const ContactSection = () => {
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Project Details *
+                      {t('contact.projectDetails')} *
                     </label>
                     <Textarea
                       id="message"
@@ -226,7 +227,7 @@ const ContactSection = () => {
                       onChange={handleInputChange}
                       rows={4}
                       className="w-full"
-                      placeholder="Tell us about your project, goals, and any specific requirements..."
+                      placeholder={t('contact.projectPlaceholder')}
                     />
                   </div>
 
@@ -239,12 +240,12 @@ const ContactSection = () => {
                       {isSubmitting ? (
                         <>
                           <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                          Sending...
+                          {t('contact.sending')}
                         </>
                       ) : (
                         <>
                           <Send className="mr-2 h-4 w-4" />
-                          Send Message
+                          {t('contact.send')}
                         </>
                       )}
                     </Button>
@@ -256,7 +257,7 @@ const ContactSection = () => {
                       className="flex-1 border-green-500 text-green-600 hover:bg-green-500 hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300"
                     >
                       <MessageCircle className="mr-2 h-4 w-4" />
-                      WhatsApp Us
+                      {t('contact.whatsapp')}
                     </Button>
                   </div>
                 </form>
@@ -301,22 +302,22 @@ const ContactSection = () => {
                     <Clock className="text-primary" size={24} />
                   </div>
                   <div>
-                    <div className="font-semibold text-foreground">Business Hours</div>
-                    <div className="text-muted-foreground">We're here to help</div>
+                    <div className="font-semibold text-foreground">{t('contact.businessHours.title')}</div>
+                    <div className="text-muted-foreground">{t('contact.businessHours.subtitle')}</div>
                   </div>
                 </div>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span>9:00 AM - 6:00 PM</span>
+                    <span>{t('contact.businessHours.monday')}</span>
+                    <span>{t('contact.businessHours.mondayTime')}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Saturday</span>
-                    <span>10:00 AM - 4:00 PM</span>
+                    <span>{t('contact.businessHours.saturday')}</span>
+                    <span>{t('contact.businessHours.saturdayTime')}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Sunday</span>
-                    <span>Closed</span>
+                    <span>{t('contact.businessHours.sunday')}</span>
+                    <span>{t('contact.businessHours.sundayTime')}</span>
                   </div>
                 </div>
               </CardContent>
@@ -327,11 +328,10 @@ const ContactSection = () => {
               <CardContent className="p-6">
                 <div className="flex items-center mb-3">
                   <CheckCircle className="text-green-600 dark:text-green-400 mr-2" size={24} />
-                  <div className="font-semibold text-green-800 dark:text-green-300">Quick Response Guarantee</div>
+                  <div className="font-semibold text-green-800 dark:text-green-300">{t('contact.guarantee.title')}</div>
                 </div>
                 <p className="text-green-700 dark:text-green-400 text-sm">
-                  We respond to all inquiries within 24 hours. Need faster response? 
-                  Use our WhatsApp for instant communication!
+                  {t('contact.guarantee.description')}
                 </p>
               </CardContent>
             </Card>

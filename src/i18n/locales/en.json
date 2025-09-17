@@ -10,26 +10,127 @@
     "getQuote": "Get a Quote"
   },
   "hero": {
-    "title": "Transform Your Digital Presence",
-    "subtitle": "Professional web development and digital marketing solutions that drive results",
-    "cta": "Get Started"
+    "title": "We Advertise.",
+    "subtitle": "You Grow.",
+    "cta": "Start My Free Strategy Call",
+    "guarantee": "We guarantee results — or we work until you get them.",
+    "trustIndicator": "100+ Projects Completed — Trusted by Global Businesses",
+    "stats": {
+      "clients": "Happy Clients",
+      "roi": "Average ROI", 
+      "successRate": "Success Rate",
+      "support": "Support"
+    },
+    "services": {
+      "metaAds": "Meta Ads",
+      "metaDescription": "Facebook & Instagram",
+      "shopify": "Shopify & Small Business Websites",
+      "shopifyDescription": "E-commerce & Business Sites",
+      "pinterest": "Pinterest Setup",
+      "pinterestDescription": "Visual Marketing",
+      "badge": "Ad Strategy & Launch"
+    }
   },
   "services": {
-    "title": "Our Services",
-    "webDev": "Web Development",
-    "digitalMarketing": "Digital Marketing",
-    "ecommerce": "E-commerce Solutions"
+    "title": "Our Expert Services",
+    "subtitle": "From digital marketing to web development, we provide comprehensive solutions to help your business establish a strong online presence and drive growth.",
+    "cta": "Get Started Today",
+    "learnMore": "Learn More",
+    "metaAds": {
+      "title": "Meta Ads Setup",
+      "description": "Professional Facebook and Instagram advertising campaigns, including WhatsApp Ads integration for maximum reach and engagement.",
+      "features": ["Campaign Strategy", "Ad Creative Design", "WhatsApp Integration", "Performance Tracking"]
+    },
+    "shopify": {
+      "title": "Shopify Development",
+      "description": "Custom Shopify stores that convert visitors into customers with optimized user experience and seamless checkout processes.",
+      "features": ["Custom Design", "Payment Integration", "SEO Optimization", "Mobile Responsive"]
+    },
+    "website": {
+      "title": "Website Development", 
+      "description": "Modern, responsive websites for small businesses that establish credibility and drive growth in the digital marketplace.",
+      "features": ["Responsive Design", "Fast Loading", "SEO Ready", "Content Management"]
+    },
+    "pinterest": {
+      "title": "Pinterest Setup",
+      "description": "Strategic Pinterest presence setup to drive traffic and increase brand visibility through engaging visual content.",
+      "features": ["Profile Optimization", "Board Strategy", "Pin Design", "Analytics Setup"]
+    },
+    "adsStrategy": {
+      "title": "Ads Strategy & Launch",
+      "description": "Comprehensive advertising strategy development and campaign management across multiple digital platforms.",
+      "features": ["Market Research", "Audience Targeting", "Campaign Management", "ROI Optimization"]
+    }
   },
   "about": {
     "title": "About Gideon Media",
-    "description": "We are a passionate team of digital experts dedicated to helping businesses thrive online."
+    "description1": "We are a passionate team of digital marketing experts and web developers dedicated to helping businesses thrive in the digital landscape. With years of experience and a proven track record, we transform your online presence into a powerful growth engine.",
+    "description2": "Our mission is simple: to provide exceptional digital solutions that drive real results. Whether you're a small local business or an international company, we have the expertise and tools to help you succeed online.",
+    "values": [
+      "Results-driven approach with measurable outcomes",
+      "Transparent communication throughout the project",
+      "Cutting-edge technology and best practices",
+      "Dedicated support for long-term success",
+      "Custom solutions tailored to your business",
+      "Competitive pricing with exceptional value"
+    ],
+    "achievements": {
+      "clients": "Happy Clients",
+      "clientsDesc": "Businesses we've helped grow",
+      "projects": "Projects Delivered", 
+      "projectsDesc": "Successful campaigns and websites",
+      "roi": "Average ROI",
+      "roiDesc": "Return on investment for clients"
+    },
+    "trustBadges": {
+      "certified": "Certified Professionals",
+      "certifiedDesc": "Meta & Google Certified",
+      "reviews": "5-Star Reviews",
+      "reviewsDesc": "Client Satisfaction Guaranteed",
+      "support": "24/7 Support",
+      "supportDesc": "Always Here When You Need Us"
+    },
+    "mission": "To empower businesses with exceptional digital solutions that drive growth, enhance brand visibility, and create lasting success in the online world."
   },
   "contact": {
-    "title": "Get In Touch",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "send": "Send Message"
+    "title": "Let's Work Together",
+    "subtitle": "Ready to take your business to the next level? Get in touch with us today for a free consultation and custom quote tailored to your needs.",
+    "formTitle": "Get Your Free Quote",
+    "formSubtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+    "fullName": "Full Name",
+    "email": "Email Address", 
+    "phone": "Phone Number",
+    "company": "Company Name",
+    "service": "Service Interested In",
+    "selectService": "Select a service",
+    "projectDetails": "Project Details",
+    "projectPlaceholder": "Tell us about your project, goals, and any specific requirements...",
+    "send": "Send Message",
+    "whatsapp": "WhatsApp Us",
+    "sending": "Sending...",
+    "contactMethods": {
+      "email": "Email Us",
+      "phone": "Call Us", 
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Chat with us instantly"
+    },
+    "businessHours": {
+      "title": "Business Hours",
+      "subtitle": "We're here to help",
+      "monday": "Monday - Friday",
+      "mondayTime": "9:00 AM - 6:00 PM",
+      "saturday": "Saturday", 
+      "saturdayTime": "10:00 AM - 4:00 PM",
+      "sunday": "Sunday",
+      "sundayTime": "Closed"
+    },
+    "guarantee": {
+      "title": "Quick Response Guarantee",
+      "description": "We respond to all inquiries within 24 hours. Need faster response? Use our WhatsApp for instant communication!"
+    },
+    "success": "Message Sent Successfully!",
+    "successDesc": "We'll get back to you within 24 hours.",
+    "error": "Failed to send message. Please try again."
   },
   "help": {
     "title": "How Can We Help You?",
