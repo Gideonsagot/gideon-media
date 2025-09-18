@@ -64,33 +64,52 @@
   },
   "about": {
     "title": "Acerca de Gideon Media",
-    "description1": "Somos un equipo apasionado de expertos en marketing digital y desarrolladores web dedicados a ayudar a las empresas a prosperar en el panorama digital.",
-    "description2": "Nuestra misión es simple: proporcionar soluciones digitales excepcionales que generen resultados reales.",
-    "values": [
-      "Enfoque orientado a resultados con resultados medibles",
-      "Comunicación transparente durante todo el proyecto",
-      "Tecnología de vanguardia y mejores prácticas",
-      "Soporte dedicado para el éxito a largo plazo",
-      "Soluciones personalizadas adaptadas a tu negocio",
-      "Precios competitivos con valor excepcional"
-    ],
-    "achievements": {
-      "clients": "Clientes Felices",
-      "clientsDesc": "Empresas que hemos ayudado a crecer",
-      "projects": "Proyectos Entregados",
-      "projectsDesc": "Campañas y sitios web exitosos",
-      "roi": "ROI Promedio",
-      "roiDesc": "Retorno de inversión para clientes"
+    "subtitle": "Tu socio de confianza para el crecimiento digital y el éxito online",
+    "description": "Somos un equipo apasionado de expertos en marketing digital y desarrolladores web dedicados a ayudar a las empresas a prosperar en el panorama digital. Con años de experiencia y un historial comprobado, transformamos tu presencia online en un poderoso motor de crecimiento.",
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Empoderar a las empresas con soluciones digitales excepcionales que impulsen el crecimiento, mejoren la visibilidad de marca y creen éxito duradero en el competitivo mercado online."
     },
-    "trustBadges": {
-      "certified": "Profesionales Certificados",
-      "certifiedDesc": "Certificados Meta y Google",
-      "reviews": "Reseñas de 5 Estrellas",
-      "reviewsDesc": "Satisfacción del Cliente Garantizada",
-      "support": "Soporte 24/7",
-      "supportDesc": "Siempre Aquí Cuando Nos Necesites"
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Convertirnos en la agencia digital líder reconocida por resultados comerciales transformadores, soluciones innovadoras y satisfacción del cliente sin igual."
     },
-    "mission": "Empoderar a las empresas con soluciones digitales excepcionales que impulsen el crecimiento."
+    "story": {
+      "title": "Nuestra Historia",
+      "description": "Fundada en 2020 con la visión de democratizar el marketing digital para empresas de todos los tamaños, Gideon Media ha crecido de una pequeña startup a un socio confiable para más de 120+ empresas en todo el mundo."
+    },
+    "expertise": {
+      "title": "Nuestra Experiencia",
+      "description": "Combinamos tecnología de vanguardia con estrategias de marketing probadas para ofrecer soluciones digitales integrales incluyendo desarrollo web, gestión de Meta Ads, tiendas Shopify y marketing en Pinterest."
+    },
+    "approach": {
+      "title": "Nuestro Enfoque",
+      "description": "Creemos en estrategias basadas en datos, comunicación transparente y construcción de asociaciones a largo plazo con nuestros clientes. Cada proyecto se adapta para cumplir objetivos comerciales específicos."
+    },
+    "values": {
+      "title": "Nuestros Valores Fundamentales",
+      "innovation": {
+        "title": "Innovación",
+        "description": "Mantenernos a la vanguardia de las tendencias digitales para proporcionar soluciones de vanguardia"
+      },
+      "quality": {
+        "title": "Calidad",
+        "description": "Entregar trabajo excepcional que supere las expectativas del cliente"
+      },
+      "partnership": {
+        "title": "Asociación",
+        "description": "Construir relaciones a largo plazo basadas en confianza y resultados"
+      }
+    },
+    "whyChoose": {
+      "title": "¿Por qué elegir Gideon Media?",
+      "point1": "Historial comprobado con 120+ proyectos exitosos y 350% ROI promedio",
+      "point2": "Agencia digital de servicio completo que ofrece soluciones integrales",
+      "point3": "Precios transparentes y comunicación clara durante todo el proyecto",
+      "point4": "Equipo experto certificado en Meta Ads, Google Ads y desarrollo Shopify",
+      "point5": "Soporte 24/7 y optimización continua para el éxito a largo plazo",
+      "point6": "Estrategias personalizadas adaptadas a tus objetivos comerciales específicos"
+    }
   },
   "contact": {
     "title": "Trabajemos Juntos",

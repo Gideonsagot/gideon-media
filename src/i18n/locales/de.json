@@ -33,19 +33,51 @@
   },
   "about": {
     "title": "Über Gideon Media",
-    "subtitle": "Ihr vertrauenswürdiger Partner für digitales Wachstum",
-    "description": "Wir sind ein leidenschaftliches Team von digitalen Experten, das sich darauf spezialisiert hat, Unternehmen beim Online-Erfolg zu helfen.",
+    "subtitle": "Ihr vertrauenswürdiger Partner für digitales Wachstum und Online-Erfolg",
+    "description": "Wir sind ein leidenschaftliches Team von digitalen Marketing-Experten und Webentwicklern, das sich darauf spezialisiert hat, Unternehmen beim Online-Erfolg zu helfen. Mit jahrelanger Erfahrung verwandeln wir Ihre Online-Präsenz in eine kraftvolle Wachstumsmaschine.",
     "mission": {
       "title": "Unsere Mission",
-      "description": "Unternehmen dabei zu helfen, im digitalen Zeitalter zu gedeihen, indem wir innovative Lösungen und außergewöhnlichen Service bieten."
+      "description": "Unternehmen mit außergewöhnlichen digitalen Lösungen zu stärken, die Wachstum fördern, Markensichtbarkeit erhöhen und dauerhaften Erfolg im wettbewerbsintensiven Online-Markt schaffen."
     },
     "vision": {
       "title": "Unsere Vision",
-      "description": "Die führende Digitalagentur zu werden, die für transformative Geschäftsergebnisse und Kundenzufriedenheit bekannt ist."
+      "description": "Die führende Digitalagentur zu werden, die für transformative Geschäftsergebnisse, innovative Lösungen und unübertroffene Kundenzufriedenheit anerkannt ist."
     },
     "story": {
       "title": "Unsere Geschichte",
-      "description": "Gegründet mit der Vision, Unternehmen durch digitale Innovation zu stärken, haben wir Hunderte von Unternehmen dabei geholfen, ihre Online-Ziele zu erreichen."
+      "description": "2020 mit der Vision gegründet, digitales Marketing für Unternehmen jeder Größe zu demokratisieren, ist Gideon Media von einem kleinen Startup zu einem vertrauenswürdigen Partner für über 120+ Unternehmen weltweit gewachsen."
+    },
+    "expertise": {
+      "title": "Unsere Expertise",
+      "description": "Wir kombinieren modernste Technologie mit bewährten Marketing-Strategien, um umfassende digitale Lösungen einschließlich Webentwicklung, Meta Ads Management, Shopify-Stores und Pinterest-Marketing zu liefern."
+    },
+    "approach": {
+      "title": "Unser Ansatz",
+      "description": "Wir glauben an datengesteuerte Strategien, transparente Kommunikation und den Aufbau langfristiger Partnerschaften mit unseren Kunden. Jedes Projekt wird auf spezifische Geschäftsziele zugeschnitten."
+    },
+    "values": {
+      "title": "Unsere Grundwerte",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Immer einen Schritt voraus bei digitalen Trends für modernste Lösungen"
+      },
+      "quality": {
+        "title": "Qualität",
+        "description": "Außergewöhnliche Arbeit liefern, die Kundenerwartungen übertrifft"
+      },
+      "partnership": {
+        "title": "Partnerschaft",
+        "description": "Langfristige Beziehungen aufbauen, die auf Vertrauen und Ergebnissen basieren"
+      }
+    },
+    "whyChoose": {
+      "title": "Warum Gideon Media wählen?",
+      "point1": "Bewährte Erfolgsbilanz mit 120+ erfolgreichen Projekten und 350% durchschnittlichem ROI",
+      "point2": "Full-Service Digitalagentur mit End-to-End-Lösungen",
+      "point3": "Transparente Preisgestaltung und klare Kommunikation während der Projekte",
+      "point4": "Expertenteam zertifiziert in Meta Ads, Google Ads und Shopify-Entwicklung",
+      "point5": "24/7 Support und kontinuierliche Optimierung für langfristigen Erfolg",
+      "point6": "Maßgeschneiderte Strategien für Ihre spezifischen Geschäftsziele"
     }
   },
   "contact": {

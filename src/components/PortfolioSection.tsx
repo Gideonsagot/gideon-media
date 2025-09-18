@@ -31,6 +31,60 @@ const PortfolioSection = () => {
       icon: TrendingUp,
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&h=400",
       technologies: ["Meta Ads", "LinkedIn Ads", "Landing Pages"]
+    },
+    {
+      title: "Luxury Real Estate Agency",
+      description: "Premium website design with integrated lead capture and WhatsApp automation",
+      category: "Real Estate",
+      results: "250% more inquiries",
+      icon: Globe,
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&h=400",
+      technologies: ["WordPress", "WhatsApp API", "SEO", "Google Ads"]
+    },
+    {
+      title: "Fitness Studio Network",
+      description: "Multi-location fitness business with membership management and local advertising",
+      category: "Health & Fitness",
+      results: "400+ new members",
+      icon: TrendingUp,
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&h=400",
+      technologies: ["Custom Website", "Booking System", "Meta Ads", "Google My Business"]
+    },
+    {
+      title: "Tech Consulting Firm",
+      description: "Professional corporate website with client portal and automated lead nurturing",
+      category: "B2B Services",
+      results: "180% increase in consultations",
+      icon: Globe,
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&h=400",
+      technologies: ["React", "Node.js", "CRM Integration", "LinkedIn Ads"]
+    },
+    {
+      title: "Artisan Jewelry Brand",
+      description: "Shopify store with Pinterest marketing strategy and influencer collaboration setup",
+      category: "E-commerce",
+      results: "500% Pinterest traffic",
+      icon: ShoppingCart,
+      image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&h=400",
+      technologies: ["Shopify Plus", "Pinterest Ads", "Influencer Marketing", "Email Automation"]
+    },
+    {
+      title: "Medical Practice Group",
+      description: "Healthcare website with appointment booking and patient management system",
+      category: "Healthcare",
+      results: "300% online bookings",
+      icon: Globe,
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&h=400",
+      technologies: ["HIPAA Compliant", "Booking System", "Local SEO", "Google Ads"]
+    },
+    {
+      title: "Home Services Company",
+      description: "Lead generation website with service area targeting and review management",
+      category: "Home Services",
+      results: "600% lead increase",
+      icon: TrendingUp,
+      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&h=400",
+      technologies: ["Lead Generation", "Google Ads", "Review Management", "Local SEO"]
     }
   ];
 
@@ -99,22 +153,22 @@ const PortfolioSection = () => {
         </div>
 
         <div className="text-center mt-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">50+</div>
+                <div className="text-3xl font-bold text-primary">120+</div>
                 <div className="text-gray-600 text-sm">Successful Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">$2M+</div>
+                <div className="text-3xl font-bold text-primary">$5M+</div>
                 <div className="text-gray-600 text-sm">Revenue Generated</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">300%</div>
+                <div className="text-3xl font-bold text-primary">350%</div>
                 <div className="text-gray-600 text-sm">Average ROI</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">98%</div>
+                <div className="text-3xl font-bold text-primary">99%</div>
                 <div className="text-gray-600 text-sm">Client Satisfaction</div>
               </div>
             </div>

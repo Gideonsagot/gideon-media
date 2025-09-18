@@ -64,33 +64,52 @@
   },
   "about": {
     "title": "About Gideon Media",
-    "description1": "We are a passionate team of digital marketing experts and web developers dedicated to helping businesses thrive in the digital landscape. With years of experience and a proven track record, we transform your online presence into a powerful growth engine.",
-    "description2": "Our mission is simple: to provide exceptional digital solutions that drive real results. Whether you're a small local business or an international company, we have the expertise and tools to help you succeed online.",
-    "values": [
-      "Results-driven approach with measurable outcomes",
-      "Transparent communication throughout the project",
-      "Cutting-edge technology and best practices",
-      "Dedicated support for long-term success",
-      "Custom solutions tailored to your business",
-      "Competitive pricing with exceptional value"
-    ],
-    "achievements": {
-      "clients": "Happy Clients",
-      "clientsDesc": "Businesses we've helped grow",
-      "projects": "Projects Delivered", 
-      "projectsDesc": "Successful campaigns and websites",
-      "roi": "Average ROI",
-      "roiDesc": "Return on investment for clients"
+    "subtitle": "Your trusted partner for digital growth and online success",
+    "description": "We are a passionate team of digital marketing experts and web developers dedicated to helping businesses thrive in the digital landscape. With years of experience and a proven track record, we transform your online presence into a powerful growth engine.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To empower businesses with exceptional digital solutions that drive growth, enhance brand visibility, and create lasting success in the competitive online marketplace."
     },
-    "trustBadges": {
-      "certified": "Certified Professionals",
-      "certifiedDesc": "Meta & Google Certified",
-      "reviews": "5-Star Reviews",
-      "reviewsDesc": "Client Satisfaction Guaranteed",
-      "support": "24/7 Support",
-      "supportDesc": "Always Here When You Need Us"
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become the leading digital agency recognized for transformative business results, innovative solutions, and unmatched client satisfaction."
     },
-    "mission": "To empower businesses with exceptional digital solutions that drive growth, enhance brand visibility, and create lasting success in the online world."
+    "story": {
+      "title": "Our Story",
+      "description": "Founded in 2020 with the vision of democratizing digital marketing for businesses of all sizes, Gideon Media has grown from a small startup to a trusted partner for over 120+ companies worldwide. We specialize in creating custom digital solutions that deliver measurable results."
+    },
+    "expertise": {
+      "title": "Our Expertise",
+      "description": "We combine cutting-edge technology with proven marketing strategies to deliver comprehensive digital solutions including web development, Meta Ads management, Shopify stores, and Pinterest marketing."
+    },
+    "approach": {
+      "title": "Our Approach",
+      "description": "We believe in data-driven strategies, transparent communication, and building long-term partnerships with our clients. Every project is tailored to meet specific business goals and deliver maximum ROI."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Staying ahead of digital trends to provide cutting-edge solutions"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Delivering exceptional work that exceeds client expectations"
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "Building long-term relationships based on trust and results"
+      }
+    },
+    "whyChoose": {
+      "title": "Why Choose Gideon Media?",
+      "point1": "Proven track record with 120+ successful projects and 350% average ROI",
+      "point2": "Full-service digital agency offering end-to-end solutions",
+      "point3": "Transparent pricing and clear communication throughout projects",
+      "point4": "Expert team certified in Meta Ads, Google Ads, and Shopify development",
+      "point5": "24/7 support and ongoing optimization for long-term success",
+      "point6": "Custom strategies tailored to your specific business goals and industry"
+    }
   },
   "contact": {
     "title": "Let's Work Together",
