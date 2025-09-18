@@ -12,24 +12,52 @@
   "hero": {
     "title": "Transformez Votre Présence Numérique",
     "subtitle": "Solutions professionnelles de développement web et marketing digital qui génèrent des résultats",
-    "cta": "Commencer"
+    "cta": "Commencer",
+    "description": "Nous créons des sites web exceptionnels et menons des campagnes marketing ciblées qui livrent de vrais résultats commerciaux."
   },
   "services": {
     "title": "Nos Services",
-    "webDev": "Développement Web",
-    "digitalMarketing": "Marketing Digital",
-    "ecommerce": "Solutions E-commerce"
+    "subtitle": "Solutions numériques complètes pour la croissance de votre entreprise",
+    "webDev": {
+      "title": "Développement Web",
+      "description": "Sites web modernes et réactifs qui fonctionnent parfaitement sur tous les appareils"
+    },
+    "digitalMarketing": {
+      "title": "Marketing Digital",
+      "description": "Campagnes publicitaires ciblées qui génèrent des prospects qualifiés et des ventes"
+    },
+    "ecommerce": {
+      "title": "Solutions E-commerce",
+      "description": "Boutiques Shopify complètes avec traitement des paiements et gestion des stocks"
+    }
   },
   "about": {
     "title": "À propos de Gideon Media",
-    "description": "Nous sommes une équipe passionnée d'experts numériques dédiés à aider les entreprises à prospérer en ligne."
+    "subtitle": "Votre partenaire de confiance pour la croissance numérique",
+    "description": "Nous sommes une équipe passionnée d'experts numériques dédiés à aider les entreprises à prospérer en ligne.",
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Aider les entreprises à prospérer à l'ère numérique en fournissant des solutions innovantes et un service exceptionnel."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Devenir l'agence numérique leader reconnue pour ses résultats commerciaux transformateurs et la satisfaction client."
+    },
+    "story": {
+      "title": "Notre Histoire",
+      "description": "Fondée avec la vision d'autonomiser les entreprises grâce à l'innovation numérique, nous avons aidé des centaines d'entreprises à atteindre leurs objectifs en ligne."
+    }
   },
   "contact": {
     "title": "Contactez-nous",
+    "subtitle": "Prêt à démarrer votre prochain projet ? Parlons-en !",
     "name": "Nom",
     "email": "Email",
     "message": "Message",
-    "send": "Envoyer le Message"
+    "send": "Envoyer le Message",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "hours": "Heures d'ouverture"
   },
   "help": {
     "title": "Comment Pouvons-nous Vous Aider?",
@@ -46,5 +74,14 @@
   "reviews": {
     "title": "Ce Que Disent Nos Clients",
     "writeReview": "Écrire un Avis"
+  },
+  "common": {
+    "back": "Retour",
+    "learnMore": "En savoir plus",
+    "getStarted": "Commencer",
+    "viewAll": "Voir tout"
+  },
+  "notifications": {
+    "justPurchased": "vient d'acheter"
   }
 }

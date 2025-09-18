@@ -147,5 +147,14 @@
   "reviews": {
     "title": "Lo Que Dicen Nuestros Clientes",
     "writeReview": "Escribir Reseña"
+  },
+  "notifications": {
+    "justPurchased": "acaba de comprar"
+  },
+  "common": {
+    "back": "Atrás",
+    "learnMore": "Más Información",
+    "getStarted": "Comenzar",
+    "viewAll": "Ver Todo"
   }
 }

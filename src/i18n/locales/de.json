@@ -4,36 +4,64 @@
     "about": "Über uns",
     "services": "Dienstleistungen",
     "portfolio": "Portfolio",
-    "testimonials": "Testimonials",
-    "contact": "Kontakt", 
+    "testimonials": "Referenzen",
+    "contact": "Kontakt",
     "help": "Hilfe",
     "getQuote": "Angebot Anfordern"
   },
   "hero": {
-    "title": "Verwandeln Sie Ihre Digitale Präsenz",
-    "subtitle": "Professionelle Webentwicklung und digitale Marketing-Lösungen, die Ergebnisse liefern",
-    "cta": "Loslegen"
+    "title": "Transformieren Sie Ihre Digitale Präsenz",
+    "subtitle": "Professionelle Webentwicklung und digitale Marketing-Lösungen, die Ergebnisse erzielen",
+    "cta": "Loslegen",
+    "description": "Wir erstellen beeindruckende Websites und führen gezielte Marketingkampagnen durch, die echte Geschäftsergebnisse liefern."
   },
   "services": {
     "title": "Unsere Dienstleistungen",
-    "webDev": "Webentwicklung",
-    "digitalMarketing": "Digital Marketing",
-    "ecommerce": "E-Commerce-Lösungen"
+    "subtitle": "Umfassende digitale Lösungen für Ihr Unternehmenswachstum",
+    "webDev": {
+      "title": "Webentwicklung",
+      "description": "Moderne, reaktionsfähige Websites, die auf allen Geräten perfekt funktionieren"
+    },
+    "digitalMarketing": {
+      "title": "Digitales Marketing",
+      "description": "Gezielte Werbekampagnen, die qualifizierte Leads und Verkäufe generieren"
+    },
+    "ecommerce": {
+      "title": "E-Commerce-Lösungen",
+      "description": "Vollständige Shopify-Stores mit Zahlungsabwicklung und Inventarverwaltung"
+    }
   },
   "about": {
     "title": "Über Gideon Media",
-    "description": "Wir sind ein leidenschaftliches Team von digitalen Experten, das sich darauf konzentriert, Unternehmen online zum Erfolg zu verhelfen."
+    "subtitle": "Ihr vertrauenswürdiger Partner für digitales Wachstum",
+    "description": "Wir sind ein leidenschaftliches Team von digitalen Experten, das sich darauf spezialisiert hat, Unternehmen beim Online-Erfolg zu helfen.",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Unternehmen dabei zu helfen, im digitalen Zeitalter zu gedeihen, indem wir innovative Lösungen und außergewöhnlichen Service bieten."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Die führende Digitalagentur zu werden, die für transformative Geschäftsergebnisse und Kundenzufriedenheit bekannt ist."
+    },
+    "story": {
+      "title": "Unsere Geschichte",
+      "description": "Gegründet mit der Vision, Unternehmen durch digitale Innovation zu stärken, haben wir Hunderte von Unternehmen dabei geholfen, ihre Online-Ziele zu erreichen."
+    }
   },
   "contact": {
-    "title": "Kontaktieren Sie Uns",
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Bereit, Ihr nächstes Projekt zu starten? Lassen Sie uns sprechen!",
     "name": "Name",
     "email": "E-Mail",
     "message": "Nachricht",
-    "send": "Nachricht Senden"
+    "send": "Nachricht Senden",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "hours": "Geschäftszeiten"
   },
   "help": {
-    "title": "Wie Können Wir Ihnen Helfen?",
-    "subtitle": "Erhalten Sie Support und Antworten auf Ihre Fragen",
+    "title": "Wie können wir Ihnen helfen?",
+    "subtitle": "Erhalten Sie Unterstützung und Antworten auf Ihre Fragen",
     "subject": "Betreff",
     "description": "Beschreibung",
     "submit": "Anfrage Senden"
@@ -44,7 +72,16 @@
     "send": "Senden"
   },
   "reviews": {
-    "title": "Was Unsere Kunden Sagen",
-    "writeReview": "Bewertung Schreiben"
+    "title": "Was unsere Kunden sagen",
+    "writeReview": "Bewertung schreiben"
+  },
+  "common": {
+    "back": "Zurück",
+    "learnMore": "Mehr erfahren",
+    "getStarted": "Loslegen",
+    "viewAll": "Alle anzeigen"
+  },
+  "notifications": {
+    "justPurchased": "hat gerade gekauft"
   }
 }

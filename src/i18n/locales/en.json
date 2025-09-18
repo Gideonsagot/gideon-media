@@ -147,5 +147,14 @@
   "reviews": {
     "title": "What Our Clients Say",
     "writeReview": "Write a Review"
+  },
+  "notifications": {
+    "justPurchased": "just purchased"
+  },
+  "common": {
+    "back": "Back",
+    "learnMore": "Learn More", 
+    "getStarted": "Get Started",
+    "viewAll": "View All"
   }
 }

@@ -3,48 +3,85 @@
     "home": "Início",
     "about": "Sobre",
     "services": "Serviços",
-    "portfolio": "Portfólio",
+    "portfolio": "Portfolio",
     "testimonials": "Depoimentos",
     "contact": "Contato",
     "help": "Ajuda",
-    "getQuote": "Obter Orçamento"
+    "getQuote": "Solicitar Orçamento"
   },
-  "common": {
-    "back": "Voltar",
-    "loading": "Carregando...",
-    "error": "Erro",
-    "success": "Sucesso"
+  "hero": {
+    "title": "Transforme Sua Presença Digital",
+    "subtitle": "Soluções profissionais de desenvolvimento web e marketing digital que geram resultados",
+    "cta": "Começar Agora",
+    "description": "Criamos sites impressionantes e executamos campanhas de marketing direcionadas que entregam resultados reais para o negócio."
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Soluções digitais abrangentes para o crescimento do seu negócio",
+    "webDev": {
+      "title": "Desenvolvimento Web",
+      "description": "Sites modernos e responsivos que funcionam perfeitamente em todos os dispositivos"
+    },
+    "digitalMarketing": {
+      "title": "Marketing Digital",
+      "description": "Campanhas publicitárias direcionadas que geram leads qualificados e vendas"
+    },
+    "ecommerce": {
+      "title": "Soluções E-commerce",
+      "description": "Lojas Shopify completas com processamento de pagamentos e gestão de inventário"
+    }
   },
   "about": {
-    "title": "Sobre Nós",
-    "subtitle": "Sua agência digital de confiança",
+    "title": "Sobre a Gideon Media",
+    "subtitle": "Seu parceiro confiável para crescimento digital",
+    "description": "Somos uma equipe apaixonada de especialistas digitais dedicados a ajudar empresas a prosperar online.",
     "mission": {
       "title": "Nossa Missão",
-      "description": "Ajudar empresas a crescer através de soluções digitais inovadoras e estratégias de marketing eficazes."
+      "description": "Ajudar empresas a prosperar na era digital, fornecendo soluções inovadoras e serviços excepcionais."
     },
     "vision": {
       "title": "Nossa Visão",
-      "description": "Ser líder no setor digital, fornecendo resultados excepcionais e construindo relacionamentos duradouros."
+      "description": "Tornar-se a agência digital líder reconhecida por resultados transformadores de negócios e satisfação do cliente."
     },
     "story": {
       "title": "Nossa História",
-      "paragraph1": "A Gideon Media nasceu da paixão pelo digital e da experiência em marketing.",
-      "paragraph2": "Com anos de experiência no setor, ajudamos centenas de empresas a alcançar seus objetivos.",
-      "paragraph3": "Hoje somos uma equipe de especialistas dedicados ao sucesso de nossos clientes."
+      "description": "Fundada com a visão de capacitar empresas através da inovação digital, ajudamos centenas de negócios a alcançar seus objetivos online."
     }
   },
-  "reviews": {
-    "writeReview": "Escrever Avaliação",
-    "submit": "Enviar",
-    "cancel": "Cancelar"
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Pronto para começar seu próximo projeto? Vamos conversar!",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Mensagem",
+    "send": "Enviar Mensagem",
+    "phone": "Telefone",
+    "address": "Endereço",
+    "hours": "Horário de Funcionamento"
+  },
+  "help": {
+    "title": "Como Podemos Ajudar?",
+    "subtitle": "Obtenha suporte e respostas para suas perguntas",
+    "subject": "Assunto",
+    "description": "Descrição",
+    "submit": "Enviar Solicitação"
   },
   "chatbot": {
-    "title": "Assistente Virtual",
+    "title": "Converse conosco",
     "placeholder": "Digite sua mensagem...",
     "send": "Enviar"
   },
-  "help": {
-    "title": "Central de Ajuda",
-    "subtitle": "Como podemos ajudá-lo hoje?"
+  "reviews": {
+    "title": "O Que Nossos Clientes Dizem",
+    "writeReview": "Escrever Avaliação"
+  },
+  "common": {
+    "back": "Voltar",
+    "learnMore": "Saiba Mais",
+    "getStarted": "Começar Agora",
+    "viewAll": "Ver Todos"
+  },
+  "notifications": {
+    "justPurchased": "acabou de comprar"
   }
 }

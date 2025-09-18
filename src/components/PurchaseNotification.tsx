@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { CheckCircle, X } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
 
 interface Purchase {
   id: number;
@@ -35,6 +36,7 @@ const purchaseNotifications: Purchase[] = [
 ];
 
 export function PurchaseNotification() {
+  const { t } = useTranslation();
   const [currentNotification, setCurrentNotification] = useState<Purchase | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [notificationIndex, setNotificationIndex] = useState(0);
@@ -85,7 +87,7 @@ export function PurchaseNotification() {
                 </span>
               </div>
               <p className="text-sm text-green-700 dark:text-green-300 mb-1">
-                just purchased <span className="font-medium">{currentNotification.service}</span>
+                {t('notifications.justPurchased')} <span className="font-medium">{currentNotification.service}</span>
               </p>
               <span className="text-xs text-green-600 dark:text-green-400">
                 {currentNotification.timeAgo}

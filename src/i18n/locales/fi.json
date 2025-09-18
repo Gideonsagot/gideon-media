@@ -6,45 +6,82 @@
     "portfolio": "Portfolio",
     "testimonials": "Suositukset",
     "contact": "Yhteystiedot",
-    "help": "Apu",
+    "help": "Apua",
     "getQuote": "Pyydä Tarjous"
   },
-  "common": {
-    "back": "Takaisin",
-    "loading": "Ladataan...",
-    "error": "Virhe",
-    "success": "Onnistui"
+  "hero": {
+    "title": "Muunna Digitaalinen Läsnäolosi",
+    "subtitle": "Ammattimaiset web-kehitys ja digitaalinen markkinointi ratkaisut, jotka tuottavat tuloksia",
+    "cta": "Aloita Nyt",
+    "description": "Luomme upeat verkkosivut ja toteutamme kohdennettuja markkinointikampanjoita, jotka tuottavat todellisia liiketuloksia."
+  },
+  "services": {
+    "title": "Palvelumme",
+    "subtitle": "Kattavat digitaaliset ratkaisut yrityksesi kasvuun",
+    "webDev": {
+      "title": "Web-kehitys",
+      "description": "Modernit, responsiiviset verkkosivut, jotka toimivat täydellisesti kaikilla laitteilla"
+    },
+    "digitalMarketing": {
+      "title": "Digitaalinen Markkinointi",
+      "description": "Kohdennetut mainoskampanjat, jotka tuottavat laadukkaita liidejä ja myyntejä"
+    },
+    "ecommerce": {
+      "title": "E-kauppa Ratkaisut",
+      "description": "Täydelliset Shopify-kaupat maksujen käsittelyllä ja varastonhallinnalla"
+    }
   },
   "about": {
-    "title": "Tietoa Meistä",
-    "subtitle": "Luotettava digitaalinen toimistosi",
+    "title": "Tietoa Gideon Mediasta",
+    "subtitle": "Luotettava kumppanisi digitaaliseen kasvuun",
+    "description": "Olemme intohimoinen tiimi digitaalisia asiantuntijoita, jotka auttavat yrityksiä menestymään verkossa.",
     "mission": {
-      "title": "Missiomme",
-      "description": "Autamme yrityksiä kasvamaan innovatiivisten digitaalisten ratkaisujen ja tehokkaiden markkinointistrategioiden avulla."
+      "title": "Tehtävämme",
+      "description": "Auttaa yrityksiä menestymään digitaalisella aikakaudella tarjoamalla innovatiivisia ratkaisuja ja poikkeuksellista palvelua."
     },
     "vision": {
       "title": "Visiomme",
-      "description": "Olla johtava digitaalisella alalla, tarjoten erinomaisia tuloksia ja rakentaen pitkäaikaisia suhteita."
+      "description": "Tulla johtavaksi digitaaliseksi toimistoksi, joka tunnetaan muuttavista liiketuloksista ja asiakastyytyväisyydestä."
     },
     "story": {
-      "title": "Tarinامme",
-      "paragraph1": "Gideon Media syntyi intohimosta digitaaliseen maailmaan ja markkinointikokemuksesta.",
-      "paragraph2": "Vuosien kokemuksella alalla olemme auttaneet satoja yrityksiä saavuttamaan tavoitteensa.",
-      "paragraph3": "Nykyään olemme asiantuntijatiimi, joka on omistautunut asiakkaidemme menestykselle."
+      "title": "Tarinaamme",
+      "description": "Perustettu visiolla voimaannuttaa yrityksiä digitaalisen innovaation kautta, olemme auttaneet satoja yrityksiä saavuttamaan verkko-tavoitteensa."
     }
   },
-  "reviews": {
-    "writeReview": "Kirjoita Arvostelu",
-    "submit": "Lähetä",
-    "cancel": "Peruuta"
+  "contact": {
+    "title": "Ota Yhteyttä",
+    "subtitle": "Valmis aloittamaan seuraavan projektisi? Keskustellaan!",
+    "name": "Nimi",
+    "email": "Sähköposti",
+    "message": "Viesti",
+    "send": "Lähetä Viesti",
+    "phone": "Puhelin",
+    "address": "Osoite",
+    "hours": "Aukioloajat"
+  },
+  "help": {
+    "title": "Kuinka Voimme Auttaa?",
+    "subtitle": "Saa tukea ja vastauksia kysymyksiisi",
+    "subject": "Aihe",
+    "description": "Kuvaus",
+    "submit": "Lähetä Pyyntö"
   },
   "chatbot": {
-    "title": "Virtuaalinen Avustaja",
+    "title": "Keskustele kanssamme",
     "placeholder": "Kirjoita viestisi...",
     "send": "Lähetä"
   },
-  "help": {
-    "title": "Tukikeskus",
-    "subtitle": "Miten voimme auttaa sinua tänään?"
+  "reviews": {
+    "title": "Mitä Asiakkaamme Sanovat",
+    "writeReview": "Kirjoita Arvostelu"
+  },
+  "common": {
+    "back": "Takaisin",
+    "learnMore": "Lue Lisää",
+    "getStarted": "Aloita Nyt",
+    "viewAll": "Näytä Kaikki"
+  },
+  "notifications": {
+    "justPurchased": "juuri osti"
   }
 }

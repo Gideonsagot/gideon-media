@@ -7,44 +7,81 @@
     "testimonials": "Testimonianze",
     "contact": "Contatti",
     "help": "Aiuto",
-    "getQuote": "Ottieni Preventivo"
+    "getQuote": "Richiedi Preventivo"
   },
-  "common": {
-    "back": "Indietro",
-    "loading": "Caricamento...",
-    "error": "Errore",
-    "success": "Successo"
+  "hero": {
+    "title": "Trasforma la Tua Presenza Digitale",
+    "subtitle": "Soluzioni professionali di sviluppo web e marketing digitale che generano risultati",
+    "cta": "Inizia Ora",
+    "description": "Creiamo siti web straordinari e gestiamo campagne di marketing mirate che offrono risultati di business reali."
+  },
+  "services": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Soluzioni digitali complete per la crescita del tuo business",
+    "webDev": {
+      "title": "Sviluppo Web",
+      "description": "Siti web moderni e responsive che funzionano perfettamente su tutti i dispositivi"
+    },
+    "digitalMarketing": {
+      "title": "Marketing Digitale",
+      "description": "Campagne pubblicitarie mirate che generano lead qualificati e vendite"
+    },
+    "ecommerce": {
+      "title": "Soluzioni E-commerce",
+      "description": "Negozi Shopify completi con elaborazione pagamenti e gestione inventario"
+    }
   },
   "about": {
-    "title": "Chi Siamo",
-    "subtitle": "La tua agenzia digitale di fiducia",
+    "title": "Chi è Gideon Media",
+    "subtitle": "Il tuo partner fidato per la crescita digitale",
+    "description": "Siamo un team appassionato di esperti digitali dedicati ad aiutare le aziende a prosperare online.",
     "mission": {
       "title": "La Nostra Missione",
-      "description": "Aiutare le aziende a crescere attraverso soluzioni digitali innovative e strategie di marketing efficaci."
+      "description": "Aiutare le aziende a prosperare nell'era digitale fornendo soluzioni innovative e servizi eccezionali."
     },
     "vision": {
       "title": "La Nostra Visione",
-      "description": "Essere leader nel settore digitale, fornendo risultati eccezionali e costruendo relazioni durature."
+      "description": "Diventare l'agenzia digitale leader riconosciuta per risultati di business trasformativi e soddisfazione del cliente."
     },
     "story": {
       "title": "La Nostra Storia",
-      "paragraph1": "Gideon Media è nata dalla passione per il digitale e dall'esperienza nel marketing.",
-      "paragraph2": "Con anni di esperienza nel settore, abbiamo aiutato centinaia di aziende a raggiungere i loro obiettivi.",
-      "paragraph3": "Oggi siamo un team di esperti dedicati al successo dei nostri clienti."
+      "description": "Fondata con la visione di potenziare le aziende attraverso l'innovazione digitale, abbiamo aiutato centinaia di imprese a raggiungere i loro obiettivi online."
     }
   },
-  "reviews": {
-    "writeReview": "Scrivi Recensione",
-    "submit": "Invia",
-    "cancel": "Annulla"
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Pronto a iniziare il tuo prossimo progetto? Parliamone!",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "send": "Invia Messaggio",
+    "phone": "Telefono",
+    "address": "Indirizzo",
+    "hours": "Orari di Lavoro"
+  },
+  "help": {
+    "title": "Come Possiamo Aiutarti?",
+    "subtitle": "Ricevi supporto e risposte alle tue domande",
+    "subject": "Oggetto",
+    "description": "Descrizione",
+    "submit": "Invia Richiesta"
   },
   "chatbot": {
-    "title": "Assistente Virtuale",
+    "title": "Chatta con noi",
     "placeholder": "Scrivi il tuo messaggio...",
     "send": "Invia"
   },
-  "help": {
-    "title": "Centro Assistenza",
-    "subtitle": "Come possiamo aiutarti oggi?"
+  "reviews": {
+    "title": "Cosa Dicono i Nostri Clienti",
+    "writeReview": "Scrivi una Recensione"
+  },
+  "common": {
+    "back": "Indietro",
+    "learnMore": "Scopri di più",
+    "getStarted": "Inizia Ora",
+    "viewAll": "Visualizza Tutto"
+  },
+  "notifications": {
+    "justPurchased": "ha appena acquistato"
   }
 }
