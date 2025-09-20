@@ -25,7 +25,22 @@ const AboutSection = () => {
     }
   ];
 
-  const values = t('about.values', { returnObjects: true }) as string[];
+  const values = t('about.coreValues', { returnObjects: true }) as {
+    innovation: { title: string; description: string };
+    quality: { title: string; description: string };
+    partnership: { title: string; description: string };
+  };
+
+  const valuesList = [
+    t('about.whyChoose.point1'),
+    t('about.whyChoose.point2'), 
+    t('about.whyChoose.point4'),
+    t('about.whyChoose.point5'),
+    t('about.whyChoose.point6')
+  ];
+
+  console.log('About values:', values);
+  console.log('Values list:', valuesList);
 
   const trustBadges = [
     {
@@ -61,9 +76,9 @@ const AboutSection = () => {
               {t('about.description2')}
             </p>
 
-            {/* Values */}
+            {/* Key Points */}
             <div className="space-y-3 mb-8">
-              {values.map((value, index) => (
+              {valuesList.map((value, index) => (
                 <div key={index} className="flex items-start">
                   <CheckCircle className="text-primary w-5 h-5 mr-3 mt-0.5 flex-shrink-0" />
                   <span className="text-muted-foreground">{value}</span>
@@ -131,9 +146,9 @@ const AboutSection = () => {
 
             {/* Mission Statement */}
             <div className="mt-8 p-6 bg-muted rounded-xl border-l-4 border-primary">
-              <h3 className="text-xl font-bold text-foreground mb-2">Our Mission</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">{t('about.mission.title')}</h3>
               <p className="text-muted-foreground italic">
-                "{t('about.mission')}"
+                "{t('about.mission.description')}"
               </p>
             </div>
           </div>

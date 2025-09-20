@@ -66,6 +66,24 @@
     "title": "About Gideon Media",
     "subtitle": "Your trusted partner for digital growth and online success",
     "description": "We are a passionate team of digital marketing experts and web developers dedicated to helping businesses thrive in the digital landscape. With years of experience and a proven track record, we transform your online presence into a powerful growth engine.",
+    "description1": "We're passionate about transforming businesses through innovative digital solutions that drive real results.",
+    "description2": "Our expert team combines creativity with data-driven strategies to deliver exceptional outcomes for every client.",
+    "achievements": {
+      "clients": "Happy Clients",
+      "clientsDesc": "Businesses we've helped grow",
+      "projects": "Completed Projects", 
+      "projectsDesc": "Successful campaigns delivered",
+      "roi": "Average ROI",
+      "roiDesc": "Return on investment for our clients"
+    },
+    "trustBadges": {
+      "certified": "Certified Experts",
+      "certifiedDesc": "Google & Meta certified team",
+      "reviews": "5-Star Reviews",
+      "reviewsDesc": "Consistent client satisfaction",
+      "support": "24/7 Support", 
+      "supportDesc": "Always here when you need us"
+    },
     "mission": {
       "title": "Our Mission",
       "description": "To empower businesses with exceptional digital solutions that drive growth, enhance brand visibility, and create lasting success in the competitive online marketplace."
@@ -88,6 +106,20 @@
     },
     "values": {
       "title": "Our Core Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Staying ahead of digital trends to provide cutting-edge solutions"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Delivering exceptional work that exceeds client expectations"
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "Building long-term relationships based on trust and results"
+      }
+    },
+    "coreValues": {
       "innovation": {
         "title": "Innovation",
         "description": "Staying ahead of digital trends to provide cutting-edge solutions"
