@@ -33,19 +33,51 @@
   },
   "about": {
     "title": "Tietoa Gideon Mediasta",
-    "subtitle": "Luotettava kumppanisi digitaaliseen kasvuun",
-    "description": "Olemme intohimoinen tiimi digitaalisia asiantuntijoita, jotka auttavat yrityksiä menestymään verkossa.",
+    "subtitle": "Luotettava kumppaniorganisaatiosi digitaaliseen markkinointiin ja web-kehitykseen",
+    "description": "Gideon Mediassa erikoistumme auttamaan yrityksiä kasvamaan ja menestymään strategisen digitaalisen markkinoinnin ja ammattimaisen web-kehityksen avulla.",
     "mission": {
-      "title": "Tehtävämme",
-      "description": "Auttaa yrityksiä menestymään digitaalisella aikakaudella tarjoamalla innovatiivisia ratkaisuja ja poikkeuksellista palvelua."
+      "title": "Missiomme",
+      "description": "Auttaa yrityksiä toteuttamaan täyden digitaalisen potentiaalinsa tarjoamalla innovatiivisia markkinointistrategioita ja huippuluokan web-kehityspalveluita, jotka tuottavat mitattavia tuloksia."
     },
     "vision": {
       "title": "Visiomme",
-      "description": "Tulla johtavaksi digitaaliseksi toimistoksi, joka tunnetaan muuttavista liiketuloksista ja asiakastyytyväisyydestä."
+      "description": "Tulla johtavaksi digitaaliseksi toimistoksi, joka tunnetaan poikkeuksellisista tuloksista, läpinäkyvästä viestinnästä ja pitkäaikaisista kumppanuuksista asiakkaidemme kanssa."
     },
     "story": {
       "title": "Tarinaamme",
-      "description": "Perustettu visiolla voimaannuttaa yrityksiä digitaalisen innovaation kautta, olemme auttaneet satoja yrityksiä saavuttamaan verkko-tavoitteensa."
+      "description": "Gideon Media perustettiin visiolla kuroa umpeen perinteisen markkinoinnin ja nopeasti kehittyvän digitaalisen maiseman välinen kuilu. Se, mikä alkoi pienena intohimoisten digitaalisten asiantuntijoiden tiiminä, on kehittynyt kattavaksi toimistoksi, joka palvelee kaiken kokoisia yrityksiä."
+    },
+    "expertise": {
+      "title": "Asiantuntemuksemme",
+      "description": "Yhdistämme huippuluokan teknologian todistettuihin markkinointistrategioihin tarjotaksemme kattavia digitaalisia ratkaisuja, mukaan lukien web-kehitys, Meta Ads -hallinta, Shopify-kaupat ja Pinterest-markkinointi."
+    },
+    "approach": {
+      "title": "Lähestymistapamme",
+      "description": "Uskomme datapohjaisiin strategioihin, läpinäkyvään viestintään ja pitkäaikaisten kumppanuuksien rakentamiseen asiakkaidemme kanssa. Jokainen projekti räätälöidään vastaamaan tiettyjä liiketoimintatavoitteita ja tuottamaan maksimaalinen ROI."
+    },
+    "values": {
+      "title": "Ydinarvomme",
+      "innovation": {
+        "title": "Innovaatio",
+        "description": "Pysyminen digitaalisten trendien edellä tarjotaksemme huippuluokan ratkaisuja"
+      },
+      "quality": {
+        "title": "Laatu",
+        "description": "Poikkeuksellisen työn toimittaminen, joka ylittää asiakkaiden odotukset"
+      },
+      "partnership": {
+        "title": "Kumppanuus",
+        "description": "Pitkäaikaisten suhteiden rakentaminen luottamuksen ja tulosten pohjalta"
+      }
+    },
+    "whyChoose": {
+      "title": "Miksi Valita Gideon Media?",
+      "point1": "Todistettu historia 180+ onnistuneella projektilla ja 400% keskimääräisellä ROI:lla",
+      "point2": "Täyden palvelun digitaalinen toimisto, joka tarjoaa päästä päähän -ratkaisuja",
+      "point3": "Läpinäkyvä hinnoittelu ja selkeä viestintä koko projektin ajan",
+      "point4": "Meta Ads-, Google Ads- ja Shopify-kehityksessä sertifioitu asiantuntijatiimi",
+      "point5": "24/7-tuki ja jatkuva optimointi pitkäaikaiseen menestykseen",
+      "point6": "Räätälöidyt strategiat, jotka on suunniteltu erityisiin liiketoimintatavoitteisiisi ja toimialaasi"
     }
   },
   "contact": {

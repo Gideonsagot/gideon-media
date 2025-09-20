@@ -85,6 +85,60 @@ const PortfolioSection = () => {
       icon: TrendingUp,
       image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&h=400",
       technologies: ["Lead Generation", "Google Ads", "Review Management", "Local SEO"]
+    },
+    {
+      title: "Educational Platform",
+      description: "Online learning platform with course management and student tracking system",
+      category: "EdTech",
+      results: "10,000+ active students",
+      icon: Globe,
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&h=400",
+      technologies: ["React", "Video Streaming", "Payment Gateway", "Progress Tracking"]
+    },
+    {
+      title: "Food Delivery Service",
+      description: "Multi-restaurant delivery platform with real-time tracking and payment integration",
+      category: "Food & Beverage",
+      results: "2M+ orders processed",
+      icon: ShoppingCart,
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?auto=format&fit=crop&w=800&h=400",
+      technologies: ["React Native", "GPS Tracking", "Payment Gateway", "Push Notifications"]
+    },
+    {
+      title: "Automotive Dealership",
+      description: "Car dealership website with inventory management and financing calculator",
+      category: "Automotive",
+      results: "200% increase in leads",
+      icon: Globe,
+      image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&h=400",
+      technologies: ["Inventory System", "Financing Calculator", "Virtual Tours", "Lead Forms"]
+    },
+    {
+      title: "Non-Profit Organization",
+      description: "Donation platform with volunteer management and event coordination system",
+      category: "Non-Profit",
+      results: "$500K+ donations raised",
+      icon: TrendingUp,
+      image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=800&h=400",
+      technologies: ["Donation Gateway", "Volunteer Portal", "Event Management", "Email Automation"]
+    },
+    {
+      title: "Photography Studio",
+      description: "Portfolio website with booking system and client gallery management",
+      category: "Creative Services",
+      results: "300% booking increase",
+      icon: Globe,
+      image: "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=800&h=400",
+      technologies: ["Portfolio System", "Booking Calendar", "Client Galleries", "Payment Integration"]
+    },
+    {
+      title: "Financial Advisory Firm",
+      description: "Professional services website with client portal and financial planning tools",
+      category: "Financial Services",
+      results: "150% client acquisition",
+      icon: TrendingUp,
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&h=400",
+      technologies: ["Client Portal", "Financial Calculators", "Secure Documents", "Appointment Booking"]
     }
   ];
 
@@ -156,19 +210,19 @@ const PortfolioSection = () => {
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">120+</div>
+                <div className="text-3xl font-bold text-primary">180+</div>
                 <div className="text-gray-600 text-sm">Successful Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">$5M+</div>
+                <div className="text-3xl font-bold text-primary">$8M+</div>
                 <div className="text-gray-600 text-sm">Revenue Generated</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">350%</div>
+                <div className="text-3xl font-bold text-primary">400%</div>
                 <div className="text-gray-600 text-sm">Average ROI</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">99%</div>
+                <div className="text-3xl font-bold text-primary">99.5%</div>
                 <div className="text-gray-600 text-sm">Client Satisfaction</div>
               </div>
             </div>

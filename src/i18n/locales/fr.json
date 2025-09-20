@@ -83,5 +83,54 @@
   },
   "notifications": {
     "justPurchased": "vient d'acheter"
+  },
+  "about": {
+    "title": "À Propos de Gideon Media",
+    "subtitle": "Votre agence partenaire de confiance pour le marketing digital et le développement web",
+    "description": "Chez Gideon Media, nous nous spécialisons dans l'aide aux entreprises pour croître et prospérer grâce au marketing digital stratégique et au développement web professionnel.",
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Permettre aux entreprises de réaliser leur plein potentiel numérique en fournissant des stratégies marketing innovantes et des services de développement web de premier plan qui génèrent des résultats mesurables."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Devenir l'agence numérique leader reconnue pour ses résultats exceptionnels, sa communication transparente et ses partenariats à long terme avec nos clients."
+    },
+    "story": {
+      "title": "Notre Histoire",
+      "description": "Gideon Media a été fondée avec la vision de combler le fossé entre le marketing traditionnel et le paysage numérique en évolution rapide. Ce qui a commencé comme une petite équipe d'experts numériques passionnés a évolué en une agence complète servant des entreprises de toutes tailles."
+    },
+    "expertise": {
+      "title": "Notre Expertise",
+      "description": "Nous combinons la technologie de pointe avec des stratégies marketing éprouvées pour fournir des solutions numériques complètes incluant le développement web, la gestion des publicités Meta, les boutiques Shopify et le marketing Pinterest."
+    },
+    "approach": {
+      "title": "Notre Approche",
+      "description": "Nous croyons aux stratégies basées sur les données, à la communication transparente et à la construction de partenariats à long terme avec nos clients. Chaque projet est adapté pour répondre aux objectifs commerciaux spécifiques et générer un ROI maximal."
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Rester en avance sur les tendances numériques pour fournir des solutions de pointe"
+      },
+      "quality": {
+        "title": "Qualité",
+        "description": "Livrer un travail exceptionnel qui dépasse les attentes des clients"
+      },
+      "partnership": {
+        "title": "Partenariat",
+        "description": "Construire des relations à long terme basées sur la confiance et les résultats"
+      }
+    },
+    "whyChoose": {
+      "title": "Pourquoi Choisir Gideon Media ?",
+      "point1": "Historique prouvé avec 180+ projets réussis et 400% de ROI moyen",
+      "point2": "Agence numérique à service complet offrant des solutions de bout en bout",
+      "point3": "Tarification transparente et communication claire tout au long des projets",
+      "point4": "Équipe d'experts certifiée en publicités Meta, Google Ads et développement Shopify",
+      "point5": "Support 24/7 et optimisation continue pour un succès à long terme",
+      "point6": "Stratégies personnalisées adaptées à vos objectifs commerciaux spécifiques et à votre industrie"
+    }
   }
 }
