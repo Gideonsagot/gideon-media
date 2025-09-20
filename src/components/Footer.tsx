@@ -1,4 +1,5 @@
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import UpworkIcon from './UpworkIcon';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -38,9 +39,9 @@ const Footer = () => {
       label: 'LinkedIn' 
     },
     { 
-      icon: Twitter, 
+      icon: UpworkIcon, 
       href: 'https://www.upwork.com/freelancers/~0168e372c5f516c460', 
-      label: 'Upwork' 
+      label: 'Upwork Profile' 
     }
   ];
 
@@ -124,7 +125,7 @@ const Footer = () => {
               Follow us on social media for digital marketing tips and updates.
             </p>
             
-            {/* Social Links */}
+            {/* Social Links with Upwork Highlight */}
             <div className="flex space-x-4 mb-6">
               {socialLinks.map((social) => (
                 <a
@@ -132,24 +133,62 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
+                  className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 group ${
+                    social.label === 'Upwork Profile' 
+                      ? 'bg-green-500 hover:bg-green-600 ring-2 ring-green-300' 
+                      : 'bg-muted hover:bg-primary'
+                  }`}
                   aria-label={social.label}
+                  title={social.label}
                 >
-                  <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary-foreground" />
+                  <social.icon className={`w-5 h-5 ${
+                    social.label === 'Upwork Profile'
+                      ? 'text-white'
+                      : 'text-muted-foreground group-hover:text-primary-foreground'
+                  }`} />
                 </a>
               ))}
             </div>
 
-            {/* WhatsApp CTA */}
-            <a
-              href="https://wa.me/2347067133828?text=Hi, I'm interested in your digital marketing services"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg inline-flex items-center"
-            >
-              <MessageCircle className="w-4 h-4 mr-2" />
-              WhatsApp Us
-            </a>
+            {/* Featured Upwork CTA */}
+            <div className="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-lg border border-green-200 mb-4">
+              <div className="flex items-center mb-2">
+                <UpworkIcon className="w-5 h-5 text-green-600 mr-2" />
+                <span className="font-semibold text-green-800">Hire me on Upwork</span>
+              </div>
+              <p className="text-sm text-green-700 mb-3">
+                Top-rated freelancer with 100% Job Success Score
+              </p>
+              <a
+                href="https://www.upwork.com/freelancers/~0168e372c5f516c460"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded text-sm font-semibold transition-all duration-300 hover:shadow-lg inline-flex items-center"
+              >
+                <UpworkIcon className="w-4 h-4 mr-2" />
+                View Upwork Profile
+              </a>
+            </div>
+
+            {/* Additional Contact CTA */}
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://wa.me/2347067133828?text=Hi, I'm interested in your digital marketing services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg inline-flex items-center justify-center"
+              >
+                <MessageCircle className="w-4 h-4 mr-2" />
+                WhatsApp
+              </a>
+              <a
+                href="mailto:gideonmedia@hotmail.com"
+                className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg inline-flex items-center justify-center"
+              >
+                <Mail className="w-4 h-4 mr-2" />
+                Email Us
+              </a>
+            </div>
           </div>
         </div>
       </div>
