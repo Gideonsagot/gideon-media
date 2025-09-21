@@ -8,6 +8,9 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/components/ui/use-toast';
 import { useNavigate } from 'react-router-dom';
+import Footer from '@/components/Footer';
+import { ThemeToggle } from '@/components/ThemeToggle';
+import { LanguageSelector } from '@/components/LanguageSelector';
 
 const Help = () => {
   const { t } = useTranslation();
@@ -58,16 +61,21 @@ const Help = () => {
       <header className="border-b bg-background/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <Button 
-              variant="ghost" 
-              onClick={() => navigate('/')}
-              className="flex items-center gap-2"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
-            <div className="text-2xl font-bold text-primary">
-              Gideon Media
+            <div className="flex items-center gap-4">
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => navigate('/')}
+                className="flex items-center gap-2"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                {t('common.back')}
+              </Button>
+              <h1 className="text-xl font-bold text-primary">Gideon Media - {t('header.help')}</h1>
+            </div>
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <LanguageSelector />
             </div>
           </div>
         </div>
@@ -77,17 +85,17 @@ const Help = () => {
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-foreground mb-4">
+            <h1 className="text-4xl font-bold text-foreground mb-4 animate-fade-in bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
               {t('help.title')}
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground animate-fade-in delay-300">
               {t('help.subtitle')}
             </p>
           </div>
 
-          <Card>
+          <Card className="hover-scale transition-all duration-300 hover:shadow-lg">
             <CardHeader>
-              <CardTitle>Support Request Form</CardTitle>
+              <CardTitle className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">Support Request Form</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -205,6 +213,7 @@ const Help = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

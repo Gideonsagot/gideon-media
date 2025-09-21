@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import PortfolioSection from '@/components/PortfolioSection';
+import Footer from '@/components/Footer';
 
 const Portfolio = () => {
   const navigate = useNavigate();
@@ -40,6 +41,7 @@ const Portfolio = () => {
       <main className="pt-8">
         <PortfolioSection />
       </main>
+      <Footer />
     </div>
   );
 };

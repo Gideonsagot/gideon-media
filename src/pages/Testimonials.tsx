@@ -6,6 +6,7 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import { ReviewsSection } from '@/components/ReviewsSection';
+import Footer from '@/components/Footer';
 
 const Testimonials = () => {
   const navigate = useNavigate();
@@ -42,6 +43,7 @@ const Testimonials = () => {
         <TestimonialsSection />
         <ReviewsSection />
       </main>
+      <Footer />
     </div>
   );
 };

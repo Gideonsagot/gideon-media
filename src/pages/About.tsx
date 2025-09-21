@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
+import Footer from '@/components/Footer';
 
 const About = () => {
   const navigate = useNavigate();
@@ -40,25 +41,25 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">{t('about.title')}</h1>
-            <p className="text-xl text-muted-foreground mb-8">{t('about.subtitle')}</p>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{t('about.description')}</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">{t('about.title')}</h1>
+            <p className="text-xl text-muted-foreground mb-8 animate-fade-in delay-300">{t('about.subtitle')}</p>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto animate-fade-in delay-500">{t('about.description')}</p>
           </div>
 
           {/* Mission & Vision */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-card rounded-xl p-8 border shadow-sm">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <div className="w-6 h-6 bg-primary rounded"></div>
+            <div className="bg-card rounded-xl p-8 border shadow-sm hover-scale transition-all duration-300 hover:shadow-lg">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 transition-transform hover:scale-110">
+                <div className="w-6 h-6 bg-primary rounded animate-pulse"></div>
               </div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">{t('about.mission.title')}</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">{t('about.mission.title')}</h2>
               <p className="text-muted-foreground leading-relaxed">{t('about.mission.description')}</p>
             </div>
-            <div className="bg-card rounded-xl p-8 border shadow-sm">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <div className="w-6 h-6 bg-primary rounded"></div>
+            <div className="bg-card rounded-xl p-8 border shadow-sm hover-scale transition-all duration-300 hover:shadow-lg">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 transition-transform hover:scale-110">
+                <div className="w-6 h-6 bg-primary rounded animate-pulse"></div>
               </div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">{t('about.vision.title')}</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">{t('about.vision.title')}</h2>
               <p className="text-muted-foreground leading-relaxed">{t('about.vision.description')}</p>
             </div>
           </div>
@@ -145,6 +146,7 @@ const About = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

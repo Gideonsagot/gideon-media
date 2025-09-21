@@ -7,6 +7,7 @@ import { LanguageSelector } from '@/components/LanguageSelector';
 import ServicesSection from '@/components/ServicesSection';
 import AllServicesSection from '@/components/AllServicesSection';
 import ShopifyServicesSection from '@/components/ShopifyServicesSection';
+import Footer from '@/components/Footer';
 
 const Services = () => {
   const navigate = useNavigate();
@@ -44,6 +45,7 @@ const Services = () => {
         <AllServicesSection />
         <ShopifyServicesSection />
       </main>
+      <Footer />
     </div>
   );
 };

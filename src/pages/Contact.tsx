@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -40,6 +41,7 @@ const Contact = () => {
       <main className="pt-8">
         <ContactSection />
       </main>
+      <Footer />
     </div>
   );
 };
