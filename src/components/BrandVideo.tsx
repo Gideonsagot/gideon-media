@@ -73,6 +73,9 @@ const BrandVideo = () => {
               onPause={() => setIsPlaying(false)}
               poster="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1920&h=1080"
               preload="metadata"
+              playsInline
+              webkit-playsinline
+              controls={false}
             >
               <source
                 src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -82,59 +85,59 @@ const BrandVideo = () => {
             </video>
 
             {/* Video Overlay Content */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 flex items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/70 flex items-center justify-center">
               {/* Brand Logo & Services Overlay */}
-              <div className="text-center space-y-8 p-8">
+              <div className="text-center space-y-8 p-8 z-10">
                 <div className="space-y-4">
-                  <h1 className="text-4xl md:text-6xl font-bold text-white">
+                  <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-2xl">
                     Gideon Media
                   </h1>
-                  <p className="text-xl md:text-2xl text-gray-200">
+                  <p className="text-xl md:text-2xl text-white drop-shadow-lg">
                     Your Digital Growth Partner
                   </p>
                 </div>
 
                 {/* Services showcase */}
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                    <h3 className="text-white font-semibold text-sm md:text-base">Meta Ads</h3>
-                    <p className="text-gray-300 text-xs">Facebook & Instagram</p>
+                  <div className="bg-white/20 backdrop-blur-md rounded-lg p-4 border border-white/30 shadow-lg">
+                    <h3 className="text-white font-semibold text-sm md:text-base drop-shadow-md">Meta Ads</h3>
+                    <p className="text-white/90 text-xs drop-shadow-sm">Facebook & Instagram</p>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                    <h3 className="text-white font-semibold text-sm md:text-base">Shopify Stores</h3>
-                    <p className="text-gray-300 text-xs">E-commerce Solutions</p>
+                  <div className="bg-white/20 backdrop-blur-md rounded-lg p-4 border border-white/30 shadow-lg">
+                    <h3 className="text-white font-semibold text-sm md:text-base drop-shadow-md">Shopify Stores</h3>
+                    <p className="text-white/90 text-xs drop-shadow-sm">E-commerce Solutions</p>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                    <h3 className="text-white font-semibold text-sm md:text-base">Web Development</h3>
-                    <p className="text-gray-300 text-xs">Professional Websites</p>
+                  <div className="bg-white/20 backdrop-blur-md rounded-lg p-4 border border-white/30 shadow-lg">
+                    <h3 className="text-white font-semibold text-sm md:text-base drop-shadow-md">Web Development</h3>
+                    <p className="text-white/90 text-xs drop-shadow-sm">Professional Websites</p>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                    <h3 className="text-white font-semibold text-sm md:text-base">Pinterest Marketing</h3>
-                    <p className="text-gray-300 text-xs">Visual Content Strategy</p>
+                  <div className="bg-white/20 backdrop-blur-md rounded-lg p-4 border border-white/30 shadow-lg">
+                    <h3 className="text-white font-semibold text-sm md:text-base drop-shadow-md">Pinterest Marketing</h3>
+                    <p className="text-white/90 text-xs drop-shadow-sm">Visual Content Strategy</p>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                    <h3 className="text-white font-semibold text-sm md:text-base">Ads Strategy</h3>
-                    <p className="text-gray-300 text-xs">Campaign Optimization</p>
+                  <div className="bg-white/20 backdrop-blur-md rounded-lg p-4 border border-white/30 shadow-lg">
+                    <h3 className="text-white font-semibold text-sm md:text-base drop-shadow-md">Ads Strategy</h3>
+                    <p className="text-white/90 text-xs drop-shadow-sm">Campaign Optimization</p>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                    <h3 className="text-white font-semibold text-sm md:text-base">24/7 Support</h3>
-                    <p className="text-gray-300 text-xs">Always Available</p>
+                  <div className="bg-white/20 backdrop-blur-md rounded-lg p-4 border border-white/30 shadow-lg">
+                    <h3 className="text-white font-semibold text-sm md:text-base drop-shadow-md">24/7 Support</h3>
+                    <p className="text-white/90 text-xs drop-shadow-sm">Always Available</p>
                   </div>
                 </div>
 
                 {/* Key stats */}
                 <div className="flex justify-center space-x-8 text-white">
                   <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold">180+</div>
-                    <div className="text-sm text-gray-300">Projects</div>
+                    <div className="text-2xl md:text-3xl font-bold drop-shadow-lg">180+</div>
+                    <div className="text-sm text-white/90 drop-shadow-sm">Projects</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold">400%</div>
-                    <div className="text-sm text-gray-300">Avg ROI</div>
+                    <div className="text-2xl md:text-3xl font-bold drop-shadow-lg">400%</div>
+                    <div className="text-sm text-white/90 drop-shadow-sm">Avg ROI</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold">99.5%</div>
-                    <div className="text-sm text-gray-300">Satisfaction</div>
+                    <div className="text-2xl md:text-3xl font-bold drop-shadow-lg">99.5%</div>
+                    <div className="text-sm text-white/90 drop-shadow-sm">Satisfaction</div>
                   </div>
                 </div>
               </div>
