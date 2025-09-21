@@ -5,9 +5,11 @@ import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
@@ -21,7 +23,7 @@ const Header = () => {
   ];
 
   const navigateToPage = (href: string) => {
-    window.location.href = href;
+    navigate(href);
     setIsMenuOpen(false);
   };
 
