@@ -25,7 +25,7 @@ export function Chatbot() {
   ]);
   const [inputValue, setInputValue] = useState('');
 
-  const sendMessage = () => {
+  const sendMessage = async () => {
     if (!inputValue.trim()) return;
 
     const userMessage: Message = {
@@ -36,13 +36,30 @@ export function Chatbot() {
     };
 
     setMessages(prev => [...prev, userMessage]);
+    const messageText = inputValue;
     setInputValue('');
+
+    // Send email notification
+    try {
+      await fetch('/functions/v1/send-chat-notification', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: messageText,
+          timestamp: new Date().toISOString(),
+        }),
+      });
+    } catch (error) {
+      console.error('Failed to send chat notification:', error);
+    }
 
     // Simulate bot response
     setTimeout(() => {
       const botResponse: Message = {
         id: messages.length + 2,
-        text: "Thanks for your message! Our team will get back to you soon. You can also call us at +1 (555) 123-4567 or email us at info@gideonmedia.com",
+        text: "Thanks for your message! Our team will get back to you soon. For urgent matters, call us at +234 706 713 3828 or email us at Gideonmedia@hotmail.com",
         isBot: true,
         timestamp: new Date(),
       };

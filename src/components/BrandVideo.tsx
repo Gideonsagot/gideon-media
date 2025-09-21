@@ -72,9 +72,10 @@ const BrandVideo = () => {
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
               poster="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1920&h=1080"
+              preload="metadata"
             >
               <source
-                src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69fabf212b2e5325d5b14dff6c5ba0b41&profile_id=164&oauth2_token_id=57447761"
+                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.

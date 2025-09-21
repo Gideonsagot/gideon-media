@@ -41,7 +41,8 @@ const ContactSection = () => {
       icon: Mail,
       title: t('contact.contactMethods.email'),
       content: 'Gideonmedia@hotmail.com',
-      action: 'mailto:Gideonmedia@hotmail.com'
+      action: 'mailto:Gideonmedia@hotmail.com',
+      subtitle: 'For fast response'
     },
     {
       icon: Phone,
@@ -286,6 +287,9 @@ const ContactSection = () => {
                         </div>
                         <div className="text-muted-foreground">
                           {info.content}
+                          {info.subtitle && (
+                            <div className="text-xs text-primary mt-1 font-medium">{info.subtitle}</div>
+                          )}
                         </div>
                       </div>
                     </a>
