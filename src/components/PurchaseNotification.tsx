@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { CheckCircle, X } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -39,34 +39,39 @@ export function PurchaseNotification() {
   const { t } = useTranslation();
   const [currentNotification, setCurrentNotification] = useState<Purchase | null>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [notificationIndex, setNotificationIndex] = useState(0);
+  const notificationIndexRef = useRef(0);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const showNotification = () => {
-      const notification = purchaseNotifications[notificationIndex];
+      const notification = purchaseNotifications[notificationIndexRef.current];
       setCurrentNotification(notification);
       setIsVisible(true);
 
-      // Hide after 5 seconds
-      setTimeout(() => {
+      // Hide after 5 seconds and move to next notification
+      timeoutRef.current = setTimeout(() => {
         setIsVisible(false);
-        setNotificationIndex((prev) => (prev + 1) % purchaseNotifications.length);
+        notificationIndexRef.current = (notificationIndexRef.current + 1) % purchaseNotifications.length;
       }, 5000);
     };
 
     // Start after 5 seconds, then repeat every 15 seconds
     const initialTimer = setTimeout(() => {
       showNotification();
-      
-      const interval = setInterval(showNotification, 15000);
-      return () => clearInterval(interval);
+      intervalRef.current = setInterval(showNotification, 15000);
     }, 5000);
 
-    return () => clearTimeout(initialTimer);
-  }, [notificationIndex]);
+    return () => {
+      clearTimeout(initialTimer);
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []); // Empty dependency array to prevent re-running
 
   const handleClose = () => {
     setIsVisible(false);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
   };
 
   if (!isVisible || !currentNotification) return null;
