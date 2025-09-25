@@ -6,10 +6,24 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import { useSEO } from '@/hooks/useSEO';
 
 const Contact = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  useSEO({
+    title: 'Contact Gideon Media | Get in Touch Today',
+    description: 'Contact Gideon Media for a free consultation on your digital marketing needs. Reach out via our contact form, email, or phone.',
+    canonical: 'https://gideonmedia.com/contact',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Us",
+      "description": "Contact Gideon Media for a free consultation on your digital marketing needs.",
+      "url": "https://gideonmedia.com/contact"
+    }
+  });
 
   return (
     <div className="min-h-screen bg-background">
@@ -27,7 +41,7 @@ const Contact = () => {
                 <ArrowLeft className="h-4 w-4" />
                 {t('common.back')}
               </Button>
-              <h1 className="text-xl font-bold text-primary">Gideon Media - {t('header.contact')}</h1>
+              <h1 className="text-xl font-bold text-primary">Contact Us</h1>
             </div>
             <div className="flex items-center gap-2">
               <ThemeToggle />

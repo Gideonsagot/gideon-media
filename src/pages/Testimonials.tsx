@@ -7,10 +7,24 @@ import { LanguageSelector } from '@/components/LanguageSelector';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import { ReviewsSection } from '@/components/ReviewsSection';
 import Footer from '@/components/Footer';
+import { useSEO } from '@/hooks/useSEO';
 
 const Testimonials = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  useSEO({
+    title: 'Client Testimonials | Success Stories & Reviews',
+    description: 'Read what our clients say about our digital marketing services. Real testimonials and success stories from businesses we have helped grow.',
+    canonical: 'https://gideonmedia.com/testimonials',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Client Testimonials",
+      "description": "Read what our clients say about our digital marketing services. Real testimonials and success stories from businesses we have helped grow.",
+      "url": "https://gideonmedia.com/testimonials"
+    }
+  });
 
   return (
     <div className="min-h-screen bg-background">
@@ -28,7 +42,7 @@ const Testimonials = () => {
                 <ArrowLeft className="h-4 w-4" />
                 {t('common.back')}
               </Button>
-              <h1 className="text-xl font-bold text-primary">Gideon Media - {t('header.testimonials')}</h1>
+              <h1 className="text-xl font-bold text-primary">Client Testimonials</h1>
             </div>
             <div className="flex items-center gap-2">
               <ThemeToggle />

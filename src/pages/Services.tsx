@@ -8,10 +8,24 @@ import ServicesSection from '@/components/ServicesSection';
 import AllServicesSection from '@/components/AllServicesSection';
 import ShopifyServicesSection from '@/components/ShopifyServicesSection';
 import Footer from '@/components/Footer';
+import { useSEO } from '@/hooks/useSEO';
 
 const Services = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  useSEO({
+    title: 'Our Digital Marketing Services | SEO, Content & Social',
+    description: 'Explore our full range of digital marketing services, including search engine optimization (SEO), content strategy, and social media management.',
+    canonical: 'https://gideonmedia.com/services',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Our Digital Marketing Services",
+      "description": "Explore our full range of digital marketing services, including search engine optimization (SEO), content strategy, and social media management.",
+      "url": "https://gideonmedia.com/services"
+    }
+  });
 
   return (
     <div className="min-h-screen bg-background">
@@ -29,7 +43,7 @@ const Services = () => {
                 <ArrowLeft className="h-4 w-4" />
                 {t('common.back')}
               </Button>
-              <h1 className="text-xl font-bold text-primary">Gideon Media - {t('header.services')}</h1>
+              <h1 className="text-xl font-bold text-primary">Our Digital Marketing Services</h1>
             </div>
             <div className="flex items-center gap-2">
               <ThemeToggle />

@@ -6,10 +6,24 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import PortfolioSection from '@/components/PortfolioSection';
 import Footer from '@/components/Footer';
+import { useSEO } from '@/hooks/useSEO';
 
 const Portfolio = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  useSEO({
+    title: 'Our Portfolio | Digital Marketing Success Stories',
+    description: 'Browse our portfolio of successful digital marketing campaigns, website developments, and client success stories. See how we help businesses grow.',
+    canonical: 'https://gideonmedia.com/portfolio',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Our Portfolio",
+      "description": "Browse our portfolio of successful digital marketing campaigns, website developments, and client success stories.",
+      "url": "https://gideonmedia.com/portfolio"
+    }
+  });
 
   return (
     <div className="min-h-screen bg-background">
@@ -27,7 +41,7 @@ const Portfolio = () => {
                 <ArrowLeft className="h-4 w-4" />
                 {t('common.back')}
               </Button>
-              <h1 className="text-xl font-bold text-primary">Gideon Media - {t('header.portfolio')}</h1>
+              <h1 className="text-xl font-bold text-primary">Our Portfolio</h1>
             </div>
             <div className="flex items-center gap-2">
               <ThemeToggle />

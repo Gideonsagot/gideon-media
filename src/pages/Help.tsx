@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import Footer from '@/components/Footer';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
+import { useSEO } from '@/hooks/useSEO';
 
 const Help = () => {
   const { t } = useTranslation();
@@ -22,6 +23,19 @@ const Help = () => {
     subject: '',
     category: '',
     description: ''
+  });
+
+  useSEO({
+    title: 'Help Center & Support | Gideon Media',
+    description: 'Need help with our digital marketing services? Contact our support team, browse FAQs, or submit a support request. We are here to help you succeed.',
+    canonical: 'https://gideonmedia.com/help',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Help Center & Support",
+      "description": "Need help with our digital marketing services? Contact our support team, browse FAQs, or submit a support request.",
+      "url": "https://gideonmedia.com/help"
+    }
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -71,7 +85,7 @@ const Help = () => {
                 <ArrowLeft className="h-4 w-4" />
                 {t('common.back')}
               </Button>
-              <h1 className="text-xl font-bold text-primary">Gideon Media - {t('header.help')}</h1>
+              <h1 className="text-xl font-bold text-primary">Help Center & Support</h1>
             </div>
             <div className="flex items-center gap-2">
               <ThemeToggle />

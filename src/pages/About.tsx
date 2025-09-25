@@ -5,10 +5,24 @@ import { useTranslation } from 'react-i18next';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import Footer from '@/components/Footer';
+import { useSEO } from '@/hooks/useSEO';
 
 const About = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  useSEO({
+    title: 'About Gideon Media | Our Mission & Team',
+    description: 'Learn about the mission and expert team behind Gideon Media. We are dedicated to delivering transparent and effective digital marketing results.',
+    canonical: 'https://gideonmedia.com/about',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "About Gideon Media",
+      "description": "Learn about the mission and expert team behind Gideon Media. We are dedicated to delivering transparent and effective digital marketing results.",
+      "url": "https://gideonmedia.com/about"
+    }
+  });
 
   return (
     <div className="min-h-screen bg-background">
@@ -26,7 +40,7 @@ const About = () => {
                 <ArrowLeft className="h-4 w-4" />
                 {t('common.back')}
               </Button>
-              <h1 className="text-xl font-bold text-primary">Gideon Media - {t('header.about')}</h1>
+              <div className="text-xl font-bold text-primary">About Gideon Media</div>
             </div>
             <div className="flex items-center gap-2">
               <ThemeToggle />

@@ -15,8 +15,27 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import { ReviewWidget } from '@/components/ReviewWidget';
 import { PurchaseNotification } from '@/components/PurchaseNotification';
+import { useSEO } from '@/hooks/useSEO';
 
 const Index = () => {
+  useSEO({
+    title: 'Gideon Media: Expert Digital Marketing & Content Creation',
+    description: 'Gideon Media offers professional digital marketing services, including SEO, content creation, and social media management to help your business grow.',
+    canonical: 'https://gideonmedia.com/',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage", 
+      "name": "Drive Growth with Expert Digital Marketing",
+      "description": "Gideon Media offers professional digital marketing services, including SEO, content creation, and social media management to help your business grow.",
+      "url": "https://gideonmedia.com/",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Gideon Media",
+        "url": "https://gideonmedia.com"
+      }
+    }
+  });
+
   return (
     <div className="min-h-screen">
       <Header />
