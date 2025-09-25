@@ -51,6 +51,21 @@
       "description": "Modern, responsive websites for small businesses that establish credibility and drive growth in the digital marketplace.",
       "features": ["Responsive Design", "Fast Loading", "SEO Ready", "Content Management"]
     },
+    "wordpress": {
+      "title": "WordPress Development",
+      "description": "Custom WordPress websites with advanced functionality and easy content management systems.",
+      "features": ["Custom Theme Development", "Plugin Integration", "WooCommerce Setup", "SEO Optimization"]
+    },
+    "squarespace": {
+      "title": "Squarespace Development",
+      "description": "Beautiful Squarespace websites with custom design and enhanced functionality for modern businesses.",
+      "features": ["Template Customization", "E-commerce Integration", "Mobile Optimization", "SEO Setup"]
+    },
+    "platforms": {
+      "title": "Multi-Platform Development",
+      "description": "Professional websites on Wix, Webflow, and other popular content management platforms.",
+      "features": ["Platform Migration", "Custom Design", "App Integration", "Performance Enhancement"]
+    },
     "pinterest": {
       "title": "Pinterest Setup",
       "description": "Strategic Pinterest presence setup to drive traffic and increase brand visibility through engaging visual content.",

@@ -10,7 +10,11 @@ import {
   Search,
   TrendingUp,
   Smartphone,
-  ArrowRight
+  ArrowRight,
+  Monitor,
+  Square,
+  Layers,
+  Zap
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -77,6 +81,24 @@ const AllServicesSection = () => {
           title: 'Business Website Development',
           description: 'Professional websites that establish credibility and drive business growth.',
           features: ['Responsive Design', 'SEO Optimization', 'Fast Loading', 'Content Management', 'Contact Forms', 'Analytics Integration']
+        },
+        {
+          icon: Monitor,
+          title: 'WordPress Development',
+          description: 'Custom WordPress websites with advanced functionality and easy content management.',
+          features: ['Custom Theme Development', 'Plugin Integration', 'WooCommerce Setup', 'SEO Optimization', 'Security Setup', 'Performance Optimization']
+        },
+        {
+          icon: Square,
+          title: 'Squarespace Development',
+          description: 'Beautiful Squarespace websites with custom design and enhanced functionality.',
+          features: ['Template Customization', 'E-commerce Integration', 'Mobile Optimization', 'SEO Setup', 'Analytics Integration', 'Custom Code Injection']
+        },
+        {
+          icon: Layers,
+          title: 'Wix & Other Platforms',
+          description: 'Professional websites on Wix, Webflow, and other popular platforms.',
+          features: ['Platform Migration', 'Custom Design', 'App Integration', 'SEO Optimization', 'Mobile Responsiveness', 'Performance Enhancement']
         },
         {
           icon: Smartphone,

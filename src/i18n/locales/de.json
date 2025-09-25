@@ -18,17 +18,47 @@
   "services": {
     "title": "Unsere Dienstleistungen",
     "subtitle": "Umfassende digitale Lösungen für Ihr Unternehmenswachstum",
-    "webDev": {
-      "title": "Webentwicklung",
-      "description": "Moderne, reaktionsfähige Websites, die auf allen Geräten perfekt funktionieren"
+    "cta": "Heute Loslegen",
+    "learnMore": "Mehr Erfahren",
+    "metaAds": {
+      "title": "Meta Ads Setup",
+      "description": "Professionelle Facebook- und Instagram-Werbekampagnen, einschließlich WhatsApp Ads-Integration für maximale Reichweite und Engagement.",
+      "features": ["Kampagnenstrategie", "Anzeigenkreation", "WhatsApp-Integration", "Performance-Tracking"]
     },
-    "digitalMarketing": {
-      "title": "Digitales Marketing",
-      "description": "Gezielte Werbekampagnen, die qualifizierte Leads und Verkäufe generieren"
+    "shopify": {
+      "title": "Shopify-Entwicklung",
+      "description": "Maßgeschneiderte Shopify-Shops, die Besucher in Kunden verwandeln mit optimierter Benutzererfahrung und nahtlosen Checkout-Prozessen.",
+      "features": ["Custom Design", "Payment Integration", "SEO-Optimierung", "Mobile Responsive"]
     },
-    "ecommerce": {
-      "title": "E-Commerce-Lösungen",
-      "description": "Vollständige Shopify-Stores mit Zahlungsabwicklung und Inventarverwaltung"
+    "website": {
+      "title": "Webentwicklung", 
+      "description": "Moderne, responsive Websites für kleine Unternehmen, die Glaubwürdigkeit schaffen und Wachstum fördern.",
+      "features": ["Responsives Design", "Schnelles Laden", "SEO-bereit", "Content-Management"]
+    },
+    "wordpress": {
+      "title": "WordPress-Entwicklung",
+      "description": "Maßgeschneiderte WordPress-Websites mit erweiterten Funktionen und einfachen Content-Management-Systemen.",
+      "features": ["Individuelle Theme-Entwicklung", "Plugin-Integration", "WooCommerce-Setup", "SEO-Optimierung"]
+    },
+    "squarespace": {
+      "title": "Squarespace-Entwicklung",
+      "description": "Schöne Squarespace-Websites mit individuellem Design und erweiterten Funktionen für moderne Unternehmen.",
+      "features": ["Template-Anpassung", "E-Commerce-Integration", "Mobile Optimierung", "SEO-Setup"]
+    },
+    "platforms": {
+      "title": "Multi-Plattform-Entwicklung",
+      "description": "Professionelle Websites auf Wix, Webflow und anderen beliebten Content-Management-Plattformen.",
+      "features": ["Plattform-Migration", "Individuelles Design", "App-Integration", "Performance-Verbesserung"]
+    },
+    "pinterest": {
+      "title": "Pinterest-Setup",
+      "description": "Strategische Pinterest-Präsenz-Setup zur Steigerung des Traffics und Erhöhung der Markensichtbarkeit durch ansprechende visuelle Inhalte.",
+      "features": ["Profil-Optimierung", "Board-Strategie", "Pin-Design", "Analytics-Setup"]
+    },
+    "adsStrategy": {
+      "title": "Anzeigenstrategie & Launch",
+      "description": "Umfassende Werbeanzeigen-Strategieentwicklung und Kampagnenmanagement auf mehreren digitalen Plattformen.",
+      "features": ["Marktforschung", "Zielgruppen-Targeting", "Kampagnenmanagement", "ROI-Optimierung"]
     }
   },
   "about": {

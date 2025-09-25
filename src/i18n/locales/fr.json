@@ -18,17 +18,47 @@
   "services": {
     "title": "Nos Services",
     "subtitle": "Solutions numériques complètes pour la croissance de votre entreprise",
-    "webDev": {
-      "title": "Développement Web",
-      "description": "Sites web modernes et réactifs qui fonctionnent parfaitement sur tous les appareils"
+    "cta": "Commencer Aujourd'hui",
+    "learnMore": "En Savoir Plus",
+    "metaAds": {
+      "title": "Configuration Meta Ads",
+      "description": "Campagnes publicitaires professionnelles Facebook et Instagram, y compris l'intégration WhatsApp Ads pour une portée et un engagement maximums.",
+      "features": ["Stratégie de Campagne", "Conception Créative d'Annonces", "Intégration WhatsApp", "Suivi des Performances"]
     },
-    "digitalMarketing": {
-      "title": "Marketing Digital",
-      "description": "Campagnes publicitaires ciblées qui génèrent des prospects qualifiés et des ventes"
+    "shopify": {
+      "title": "Développement Shopify",
+      "description": "Boutiques Shopify personnalisées qui convertissent les visiteurs en clients avec une expérience utilisateur optimisée et des processus de checkout transparents.",
+      "features": ["Design Personnalisé", "Intégration de Paiement", "Optimisation SEO", "Mobile Responsive"]
     },
-    "ecommerce": {
-      "title": "Solutions E-commerce",
-      "description": "Boutiques Shopify complètes avec traitement des paiements et gestion des stocks"
+    "website": {
+      "title": "Développement Web", 
+      "description": "Sites web modernes et responsifs pour les petites entreprises qui établissent la crédibilité et stimulent la croissance.",
+      "features": ["Design Responsif", "Chargement Rapide", "Prêt pour le SEO", "Gestion de Contenu"]
+    },
+    "wordpress": {
+      "title": "Développement WordPress",
+      "description": "Sites web WordPress personnalisés avec des fonctionnalités avancées et des systèmes de gestion de contenu faciles.",
+      "features": ["Développement de Thèmes Personnalisés", "Intégration de Plugins", "Configuration WooCommerce", "Optimisation SEO"]
+    },
+    "squarespace": {
+      "title": "Développement Squarespace",
+      "description": "Beaux sites web Squarespace avec un design personnalisé et des fonctionnalités améliorées pour les entreprises modernes.",
+      "features": ["Personnalisation de Modèles", "Intégration E-commerce", "Optimisation Mobile", "Configuration SEO"]
+    },
+    "platforms": {
+      "title": "Développement Multi-Plateformes",
+      "description": "Sites web professionnels sur Wix, Webflow et autres plateformes populaires de gestion de contenu.",
+      "features": ["Migration de Plateformes", "Design Personnalisé", "Intégration d'Applications", "Amélioration des Performances"]
+    },
+    "pinterest": {
+      "title": "Configuration Pinterest",
+      "description": "Configuration stratégique de présence Pinterest pour augmenter le trafic et améliorer la visibilité de la marque grâce à un contenu visuel engageant.",
+      "features": ["Optimisation de Profil", "Stratégie de Tableau", "Design de Pins", "Configuration Analytics"]
+    },
+    "adsStrategy": {
+      "title": "Stratégie et Lancement de Publicités",
+      "description": "Développement de stratégie publicitaire complète et gestion de campagnes sur plusieurs plateformes numériques.",
+      "features": ["Recherche de Marché", "Ciblage d'Audience", "Gestion de Campagnes", "Optimisation ROI"]
     }
   },
   "about": {

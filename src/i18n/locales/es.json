@@ -51,6 +51,21 @@
       "description": "Sitios web modernos y responsivos para pequeñas empresas que establecen credibilidad e impulsan el crecimiento en el mercado digital.",
       "features": ["Diseño Responsivo", "Carga Rápida", "Listo para SEO", "Gestión de Contenido"]
     },
+    "wordpress": {
+      "title": "Desarrollo WordPress",
+      "description": "Sitios web WordPress personalizados con funcionalidad avanzada y sistemas de gestión de contenido fáciles.",
+      "features": ["Desarrollo de Temas Personalizados", "Integración de Plugins", "Configuración WooCommerce", "Optimización SEO"]
+    },
+    "squarespace": {
+      "title": "Desarrollo Squarespace",
+      "description": "Hermosos sitios web Squarespace con diseño personalizado y funcionalidad mejorada para empresas modernas.",
+      "features": ["Personalización de Plantillas", "Integración E-commerce", "Optimización Móvil", "Configuración SEO"]
+    },
+    "platforms": {
+      "title": "Desarrollo Multi-Plataforma",
+      "description": "Sitios web profesionales en Wix, Webflow y otras plataformas populares de gestión de contenido.",
+      "features": ["Migración de Plataformas", "Diseño Personalizado", "Integración de Apps", "Mejora de Rendimiento"]
+    },
     "pinterest": {
       "title": "Configuración de Pinterest",
       "description": "Configuración estratégica de presencia en Pinterest para impulsar tráfico e incrementar la visibilidad de marca através de contenido visual atractivo.",
