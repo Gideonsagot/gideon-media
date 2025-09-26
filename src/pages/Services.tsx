@@ -17,13 +17,33 @@ const Services = () => {
   useSEO({
     title: 'Our Digital Marketing Services | SEO, Content & Social',
     description: 'Explore our full range of digital marketing services, including search engine optimization (SEO), content strategy, and social media management.',
-    canonical: 'https://gideonmedia.com/services',
+    canonical: 'https://gideonmedia.netlify.app/services',
     schema: {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Our Digital Marketing Services",
-      "description": "Explore our full range of digital marketing services, including search engine optimization (SEO), content strategy, and social media management.",
-      "url": "https://gideonmedia.com/services"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Our Digital Marketing Services",
+          "description": "Explore our full range of digital marketing services, including search engine optimization (SEO), content strategy, and social media management.",
+          "url": "https://gideonmedia.netlify.app/services"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gideonmedia.netlify.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Our Services"
+            }
+          ]
+        }
+      ]
     }
   });
 

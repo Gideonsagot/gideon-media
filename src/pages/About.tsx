@@ -14,13 +14,33 @@ const About = () => {
   useSEO({
     title: 'About Gideon Media | Our Mission & Team',
     description: 'Learn about the mission and expert team behind Gideon Media. We are dedicated to delivering transparent and effective digital marketing results.',
-    canonical: 'https://gideonmedia.com/about',
+    canonical: 'https://gideonmedia.netlify.app/about',
     schema: {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "About Gideon Media",
-      "description": "Learn about the mission and expert team behind Gideon Media. We are dedicated to delivering transparent and effective digital marketing results.",
-      "url": "https://gideonmedia.com/about"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "About Gideon Media",
+          "description": "Learn about the mission and expert team behind Gideon Media. We are dedicated to delivering transparent and effective digital marketing results.",
+          "url": "https://gideonmedia.netlify.app/about"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gideonmedia.netlify.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us"
+            }
+          ]
+        }
+      ]
     }
   });
 
