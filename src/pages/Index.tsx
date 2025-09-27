@@ -21,17 +21,17 @@ const Index = () => {
   useSEO({
     title: 'Gideon Media: Expert Digital Marketing & Content Creation',
     description: 'Gideon Media offers professional digital marketing services, including SEO, content creation, and social media management to help your business grow.',
-    canonical: 'https://gideonmedia.com/',
+    canonical: 'https://gideonmedia.netlify.app/',
     schema: {
       "@context": "https://schema.org",
       "@type": "WebPage", 
       "name": "Drive Growth with Expert Digital Marketing",
       "description": "Gideon Media offers professional digital marketing services, including SEO, content creation, and social media management to help your business grow.",
-      "url": "https://gideonmedia.com/",
+      "url": "https://gideonmedia.netlify.app/",
       "isPartOf": {
         "@type": "WebSite",
         "name": "Gideon Media",
-        "url": "https://gideonmedia.com"
+        "url": "https://gideonmedia.netlify.app"
       }
     }
   });
