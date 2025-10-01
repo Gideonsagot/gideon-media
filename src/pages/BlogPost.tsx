@@ -6,61 +6,18 @@ import { Calendar, Clock, User, ArrowLeft, Share2 } from 'lucide-react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSEO } from '@/hooks/useSEO';
 import { useToast } from '@/hooks/use-toast';
+import { getBlogPostBySlug } from '@/data/blogPosts';
 
 const BlogPost = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  // Blog post data - in a real app, this would come from a CMS or API
-  const blogPost = {
-    id: '5-signs-you-need-seo',
-    title: '5 Signs Your Business Needs SEO',
-    description: 'Is your website invisible to customers? Learn the 5 signs your business is losing money by ignoring SEO and how to fix it.',
-    author: 'Gideon Media',
-    publishDate: '2024-01-15',
-    readTime: '8 min read',
-    category: 'SEO',
-    content: `
-      <article>
-        <p>In today's digital landscape, having a website isn't enough. If your potential customers can't find you on Google, you're missing out on countless opportunities. Here are five clear signs that your business desperately needs SEO.</p>
-
-        <h2>1. Your Website Traffic Has Plateaued or Declined</h2>
-        <p>If your Google Analytics shows flat or declining organic traffic, it's a red flag. Search engines are constantly evolving, and what worked last year might not work today. Without ongoing SEO efforts, your rankings will inevitably slip as competitors optimize their sites.</p>
-
-        <h2>2. Your Competitors Appear Above You in Search Results</h2>
-        <p>When you search for your own products or services, do competitors consistently appear above you? This means they're capturing customers who should be finding you first. Every click they get is potential revenue you're losing.</p>
-
-        <h2>3. You're Not Ranking for Your Target Keywords</h2>
-        <p>If you're not appearing on the first page of Google for terms your customers are searching for, you're invisible to most potential clients. Studies show that 75% of users never scroll past the first page of search results.</p>
-
-        <h2>4. Your Local Business Isn't Showing Up in "Near Me" Searches</h2>
-        <p>For local businesses, appearing in local search results is crucial. If you're not optimized for local SEO, you're missing out on customers who are ready to buy and just looking for a nearby provider.</p>
-
-        <h2>5. Your Website Isn't Mobile-Friendly or Fast</h2>
-        <p>Google prioritizes mobile-friendly, fast-loading websites. If your site takes more than 3 seconds to load or doesn't work well on phones, Google will rank you lower, and users will leave before they even see what you offer.</p>
-
-        <h2>The Cost of Ignoring SEO</h2>
-        <p>Every day without proper SEO is money left on the table. Your competitors are actively working to outrank you, capture your potential customers, and grow their market share at your expense.</p>
-
-        <h2>What You Can Do Right Now</h2>
-        <p>Start with these immediate actions:</p>
-        <ul>
-          <li>Audit your current keyword rankings</li>
-          <li>Optimize your Google Business Profile</li>
-          <li>Ensure your website is mobile-responsive</li>
-          <li>Create valuable, keyword-rich content</li>
-          <li>Build quality backlinks from reputable sites</li>
-        </ul>
-
-        <h2>Ready to Take Action?</h2>
-        <p>Don't let another day pass while your competitors capture your potential customers. At Gideon Media, we specialize in helping businesses like yours dominate search results and grow their online presence.</p>
-      </article>
-    `
-  };
+  // Get blog post data
+  const blogPost = getBlogPostBySlug(slug || '');
 
   // 404 handling
-  if (slug !== '5-signs-you-need-seo') {
+  if (!blogPost) {
     return (
       <div className="min-h-screen">
         <Header />

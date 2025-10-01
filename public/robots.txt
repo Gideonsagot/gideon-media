@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://gideonmedia.com/sitemap.xml
+Sitemap: https://gideonmedia.netlify.app/sitemap.xml

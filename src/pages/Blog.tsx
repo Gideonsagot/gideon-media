@@ -6,6 +6,7 @@ import { Calendar, Clock, User } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useSEO } from '@/hooks/useSEO';
 import { useNavigate } from 'react-router-dom';
+import { blogPosts } from '@/data/blogPosts';
 
 const Blog = () => {
   const { t } = useTranslation();
@@ -43,19 +44,6 @@ const Blog = () => {
       ]
     }
   });
-
-  const blogPosts = [
-    {
-      id: '5-signs-you-need-seo',
-      title: '5 Signs Your Business Needs SEO',
-      description: 'Is your website invisible to customers? Learn the 5 signs your business is losing money by ignoring SEO and how to fix it.',
-      author: 'Gideon Media',
-      publishDate: '2024-01-15',
-      readTime: '8 min read',
-      category: 'SEO',
-      excerpt: 'Discover the critical warning signs that indicate your business needs immediate SEO attention. From declining website traffic to poor search rankings, learn how to identify and fix these issues before they impact your bottom line.',
-    }
-  ];
 
   const handleReadMore = (postId: string) => {
     navigate(`/blog/${postId}`);
@@ -100,7 +88,7 @@ const Blog = () => {
                   </CardHeader>
                   <CardContent className="flex-1 flex flex-col justify-between">
                     <p className="text-muted-foreground mb-6 line-clamp-3">
-                      {post.excerpt}
+                      {post.description}
                     </p>
                     <div className="space-y-4">
                       <div className="flex items-center justify-between text-sm text-muted-foreground">
