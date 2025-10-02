@@ -15,13 +15,13 @@ const Portfolio = () => {
   useSEO({
     title: 'Our Portfolio | Digital Marketing Success Stories',
     description: 'Browse our portfolio of successful digital marketing campaigns, website developments, and client success stories. See how we help businesses grow.',
-    canonical: 'https://gideonmedia.com/portfolio',
+    canonical: 'https://gideonmedia.netlify.app/portfolio',
     schema: {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Our Portfolio",
       "description": "Browse our portfolio of successful digital marketing campaigns, website developments, and client success stories.",
-      "url": "https://gideonmedia.com/portfolio"
+      "url": "https://gideonmedia.netlify.app/portfolio"
     }
   });
 

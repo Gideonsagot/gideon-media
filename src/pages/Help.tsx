@@ -28,13 +28,13 @@ const Help = () => {
   useSEO({
     title: 'Help Center & Support | Gideon Media',
     description: 'Need help with our digital marketing services? Contact our support team, browse FAQs, or submit a support request. We are here to help you succeed.',
-    canonical: 'https://gideonmedia.com/help',
+    canonical: 'https://gideonmedia.netlify.app/help',
     schema: {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Help Center & Support",
       "description": "Need help with our digital marketing services? Contact our support team, browse FAQs, or submit a support request.",
-      "url": "https://gideonmedia.com/help"
+      "url": "https://gideonmedia.netlify.app/help"
     }
   });
 

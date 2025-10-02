@@ -15,13 +15,13 @@ const Contact = () => {
   useSEO({
     title: 'Contact Gideon Media | Get in Touch Today',
     description: 'Contact Gideon Media for a free consultation on your digital marketing needs. Reach out via our contact form, email, or phone.',
-    canonical: 'https://gideonmedia.com/contact',
+    canonical: 'https://gideonmedia.netlify.app/contact',
     schema: {
       "@context": "https://schema.org",
       "@type": "ContactPage",
       "name": "Contact Us",
       "description": "Contact Gideon Media for a free consultation on your digital marketing needs.",
-      "url": "https://gideonmedia.com/contact"
+      "url": "https://gideonmedia.netlify.app/contact"
     }
   });
 

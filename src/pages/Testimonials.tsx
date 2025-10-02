@@ -16,13 +16,13 @@ const Testimonials = () => {
   useSEO({
     title: 'Client Testimonials | Success Stories & Reviews',
     description: 'Read what our clients say about our digital marketing services. Real testimonials and success stories from businesses we have helped grow.',
-    canonical: 'https://gideonmedia.com/testimonials',
+    canonical: 'https://gideonmedia.netlify.app/testimonials',
     schema: {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Client Testimonials",
       "description": "Read what our clients say about our digital marketing services. Real testimonials and success stories from businesses we have helped grow.",
-      "url": "https://gideonmedia.com/testimonials"
+      "url": "https://gideonmedia.netlify.app/testimonials"
     }
   });
 
