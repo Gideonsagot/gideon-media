@@ -11,6 +11,43 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '5-website-mistakes',
+    title: '5 Common Website Mistakes That Are Costing Your Small Business Customers',
+    description: 'Is your website turning customers away? Learn the 5 most common mistakes small businesses make and how to fix them, from slow speed to poor SEO.',
+    author: 'Gideon Media',
+    publishDate: '2025-01-10',
+    readTime: '9 min read',
+    category: 'Web Design',
+    content: `
+      <article>
+        <p>Your website is your digital storefront, but is it quietly turning customers away? Many small businesses invest in a beautiful design but overlook critical mistakes that hurt user trust and kill conversions. At Gideon Media, we've seen it all. Here are five of the most common website mistakes and how to fix them.</p>
+
+        <h2>1. No Clear Call to Action (CTA)</h2>
+        <p><strong>The Mistake:</strong> A visitor lands on your site, likes what they see, but has no idea what to do next. There are no clear buttons or links guiding them to "Contact Us," "Buy Now," or "Learn More."</p>
+        <p><strong>The Fix:</strong> Every page should guide the user toward a next step. A prominent "Contact Us" button is essential. If you're unsure how to guide your visitors, a professional review can make all the difference. You can <a href="https://gideonmedia.netlify.app/contact" style="color: hsl(var(--primary)); text-decoration: underline;">get in touch with us</a> for a free consultation.</p>
+
+        <h2>2. Ignoring Search Engine Optimization (SEO)</h2>
+        <p><strong>The Mistake:</strong> You have a great website, but no one can find it on Google. You're invisible to potential customers who are actively searching for your services.</p>
+        <p><strong>The Fix:</strong> SEO is the process of making your site visible on search engines. It's the single best way to attract high-quality traffic. As we explained in our guide on <a href="https://gideonmedia.netlify.app/blog/why-seo-matters" style="color: hsl(var(--primary)); text-decoration: underline;">why SEO is the best investment for small businesses</a>, it's a long-term asset that builds trust and credibility.</p>
+
+        <h2>3. Slow Page Load Speed</h2>
+        <p><strong>The Mistake:</strong> Your pages take more than a few seconds to load. In 2025, users expect instant results. A slow website leads to frustration and high bounce rates.</p>
+        <p><strong>The Fix:</strong> Optimizing images, leveraging browser caching, and using a modern web host are key. A fast website is a core part of the <a href="https://gideonmedia.netlify.app/services" style="color: hsl(var(--primary)); text-decoration: underline;">professional digital marketing services</a> we provide to ensure a great user experience.</p>
+
+        <h2>4. Not Being Mobile-Friendly</h2>
+        <p><strong>The Mistake:</strong> Your website looks great on a desktop but is difficult to navigate on a phone. Text is tiny, buttons are hard to press, and users have to pinch and zoom constantly.</p>
+        <p><strong>The Fix:</strong> With over half of all web traffic coming from mobile devices, a responsive, mobile-first design is non-negotiable. Every element must be easily accessible on a small screen.</p>
+
+        <h2>5. Lack of Trust Signals</h2>
+        <p><strong>The Mistake:</strong> Your site has no testimonials, case studies, or a clear "About Us" page. Visitors have no reason to trust you over a competitor.</p>
+        <p><strong>The Fix:</strong> Build trust by being transparent. Showcase reviews from happy clients and tell your story. Let people know who is behind the business. At <a href="https://gideonmedia.netlify.app/" style="color: hsl(var(--primary)); text-decoration: underline;">Gideon Media</a>, we believe trust is the foundation of any successful business relationship.</p>
+
+        <h2>Ready to Fix These Mistakes?</h2>
+        <p>Don't let these common errors cost you another customer. A professional website audit can identify exactly what's holding your site back and provide a clear roadmap to fix it. Your website should be your best salesperson—let's make sure it's working for you, not against you.</p>
+      </article>
+    `
+  },
+  {
     id: '5-signs-you-need-seo',
     title: '5 Signs Your Business Needs SEO',
     description: 'Is your website invisible to customers? Learn the 5 signs your business is losing money by ignoring SEO and how to fix it.',

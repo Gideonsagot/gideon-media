@@ -9,6 +9,7 @@ const pages = [
   { url: '/contact', changefreq: 'monthly', priority: '0.8' },
   { url: '/testimonials', changefreq: 'weekly', priority: '0.8' },
   { url: '/blog', changefreq: 'weekly', priority: '0.8' },
+  { url: '/blog/5-website-mistakes', changefreq: 'monthly', priority: '0.7' },
   { url: '/blog/5-signs-you-need-seo', changefreq: 'monthly', priority: '0.7' },
   { url: '/blog/why-seo-matters', changefreq: 'monthly', priority: '0.7' },
   { url: '/help', changefreq: 'monthly', priority: '0.6' },
