@@ -14,7 +14,7 @@ const pages = [
   { url: '/help', changefreq: 'monthly', priority: '0.6' },
 ];
 
-const baseUrl = 'https://gideonmedia.com';
+const baseUrl = 'https://gideonmedia.netlify.app';
 const currentDate = new Date().toISOString().split('T')[0];
 
 const generateSitemap = () => {
