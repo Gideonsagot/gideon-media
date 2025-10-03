@@ -3,7 +3,7 @@
 
 [build]
   publish = "dist"
-  command = "npm run build"
+  command = "node generate-sitemap.js && npm run build"
 
 [[headers]]
   for = "/*"
