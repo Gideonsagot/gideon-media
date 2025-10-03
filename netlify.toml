@@ -1,0 +1,32 @@
+# Netlify Configuration
+# This ensures proper serving of all files including sitemap.xml and robots.txt
+
+[[headers]]
+  # Apply these headers to all pages
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  # Ensure sitemap.xml is served with correct content type
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  # Ensure robots.txt is served correctly
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+# SPA routing - ensure React Router works correctly
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  # This does NOT apply to existing files like sitemap.xml or robots.txt
+  force = false
