@@ -32,9 +32,9 @@ ${urls}
 </urlset>
 `;
 
-  const distPath = join(process.cwd(), 'dist', 'sitemap.xml');
-  writeFileSync(distPath, sitemap, 'utf8');
-  console.log('✅ Sitemap generated successfully at dist/sitemap.xml');
+  const publicPath = join(process.cwd(), 'public', 'sitemap.xml');
+  writeFileSync(publicPath, sitemap, 'utf8');
+  console.log('✅ Sitemap generated successfully at public/sitemap.xml');
 };
 
 generateSitemap();
