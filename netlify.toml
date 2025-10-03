@@ -1,8 +1,11 @@
-# Netlify Configuration
-# This ensures proper serving of all files including sitemap.xml and robots.txt
+# Netlify Configuration for Vite + React SPA
+# Critical: Files in public/ folder MUST be copied to dist/ during build
+
+[build]
+  publish = "dist"
+  command = "npm run build"
 
 [[headers]]
-  # Apply these headers to all pages
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
@@ -10,23 +13,22 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
-  # Ensure sitemap.xml is served with correct content type
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml; charset=utf-8"
     Cache-Control = "public, max-age=3600"
 
 [[headers]]
-  # Ensure robots.txt is served correctly
   for = "/robots.txt"
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
     Cache-Control = "public, max-age=3600"
 
-# SPA routing - ensure React Router works correctly
+# SPA routing for React Router
+# Netlify's "shadowing" ensures existing files (sitemap.xml, robots.txt) 
+# are served directly and NOT rewritten to index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  # This does NOT apply to existing files like sitemap.xml or robots.txt
   force = false

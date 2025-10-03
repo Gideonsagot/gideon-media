@@ -19,4 +19,11 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Explicitly ensure public folder files are copied to dist
+  publicDir: 'public',
+  build: {
+    outDir: 'dist',
+    // Ensure public folder contents are copied
+    copyPublicDir: true,
+  },
 }));
