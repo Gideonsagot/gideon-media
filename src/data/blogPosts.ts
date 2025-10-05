@@ -52,7 +52,7 @@ export const blogPosts: BlogPost[] = [
     title: '5 Signs Your Business Needs SEO',
     description: 'Is your website invisible to customers? Learn the 5 signs your business is losing money by ignoring SEO and how to fix it.',
     author: 'Gideon Media',
-    publishDate: '2024-01-15',
+    publishDate: '2025-01-15',
     readTime: '8 min read',
     category: 'SEO',
     content: `

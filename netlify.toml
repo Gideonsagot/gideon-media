@@ -3,7 +3,7 @@
 
 [build]
   publish = "dist"
-  command = "node generate-sitemap.js && npm run build"
+  command = "npm run build && node generate-sitemap.js"
 
 [[headers]]
   for = "/*"
@@ -13,10 +13,10 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
-  for = "/sitemap.xml"
+  for = "/sitemap*.xml"
   [headers.values]
     Content-Type = "application/xml; charset=utf-8"
-    Cache-Control = "public, max-age=3600"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/robots.txt"
