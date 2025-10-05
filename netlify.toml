@@ -27,8 +27,5 @@
 # SPA routing for React Router
 # Netlify's "shadowing" ensures existing files (sitemap.xml, robots.txt) 
 # are served directly and NOT rewritten to index.html
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
+# SPA routing handled by public/_redirects file
+# No redirects needed here - _redirects file takes precedence

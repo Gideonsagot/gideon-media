@@ -1,7 +1,7 @@
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
-const baseUrl = 'https://gideonmedia.netlify.app';
+const baseUrl = 'https://gideonmedia.netlify.app'; // Must match EXACTLY with your Netlify domain
 const currentDate = new Date().toISOString().split('T')[0];
 
 // Main pages sitemap - These must match exactly with routes in App.tsx

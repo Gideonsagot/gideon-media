@@ -1,0 +1,3 @@
+# SPA fallback - rewrite all routes to index.html
+# Existing files (like sitemap.xml, robots.txt) are NOT affected
+/*    /index.html   200
