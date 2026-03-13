@@ -1,20 +1,11 @@
 
-import { ArrowRight, CheckCircle, Globe, Smartphone, TrendingUp, Phone, Quote } from 'lucide-react';
+import { ArrowRight, Phone, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
-  const { t } = useTranslation();
   const openWhatsApp = () => {
-    window.open('https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20start%20my%20free%20strategy%20call%20with%20Gideon%20Media', '_blank');
+    window.open('https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call%20with%20Gideon%20Media', '_blank');
   };
-
-  const services = [
-    { icon: Smartphone, name: t('hero.services.metaAds'), description: t('hero.services.metaDescription') },
-    { icon: Globe, name: t('hero.services.shopify'), description: t('hero.services.shopifyDescription') },
-    { icon: TrendingUp, name: t('hero.services.pinterest'), description: t('hero.services.pinterestDescription') },
-  ];
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
@@ -32,111 +23,77 @@ const HeroSection = () => {
             src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69fabf212b2e5325d5b14dff6c5ba0b41&profile_id=164&oauth2_token_id=57447761"
             type="video/mp4"
           />
-          <div 
-            className="w-full h-full bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&h=1080')"
-            }}
-          />
         </video>
       </div>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70 z-10"></div>
+      <div className="absolute inset-0 bg-black/75 z-10"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20 max-w-6xl py-20">
-        {/* Main Content */}
-        <div className="space-y-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20 max-w-5xl py-20">
+        <div className="space-y-10">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2">
+            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            <span className="text-white/90 text-sm font-medium">Trusted by 50+ Businesses Worldwide</span>
+          </div>
+
           {/* Headline */}
-          <div className="space-y-8 pt-8">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight tracking-tight">
-              {t('hero.title')}{' '}
-              <span className="block text-transparent bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text hover:scale-105 transition-transform duration-300 cursor-default relative group">
-                {t('hero.subtitle')}
-                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+          <div className="space-y-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
+              We Build Websites That{' '}
+              <span className="text-transparent bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text">
+                Turn Visitors Into Customers
               </span>
             </h1>
+            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+              Gideon Media helps small businesses, startups, and e-commerce brands grow online with 
+              high-converting websites and results-driven digital marketing.
+            </p>
           </div>
 
-          {/* Services Section */}
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:-translate-y-2 border border-white/20 group cursor-pointer"
-                >
-                  <div className="flex flex-col items-center space-y-4">
-                    <div className="bg-primary/20 p-4 rounded-full group-hover:bg-primary/30 transition-colors duration-300">
-                      <service.icon className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                    <h3 className="text-white font-semibold text-lg text-center group-hover:text-blue-200 transition-colors duration-300">{service.name}</h3>
-                    <p className="text-gray-200 text-sm text-center group-hover:text-gray-100 transition-colors duration-300">{service.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8">
-              <Badge variant="secondary" className="bg-white/10 text-white border-white/20 backdrop-blur-md">
-                {t('hero.services.badge')}
-              </Badge>
-            </div>
-          </div>
-
-          {/* Guarantee Section */}
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-white/15 to-white/10 backdrop-blur-lg rounded-3xl p-10 md:p-12 shadow-2xl border border-white/20">
-              <div className="flex items-start justify-center space-x-6">
-                <Quote className="h-10 w-10 text-blue-400 flex-shrink-0 mt-1" />
-                <div className="text-center flex-1">
-                  <p className="text-2xl md:text-3xl text-white font-medium leading-relaxed">
-                    {t('hero.guarantee')}
-                  </p>
-                </div>
-                <Quote className="h-10 w-10 text-blue-400 flex-shrink-0 mt-1 rotate-180" />
+          {/* Trust points */}
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-white/80">
+            {[
+              'Conversion-Focused Design',
+              'SEO-Ready From Day One', 
+              'Fast & Mobile-Optimized'
+            ].map((point) => (
+              <div key={point} className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
+                <span className="text-sm font-medium">{point}</span>
               </div>
-            </div>
+            ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="space-y-10">
+          {/* CTA */}
+          <div className="space-y-4">
             <Button 
               onClick={openWhatsApp}
               size="lg"
-              className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-500 text-white px-12 py-8 rounded-full font-bold text-xl transition-all duration-300 hover:shadow-2xl hover:scale-110 group border-2 border-primary/20"
+              className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-500 text-white px-10 py-7 rounded-full font-bold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 group"
             >
-              <Phone className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform" />
-              {t('hero.cta')}
-              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
+              <Phone className="mr-3 h-5 w-5 group-hover:rotate-12 transition-transform" />
+              Get Your Free Strategy Call
+              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
+            <p className="text-white/50 text-sm">No commitment required • Response within 24 hours</p>
+          </div>
 
-            {/* Trust Indicator */}
-            <div className="flex items-center justify-center gap-4 text-gray-200">
-              <CheckCircle className="h-6 w-6 text-green-400" />
-              <span className="font-semibold text-lg">{t('hero.trustIndicator')}</span>
-            </div>
-
-            {/* Client Credibility Strip */}
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-80">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-white">50+</div>
-                    <div className="text-gray-300 text-sm">{t('hero.stats.clients')}</div>
+          {/* Stats Strip */}
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {[
+                  { number: '100+', label: 'Projects Completed' },
+                  { number: '50+', label: 'Happy Clients' },
+                  { number: '2x', label: 'Average ROI' },
+                  { number: '95%', label: 'Client Satisfaction' },
+                ].map((stat) => (
+                  <div key={stat.label} className="text-center">
+                    <div className="text-2xl sm:text-3xl font-bold text-white">{stat.number}</div>
+                    <div className="text-white/60 text-xs sm:text-sm">{stat.label}</div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-white">2x</div>
-                    <div className="text-gray-300 text-sm">{t('hero.stats.roi')}</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-white">95%</div>
-                    <div className="text-gray-300 text-sm">{t('hero.stats.successRate')}</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-white">24/7</div>
-                    <div className="text-gray-300 text-sm">{t('hero.stats.support')}</div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

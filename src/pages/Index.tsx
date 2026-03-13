@@ -1,15 +1,14 @@
 
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
-import BrandVideo from '@/components/BrandVideo';
+import ProblemSection from '@/components/ProblemSection';
 import ServicesSection from '@/components/ServicesSection';
-import AllServicesSection from '@/components/AllServicesSection';
-import ShopifyServicesSection from '@/components/ShopifyServicesSection';
-import PortfolioSection from '@/components/PortfolioSection';
-import AboutSection from '@/components/AboutSection';
-import UpworkBanner from '@/components/UpworkBanner';
+import DigitalMarketingSection from '@/components/DigitalMarketingSection';
+import ProcessSection from '@/components/ProcessSection';
+import SocialProofSection from '@/components/SocialProofSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
-import { ReviewsSection } from '@/components/ReviewsSection';
+import PortfolioSection from '@/components/PortfolioSection';
+import GuaranteeSection from '@/components/GuaranteeSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -19,14 +18,14 @@ import { useSEO } from '@/hooks/useSEO';
 
 const Index = () => {
   useSEO({
-    title: 'Gideon Media: Expert Digital Marketing & Content Creation',
-    description: 'Gideon Media offers professional digital marketing services, including SEO, content creation, and social media management to help your business grow.',
+    title: 'Gideon Media | Websites & Digital Marketing That Drive Growth',
+    description: 'Gideon Media builds high-converting websites and runs results-driven digital marketing for small businesses, startups, and e-commerce brands. Book your free strategy call today.',
     canonical: 'https://gideonmedia.netlify.app/',
     schema: {
       "@context": "https://schema.org",
-      "@type": "WebPage", 
-      "name": "Drive Growth with Expert Digital Marketing",
-      "description": "Gideon Media offers professional digital marketing services, including SEO, content creation, and social media management to help your business grow.",
+      "@type": "WebPage",
+      "name": "Gideon Media | Websites & Digital Marketing That Drive Growth",
+      "description": "We build websites that turn visitors into customers and run digital marketing that drives real business growth.",
       "url": "https://gideonmedia.netlify.app/",
       "isPartOf": {
         "@type": "WebSite",
@@ -41,19 +40,18 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <BrandVideo />
+        <ProblemSection />
         <ServicesSection />
-        <AllServicesSection />
-        <ShopifyServicesSection />
-        <PortfolioSection />
-        <AboutSection />
-        <UpworkBanner />
+        <DigitalMarketingSection />
+        <ProcessSection />
+        <SocialProofSection />
         <TestimonialsSection />
-        <ReviewsSection />
+        <PortfolioSection />
+        <GuaranteeSection />
         <FAQSection />
         <ContactSection />
-        <Footer />
       </main>
+      <Footer />
       <ReviewWidget />
       <PurchaseNotification />
     </div>

@@ -1,103 +1,85 @@
 
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
+const faqs = [
+  {
+    question: "How long does it take to build a website?",
+    answer: "Most websites are completed within 1-3 weeks depending on complexity. Shopify stores typically take 1-2 weeks, and custom business websites take 2-3 weeks. We'll give you a clear timeline before we start."
+  },
+  {
+    question: "How much does a website cost?",
+    answer: "Our websites start from $500 for small business sites and $800+ for Shopify stores. We provide transparent, fixed-price quotes based on your specific needs — no hidden fees or surprises."
+  },
+  {
+    question: "Do you provide ongoing support after launch?",
+    answer: "Yes! Every project includes post-launch support. We also offer monthly maintenance packages for updates, security monitoring, and performance optimization."
+  },
+  {
+    question: "Can you help with both a website and marketing?",
+    answer: "Absolutely — that's our sweet spot. We build websites designed to convert, then drive targeted traffic through Meta Ads, Pinterest marketing, and social media. It's the full growth package."
+  },
+  {
+    question: "What if I already have a website but it's not getting results?",
+    answer: "We can audit your existing site, identify what's holding it back, and either optimize it or rebuild it for better conversions. Many of our clients come to us with underperforming websites."
+  },
+  {
+    question: "Do you guarantee results?",
+    answer: "Yes. We guarantee results — or we continue working until we achieve measurable improvements. We succeed when you succeed, and we stand behind every project we take on."
+  },
+  {
+    question: "What platforms do you build on?",
+    answer: "We build on Shopify, WordPress, Squarespace, Wix, Webflow, and custom solutions. We'll recommend the best platform for your business goals and budget."
+  },
+  {
+    question: "How do I get started?",
+    answer: "Simply book a free strategy call with us. We'll discuss your business goals, recommend the best approach, and provide a clear quote — no pressure, no obligation."
+  }
+];
 
 const FAQSection = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
-  const faqs = [
-    {
-      question: "What services does Gideon Media offer?",
-      answer: "We offer comprehensive digital marketing and web development services including Meta Ads setup, Shopify development, website creation, Pinterest marketing, and strategic advertising campaigns. Our goal is to help businesses establish a strong online presence and drive growth."
-    },
-    {
-      question: "How long does it take to set up Meta Ads campaigns?",
-      answer: "Meta Ads setup typically takes 3-5 business days. This includes campaign strategy development, ad creative design, audience targeting setup, and initial optimization. We provide ongoing monitoring and optimization to ensure maximum ROI."
-    },
-    {
-      question: "Do you provide ongoing support after website launch?",
-      answer: "Yes! We offer comprehensive post-launch support including regular updates, security monitoring, performance optimization, and technical assistance. Our support packages are tailored to meet your specific needs and budget."
-    },
-    {
-      question: "Can you help migrate my existing store to Shopify?",
-      answer: "Absolutely! We specialize in Shopify migrations from various platforms including WooCommerce, Magento, and other e-commerce solutions. We ensure data integrity, SEO preservation, and minimal downtime during the migration process."
-    },
-    {
-      question: "What makes your advertising strategy different?",
-      answer: "Our advertising approach is data-driven and tailored to each business. We conduct thorough market research, create compelling ad creatives, and use advanced targeting techniques. We focus on ROI optimization and provide detailed performance reports."
-    },
-    {
-      question: "How do you measure the success of marketing campaigns?",
-      answer: "We track key performance indicators (KPIs) including conversion rates, click-through rates, cost per acquisition, return on ad spend (ROAS), and overall ROI. We provide regular reports with actionable insights and recommendations."
-    },
-    {
-      question: "Do you work with businesses of all sizes?",
-      answer: "Yes, we work with businesses of all sizes - from startups to established enterprises. Our services are scalable and can be customized to fit different budgets and requirements."
-    },
-    {
-      question: "What is your pricing structure?",
-      answer: "Our pricing is project-based and depends on the scope of work. We offer transparent pricing with no hidden fees. Contact us for a free consultation and custom quote based on your specific needs."
-    }
-  ];
-
-  const toggleFAQ = (index: number) => {
-    setOpenFAQ(openFAQ === index ? null : index);
-  };
-
   return (
-    <section id="faq" className="py-20 bg-muted">
+    <section id="faq" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Get answers to common questions about our digital marketing and web development services.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Got questions? We've got answers.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
-            <Card key={index} className="mb-4 border border-border hover:shadow-md transition-shadow duration-300">
+            <Card key={index} className="mb-3 border border-border hover:border-primary/20 transition-colors duration-300">
               <CardHeader 
-                onClick={() => toggleFAQ(index)}
-                className="cursor-pointer hover:bg-muted/50 transition-colors duration-200"
+                onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
+                className="cursor-pointer hover:bg-muted/50 transition-colors duration-200 py-4"
               >
                 <div className="flex items-center justify-between">
-                  <CardTitle className="text-lg font-semibold text-foreground pr-4">
+                  <CardTitle className="text-base font-semibold text-foreground pr-4">
                     {faq.question}
                   </CardTitle>
                   {openFAQ === index ? (
                     <ChevronUp className="h-5 w-5 text-primary flex-shrink-0" />
                   ) : (
-                    <ChevronDown className="h-5 w-5 text-primary flex-shrink-0" />
+                    <ChevronDown className="h-5 w-5 text-muted-foreground flex-shrink-0" />
                   )}
                 </div>
               </CardHeader>
               {openFAQ === index && (
-                <CardContent className="pt-0">
-                  <CardDescription className="text-muted-foreground leading-relaxed">
+                <CardContent className="pt-0 pb-4">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {faq.answer}
-                  </CardDescription>
+                  </p>
                 </CardContent>
               )}
             </Card>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">
-            Still have questions? We're here to help!
-          </p>
-          <a
-            href="https://wa.me/2347067133828?text=Hi, I have a question about your services"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg inline-block"
-          >
-            Ask a Question
-          </a>
         </div>
       </div>
     </section>
