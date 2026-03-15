@@ -2,6 +2,8 @@
 import { Globe, ShoppingCart, TrendingUp } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { useTranslation } from 'react-i18next';
+import { useScrollAnimation, useStaggerAnimation } from '@/hooks/useScrollAnimation';
 
 const projects = [
   {
@@ -55,29 +57,37 @@ const projects = [
 ];
 
 const PortfolioSection = () => {
+  const { t } = useTranslation();
+  const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
+  const { ref: gridRef, getItemStyle } = useStaggerAnimation(projects.length);
+
   return (
     <section id="portfolio" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
+        <div 
+          ref={headerRef}
+          className="text-center mb-14 transition-all duration-700"
+          style={{ opacity: headerVisible ? 1 : 0, transform: headerVisible ? 'translateY(0)' : 'translateY(30px)' }}
+        >
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
-            Our Work
+            {t('portfolio.badge')}
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Success Stories
+            {t('portfolio.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real businesses. Real results. See how we've helped companies like yours grow online.
+            {t('portfolio.subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border">
+            <Card key={index} style={getItemStyle(index)} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border">
               <div className="relative overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
                 <div className="absolute top-3 left-3">
@@ -96,7 +106,7 @@ const PortfolioSection = () => {
 
               <CardContent className="pt-0">
                 <div className="bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800/30 rounded-lg p-3">
-                  <div className="text-xs font-semibold text-green-800 dark:text-green-300">Results:</div>
+                  <div className="text-xs font-semibold text-green-800 dark:text-green-300">{t('portfolio.results')}</div>
                   <div className="text-base font-bold text-green-600 dark:text-green-400">{project.results}</div>
                 </div>
               </CardContent>

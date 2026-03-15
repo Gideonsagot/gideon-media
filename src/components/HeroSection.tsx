@@ -1,11 +1,27 @@
 
 import { ArrowRight, Phone, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   const openWhatsApp = () => {
     window.open('https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call%20with%20Gideon%20Media', '_blank');
   };
+
+  const trustPoints = [
+    t('hero.trust1'),
+    t('hero.trust2'),
+    t('hero.trust3'),
+  ];
+
+  const stats = [
+    { number: '100+', label: t('hero.stats.projects') },
+    { number: '50+', label: t('hero.stats.clients') },
+    { number: '2x', label: t('hero.stats.roi') },
+    { number: '95%', label: t('hero.stats.satisfaction') },
+  ];
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
@@ -32,32 +48,39 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20 max-w-5xl py-20">
         <div className="space-y-10">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2">
+          <div 
+            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 animate-fade-in-up"
+            style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
+          >
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-            <span className="text-white/90 text-sm font-medium">Trusted by 50+ Businesses Worldwide</span>
+            <span className="text-white/90 text-sm font-medium">{t('hero.badge')}</span>
           </div>
 
           {/* Headline */}
           <div className="space-y-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-              We Build Websites That{' '}
+            <h1 
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight animate-fade-in-up"
+              style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
+            >
+              {t('hero.title')}{' '}
               <span className="text-transparent bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text">
-                Turn Visitors Into Customers
+                {t('hero.titleHighlight')}
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-              Gideon Media helps small businesses, startups, and e-commerce brands grow online with 
-              high-converting websites and results-driven digital marketing.
+            <p 
+              className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed animate-fade-in-up"
+              style={{ animationDelay: '0.6s', animationFillMode: 'both' }}
+            >
+              {t('hero.subtitle')}
             </p>
           </div>
 
           {/* Trust points */}
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-white/80">
-            {[
-              'Conversion-Focused Design',
-              'SEO-Ready From Day One', 
-              'Fast & Mobile-Optimized'
-            ].map((point) => (
+          <div 
+            className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-white/80 animate-fade-in-up"
+            style={{ animationDelay: '0.8s', animationFillMode: 'both' }}
+          >
+            {trustPoints.map((point) => (
               <div key={point} className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
                 <span className="text-sm font-medium">{point}</span>
@@ -66,29 +89,30 @@ const HeroSection = () => {
           </div>
 
           {/* CTA */}
-          <div className="space-y-4">
+          <div 
+            className="space-y-4 animate-fade-in-up"
+            style={{ animationDelay: '1s', animationFillMode: 'both' }}
+          >
             <Button 
               onClick={openWhatsApp}
               size="lg"
               className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-500 text-white px-10 py-7 rounded-full font-bold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 group"
             >
               <Phone className="mr-3 h-5 w-5 group-hover:rotate-12 transition-transform" />
-              Get Your Free Strategy Call
+              {t('hero.cta')}
               <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <p className="text-white/50 text-sm">No commitment required • Response within 24 hours</p>
+            <p className="text-white/50 text-sm">{t('hero.ctaSub')}</p>
           </div>
 
           {/* Stats Strip */}
-          <div className="max-w-3xl mx-auto">
+          <div 
+            className="max-w-3xl mx-auto animate-fade-in-up"
+            style={{ animationDelay: '1.2s', animationFillMode: 'both' }}
+          >
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {[
-                  { number: '100+', label: 'Projects Completed' },
-                  { number: '50+', label: 'Happy Clients' },
-                  { number: '2x', label: 'Average ROI' },
-                  { number: '95%', label: 'Client Satisfaction' },
-                ].map((stat) => (
+                {stats.map((stat) => (
                   <div key={stat.label} className="text-center">
                     <div className="text-2xl sm:text-3xl font-bold text-white">{stat.number}</div>
                     <div className="text-white/60 text-xs sm:text-sm">{stat.label}</div>

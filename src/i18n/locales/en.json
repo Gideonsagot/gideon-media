@@ -2,81 +2,300 @@
   "header": {
     "home": "Home",
     "about": "About",
-    "services": "Services", 
+    "services": "Services",
     "portfolio": "Portfolio",
     "blog": "Blog",
     "testimonials": "Testimonials",
     "contact": "Contact",
     "help": "Help",
-    "getQuote": "Get a Quote"
+    "getQuote": "Get a Quote",
+    "freeCall": "Free Strategy Call"
   },
   "hero": {
-    "title": "We Advertise.",
-    "subtitle": "You Grow.",
-    "cta": "Start My Free Strategy Call",
-    "guarantee": "We guarantee results — or we work until you get them.",
-    "trustIndicator": "100+ Projects Completed — Trusted by Global Businesses",
+    "badge": "Trusted by 50+ Businesses Worldwide",
+    "title": "We Build Websites That",
+    "titleHighlight": "Turn Visitors Into Customers",
+    "subtitle": "Gideon Media helps small businesses, startups, and e-commerce brands grow online with high-converting websites and results-driven digital marketing.",
+    "trust1": "Conversion-Focused Design",
+    "trust2": "SEO-Ready From Day One",
+    "trust3": "Fast & Mobile-Optimized",
+    "cta": "Get Your Free Strategy Call",
+    "ctaSub": "No commitment required • Response within 24 hours",
     "stats": {
+      "projects": "Projects Completed",
       "clients": "Happy Clients",
-      "roi": "Average ROI", 
-      "successRate": "Success Rate",
-      "support": "Support"
-    },
-    "services": {
-      "metaAds": "Meta Ads",
-      "metaDescription": "Facebook & Instagram",
-      "shopify": "Shopify & Small Business Websites",
-      "shopifyDescription": "E-commerce & Business Sites",
-      "pinterest": "Pinterest Setup",
-      "pinterestDescription": "Visual Marketing",
-      "badge": "Ad Strategy & Launch"
+      "roi": "Average ROI",
+      "satisfaction": "Client Satisfaction"
     }
   },
+  "problem": {
+    "badge": "Sound Familiar?",
+    "title": "Is Your Business Losing Customers Online?",
+    "subtitle": "Most businesses struggle with these problems — and they're costing you money every single day.",
+    "items": {
+      "outdated": {
+        "title": "Your Website Looks Outdated",
+        "description": "First impressions matter. An old, clunky website makes visitors leave in seconds — and they won't come back."
+      },
+      "noConvert": {
+        "title": "Your Website Doesn't Convert",
+        "description": "You're getting traffic but no leads, no sales, no inquiries. Your website isn't doing its job."
+      },
+      "noVisibility": {
+        "title": "You Have Zero Online Visibility",
+        "description": "Potential customers can't find you on Google. Your competitors are showing up — and you're invisible."
+      },
+      "struggling": {
+        "title": "You're Struggling to Get Customers Online",
+        "description": "You know digital marketing works, but you don't have the time, skills, or strategy to make it happen."
+      }
+    },
+    "cta": "If any of this sounds like you —",
+    "ctaHighlight": "we can fix it."
+  },
   "services": {
-    "title": "Our Expert Services",
-    "subtitle": "From digital marketing to web development, we provide comprehensive solutions to help your business establish a strong online presence and drive growth.",
-    "cta": "Get Started Today",
+    "badge": "Primary Service",
+    "title": "Websites That Work as Hard as You Do",
+    "subtitle": "We don't just build websites — we build growth engines. Every site we create is designed to attract visitors, build trust, and convert them into paying customers.",
+    "cta": "Discuss Your Website Project",
+    "items": {
+      "shopify": {
+        "title": "Shopify E-commerce Websites",
+        "description": "Custom Shopify stores built to sell. From product pages to checkout — every element designed to maximize conversions and revenue.",
+        "features": ["Custom Store Design", "Payment & Shipping Setup", "Product Catalog Optimization", "Mobile-Optimized Checkout"]
+      },
+      "smallBusiness": {
+        "title": "Small Business Websites",
+        "description": "Professional websites that establish credibility, capture leads, and turn your online presence into your best salesperson.",
+        "features": ["Lead Capture Forms", "Professional Design", "Content Management", "Analytics Integration"]
+      },
+      "conversion": {
+        "title": "Conversion-Focused Design",
+        "description": "Every page, button, and layout is strategically designed to guide visitors toward taking action — whether that's buying, booking, or calling.",
+        "features": ["Strategic Page Layouts", "Clear Call-to-Actions", "Trust-Building Elements", "A/B Tested Templates"]
+      },
+      "mobile": {
+        "title": "Fast, Mobile-Friendly Websites",
+        "description": "Over 60% of traffic comes from mobile. Your website will look and perform flawlessly on every device, every time.",
+        "features": ["Responsive Design", "Sub-3s Load Times", "Touch-Optimized Navigation", "Mobile-First Approach"]
+      },
+      "seo": {
+        "title": "SEO-Ready Structure",
+        "description": "Built from the ground up with search engines in mind. Your site will be structured to rank higher and attract organic traffic.",
+        "features": ["Technical SEO Setup", "Schema Markup", "Optimized Meta Tags", "Site Speed Optimization"]
+      },
+      "migration": {
+        "title": "Website Migration & Optimization",
+        "description": "Moving from another platform? We migrate your site seamlessly and optimize it for better performance and conversions.",
+        "features": ["Platform Migration", "SEO Preservation", "Speed Enhancement", "Conversion Optimization"]
+      }
+    },
     "learnMore": "Learn More",
-    "metaAds": {
-      "title": "Meta Ads Setup",
-      "description": "Professional Facebook and Instagram advertising campaigns, including WhatsApp Ads integration for maximum reach and engagement.",
-      "features": ["Campaign Strategy", "Ad Creative Design", "WhatsApp Integration", "Performance Tracking"]
-    },
-    "shopify": {
-      "title": "Shopify Development",
-      "description": "Custom Shopify stores that convert visitors into customers with optimized user experience and seamless checkout processes.",
-      "features": ["Custom Design", "Payment Integration", "SEO Optimization", "Mobile Responsive"]
-    },
-    "website": {
-      "title": "Website Development", 
-      "description": "Modern, responsive websites for small businesses that establish credibility and drive growth in the digital marketplace.",
-      "features": ["Responsive Design", "Fast Loading", "SEO Ready", "Content Management"]
-    },
-    "wordpress": {
-      "title": "WordPress Development",
-      "description": "Custom WordPress websites with advanced functionality and easy content management systems.",
-      "features": ["Custom Theme Development", "Plugin Integration", "WooCommerce Setup", "SEO Optimization"]
-    },
-    "squarespace": {
-      "title": "Squarespace Development",
-      "description": "Beautiful Squarespace websites with custom design and enhanced functionality for modern businesses.",
-      "features": ["Template Customization", "E-commerce Integration", "Mobile Optimization", "SEO Setup"]
-    },
-    "platforms": {
-      "title": "Multi-Platform Development",
-      "description": "Professional websites on Wix, Webflow, and other popular content management platforms.",
-      "features": ["Platform Migration", "Custom Design", "App Integration", "Performance Enhancement"]
-    },
-    "pinterest": {
-      "title": "Pinterest Setup",
-      "description": "Strategic Pinterest presence setup to drive traffic and increase brand visibility through engaging visual content.",
-      "features": ["Profile Optimization", "Board Strategy", "Pin Design", "Analytics Setup"]
-    },
-    "adsStrategy": {
-      "title": "Ads Strategy & Launch",
-      "description": "Comprehensive advertising strategy development and campaign management across multiple digital platforms.",
-      "features": ["Market Research", "Audience Targeting", "Campaign Management", "ROI Optimization"]
+    "getStarted": "Get Started Today"
+  },
+  "marketing": {
+    "badge": "Drive More Traffic & Sales",
+    "title": "Digital Marketing That Delivers Results",
+    "subtitle": "A great website needs great marketing. We drive targeted traffic to your site and turn that traffic into revenue.",
+    "cta": "Get a Marketing Strategy",
+    "items": {
+      "metaAds": {
+        "title": "Meta Ads (Facebook & Instagram)",
+        "description": "Targeted advertising campaigns that put your business in front of the right people at the right time — driving leads and sales on autopilot.",
+        "features": ["Campaign Strategy & Setup", "Audience Research & Targeting", "Ad Creative Design", "Performance Optimization & Reporting"]
+      },
+      "social": {
+        "title": "Social Media Marketing",
+        "description": "Build a loyal audience and consistent brand presence across social platforms that keeps your business top-of-mind.",
+        "features": ["Content Strategy & Calendar", "Engagement & Community Management", "Brand Consistency", "Growth Analytics"]
+      },
+      "pinterest": {
+        "title": "Pinterest Marketing",
+        "description": "Tap into Pinterest's high-intent audience to drive massive organic traffic to your website and products.",
+        "features": ["Profile & Board Optimization", "Pin Design & Strategy", "Pinterest SEO", "Traffic & Conversion Tracking"]
+      },
+      "adStrategy": {
+        "title": "Ad Strategy & Campaign Launch",
+        "description": "Not sure where to start? We create a custom advertising strategy tailored to your goals, budget, and target audience.",
+        "features": ["Market & Competitor Analysis", "Budget Planning & Allocation", "Multi-Platform Strategy", "Launch & Optimization"]
+      }
     }
+  },
+  "process": {
+    "badge": "Simple & Transparent",
+    "title": "How We Work",
+    "subtitle": "Getting started is easy. We handle everything so you can focus on running your business.",
+    "steps": {
+      "strategy": {
+        "step": "01",
+        "title": "Strategy & Planning",
+        "description": "We start by understanding your business, goals, and target audience. Then we create a clear roadmap for your website and marketing."
+      },
+      "design": {
+        "step": "02",
+        "title": "Design & Development",
+        "description": "We design and build your website (or marketing campaign) with conversion in mind — fast, mobile-friendly, and built to perform."
+      },
+      "launch": {
+        "step": "03",
+        "title": "Launch & Growth",
+        "description": "We launch your project, monitor performance, and continuously optimize to drive more traffic, leads, and revenue for your business."
+      }
+    }
+  },
+  "socialProof": {
+    "title": "Numbers Don't Lie",
+    "subtitle": "We let our results do the talking. Here's what we've achieved for businesses like yours.",
+    "stats": {
+      "projects": {
+        "number": "100+",
+        "label": "Projects Completed",
+        "description": "Websites and campaigns delivered across industries"
+      },
+      "clients": {
+        "number": "50+",
+        "label": "Happy Clients",
+        "description": "Businesses that trust Gideon Media for their growth"
+      },
+      "roi": {
+        "number": "2x",
+        "label": "Average ROI",
+        "description": "Our clients see real, measurable returns"
+      },
+      "satisfaction": {
+        "number": "95%",
+        "label": "Client Satisfaction",
+        "description": "Because results speak louder than promises"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Real Results",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. Here's how we've helped real businesses grow."
+  },
+  "portfolio": {
+    "badge": "Our Work",
+    "title": "Success Stories",
+    "subtitle": "Real businesses. Real results. See how we've helped companies like yours grow online.",
+    "results": "Results:"
+  },
+  "guarantee": {
+    "title": "Our Guarantee to You",
+    "quote": "We guarantee results — or we continue working until we achieve",
+    "quoteHighlight": "measurable improvements",
+    "quoteEnd": "for your business.",
+    "description": "We're not interested in taking your money and disappearing. We succeed when you succeed. That's why every project comes with our performance commitment.",
+    "cta": "Book Your Free Strategy Call"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Got questions? We've got answers.",
+    "items": {
+      "q1": {
+        "question": "How long does it take to build a website?",
+        "answer": "Most websites are completed within 1-3 weeks depending on complexity. Shopify stores typically take 1-2 weeks, and custom business websites take 2-3 weeks. We'll give you a clear timeline before we start."
+      },
+      "q2": {
+        "question": "How much does a website cost?",
+        "answer": "Our websites start from $500 for small business sites and $800+ for Shopify stores. We provide transparent, fixed-price quotes based on your specific needs — no hidden fees or surprises."
+      },
+      "q3": {
+        "question": "Do you provide ongoing support after launch?",
+        "answer": "Yes! Every project includes post-launch support. We also offer monthly maintenance packages for updates, security monitoring, and performance optimization."
+      },
+      "q4": {
+        "question": "Can you help with both a website and marketing?",
+        "answer": "Absolutely — that's our sweet spot. We build websites designed to convert, then drive targeted traffic through Meta Ads, Pinterest marketing, and social media. It's the full growth package."
+      },
+      "q5": {
+        "question": "What if I already have a website but it's not getting results?",
+        "answer": "We can audit your existing site, identify what's holding it back, and either optimize it or rebuild it for better conversions. Many of our clients come to us with underperforming websites."
+      },
+      "q6": {
+        "question": "Do you guarantee results?",
+        "answer": "Yes. We guarantee results — or we continue working until we achieve measurable improvements. We succeed when you succeed, and we stand behind every project we take on."
+      },
+      "q7": {
+        "question": "What platforms do you build on?",
+        "answer": "We build on Shopify, WordPress, Squarespace, Wix, Webflow, and custom solutions. We'll recommend the best platform for your business goals and budget."
+      },
+      "q8": {
+        "question": "How do I get started?",
+        "answer": "Simply book a free strategy call with us. We'll discuss your business goals, recommend the best approach, and provide a clear quote — no pressure, no obligation."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Let's Talk",
+    "title": "Ready to Grow Your Business Online?",
+    "subtitle": "Book a free strategy call and let's discuss how we can build you a website and marketing strategy that drives real results.",
+    "formTitle": "Tell Us About Your Project",
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "company": "Company Name",
+    "service": "What do you need?",
+    "selectService": "Select a service",
+    "projectDetails": "Project Details",
+    "projectPlaceholder": "Tell us about your project, goals, and timeline...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "whatsappInstead": "WhatsApp Instead",
+    "services": {
+      "shopify": "Shopify E-commerce Website",
+      "smallBiz": "Small Business Website",
+      "redesign": "Website Redesign / Optimization",
+      "metaAds": "Meta Ads (Facebook & Instagram)",
+      "socialMedia": "Social Media Marketing",
+      "pinterest": "Pinterest Marketing",
+      "fullPackage": "Full Website + Marketing Package"
+    },
+    "info": {
+      "email": "Email Us",
+      "call": "Call Us",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Chat with us instantly"
+    },
+    "preferTalk": "Prefer to talk?",
+    "preferTalkDesc": "Book a free 15-min strategy call. No commitment, no pressure.",
+    "bookFreeCall": "Book Free Call",
+    "success": "Message sent!",
+    "successDesc": "We'll get back to you within 24 hours.",
+    "error": "Something went wrong. Please try again.",
+    "formSubtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+    "contactMethods": {
+      "email": "Email Us",
+      "phone": "Call Us",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Chat with us instantly"
+    },
+    "businessHours": {
+      "title": "Business Hours",
+      "subtitle": "We're here to help",
+      "monday": "Monday - Friday",
+      "mondayTime": "9:00 AM - 6:00 PM",
+      "saturday": "Saturday",
+      "saturdayTime": "10:00 AM - 4:00 PM",
+      "sunday": "Sunday",
+      "sundayTime": "Closed"
+    },
+    "guarantee": {
+      "title": "Quick Response Guarantee",
+      "description": "We respond to all inquiries within 24 hours. Need faster response? Use our WhatsApp for instant communication!"
+    }
+  },
+  "footer": {
+    "description": "We build websites that convert and run marketing that grows your business. Your partner for real, measurable results online.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "connectWithUs": "Connect With Us",
+    "whatsappUs": "WhatsApp Us",
+    "emailUs": "Email Us",
+    "worldwide": "Worldwide — Remote Team",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "about": {
     "title": "About Gideon Media",
@@ -87,7 +306,7 @@
     "achievements": {
       "clients": "Happy Clients",
       "clientsDesc": "Businesses we've helped grow",
-      "projects": "Completed Projects", 
+      "projects": "Completed Projects",
       "projectsDesc": "Successful campaigns delivered",
       "roi": "Average ROI",
       "roiDesc": "Return on investment for our clients"
@@ -97,7 +316,7 @@
       "certifiedDesc": "Google & Meta certified team",
       "reviews": "5-Star Reviews",
       "reviewsDesc": "Consistent client satisfaction",
-      "support": "24/7 Support", 
+      "support": "24/7 Support",
       "supportDesc": "Always here when you need us"
     },
     "mission": {
@@ -110,7 +329,7 @@
     },
     "story": {
       "title": "Our Story",
-      "description": "Founded in 2020 with the vision of democratizing digital marketing for businesses of all sizes, Gideon Media has grown from a small startup to a trusted partner for over 120+ companies worldwide. We specialize in creating custom digital solutions that deliver measurable results."
+      "description": "Founded in 2020 with the vision of democratizing digital marketing for businesses of all sizes, Gideon Media has grown from a small startup to a trusted partner for over 120+ companies worldwide."
     },
     "expertise": {
       "title": "Our Expertise",
@@ -118,7 +337,7 @@
     },
     "approach": {
       "title": "Our Approach",
-      "description": "We believe in data-driven strategies, transparent communication, and building long-term partnerships with our clients. Every project is tailored to meet specific business goals and deliver maximum ROI."
+      "description": "We believe in data-driven strategies, transparent communication, and building long-term partnerships with our clients."
     },
     "values": {
       "title": "Our Core Values",
@@ -159,46 +378,6 @@
       "point6": "Custom strategies tailored to your specific business goals and industry"
     }
   },
-  "contact": {
-    "title": "Let's Work Together",
-    "subtitle": "Ready to take your business to the next level? Get in touch with us today for a free consultation and custom quote tailored to your needs.",
-    "formTitle": "Get Your Free Quote",
-    "formSubtitle": "Fill out the form below and we'll get back to you within 24 hours.",
-    "fullName": "Full Name",
-    "email": "Email Address", 
-    "phone": "Phone Number",
-    "company": "Company Name",
-    "service": "Service Interested In",
-    "selectService": "Select a service",
-    "projectDetails": "Project Details",
-    "projectPlaceholder": "Tell us about your project, goals, and any specific requirements...",
-    "send": "Send Message",
-    "whatsapp": "WhatsApp Us",
-    "sending": "Sending...",
-    "contactMethods": {
-      "email": "Email Us",
-      "phone": "Call Us", 
-      "whatsapp": "WhatsApp",
-      "whatsappDesc": "Chat with us instantly"
-    },
-    "businessHours": {
-      "title": "Business Hours",
-      "subtitle": "We're here to help",
-      "monday": "Monday - Friday",
-      "mondayTime": "9:00 AM - 6:00 PM",
-      "saturday": "Saturday", 
-      "saturdayTime": "10:00 AM - 4:00 PM",
-      "sunday": "Sunday",
-      "sundayTime": "Closed"
-    },
-    "guarantee": {
-      "title": "Quick Response Guarantee",
-      "description": "We respond to all inquiries within 24 hours. Need faster response? Use our WhatsApp for instant communication!"
-    },
-    "success": "Message Sent Successfully!",
-    "successDesc": "We'll get back to you within 24 hours.",
-    "error": "Failed to send message. Please try again."
-  },
   "help": {
     "title": "How Can We Help You?",
     "subtitle": "Get support and answers to your questions",
@@ -220,7 +399,7 @@
   },
   "common": {
     "back": "Back",
-    "learnMore": "Learn More", 
+    "learnMore": "Learn More",
     "getStarted": "Get Started",
     "viewAll": "View All"
   }
