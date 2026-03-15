@@ -1,6 +1,8 @@
 
 import { Star, Quote } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { useTranslation } from 'react-i18next';
+import { useScrollAnimation, useStaggerAnimation } from '@/hooks/useScrollAnimation';
 
 const testimonials = [
   {
@@ -54,25 +56,34 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+  const { t } = useTranslation();
+  const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
+  const { ref: gridRef, getItemStyle } = useStaggerAnimation(testimonials.length);
+
   return (
     <section id="testimonials" className="py-20 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
+        <div 
+          ref={headerRef}
+          className="text-center mb-14 transition-all duration-700"
+          style={{ opacity: headerVisible ? 1 : 0, transform: headerVisible ? 'translateY(0)' : 'translateY(30px)' }}
+        >
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
-            Real Results
+            {t('testimonials.badge')}
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            What Our Clients Say
+            {t('testimonials.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it. Here's how we've helped real businesses grow.
+            {t('testimonials.subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
+              style={getItemStyle(index)}
               className="border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group bg-card"
             >
               <CardContent className="p-6">
@@ -95,14 +106,11 @@ const TestimonialsSection = () => {
                     src={testimonial.image} 
                     alt={testimonial.name}
                     className="w-10 h-10 rounded-full object-cover mr-3"
+                    loading="lazy"
                   />
                   <div>
-                    <div className="font-semibold text-foreground text-sm">
-                      {testimonial.name}
-                    </div>
-                    <div className="text-xs text-muted-foreground">
-                      {testimonial.role}, {testimonial.company}
-                    </div>
+                    <div className="font-semibold text-foreground text-sm">{testimonial.name}</div>
+                    <div className="text-xs text-muted-foreground">{testimonial.role}, {testimonial.company}</div>
                   </div>
                 </div>
               </CardContent>
