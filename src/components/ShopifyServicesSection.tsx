@@ -169,7 +169,7 @@ const ShopifyServicesSection = () => {
               Get Custom Quote
             </Button>
             <a
-              href="https://wa.me/2347067133828?text=Hi, I need a custom Shopify solution"
+              href="https://wa.me/15485998101?text=Hi, I need a custom Shopify solution"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg inline-flex items-center justify-center"

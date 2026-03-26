@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { Facebook, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 import UpworkIcon from './UpworkIcon';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -28,7 +28,6 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: 'https://www.facebook.com/share/1CpvVeypZy/', label: 'Facebook' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/elakpa-gideon-0675112b9', label: 'LinkedIn' },
     { icon: UpworkIcon, href: 'https://www.upwork.com/freelancers/~0168e372c5f516c460', label: 'Upwork Profile' }
   ];
 
@@ -46,7 +45,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-muted-foreground text-sm">
                 <Phone className="w-4 h-4 mr-3 text-primary" />
-                <span>+234 706 713 3828</span>
+                <span>+1 (548) 599-8101</span>
               </div>
               <div className="flex items-center text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 mr-3 text-primary" />
@@ -104,7 +103,7 @@ const Footer = () => {
 
             <div className="flex flex-col gap-3">
               <a
-                href="https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project"
+                href="https://wa.me/15485998101?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all hover:shadow-lg inline-flex items-center justify-center"

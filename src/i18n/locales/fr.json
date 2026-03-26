@@ -1,97 +1,385 @@
 {
   "header": {
     "home": "Accueil",
-    "about": "À propos",
+    "about": "À Propos",
     "services": "Services",
     "portfolio": "Portfolio",
     "blog": "Blog",
-    "testimonials": "Témoignages", 
+    "testimonials": "Témoignages",
     "contact": "Contact",
     "help": "Aide",
-    "getQuote": "Obtenir un Devis"
+    "getQuote": "Obtenir un Devis",
+    "freeCall": "Appel Stratégique Gratuit"
   },
   "hero": {
-    "title": "Transformez Votre Présence Numérique",
-    "subtitle": "Solutions professionnelles de développement web et marketing digital qui génèrent des résultats",
-    "cta": "Commencer",
-    "description": "Nous créons des sites web exceptionnels et menons des campagnes marketing ciblées qui livrent de vrais résultats commerciaux."
-  },
-  "services": {
-    "title": "Nos Services",
-    "subtitle": "Solutions numériques complètes pour la croissance de votre entreprise",
-    "cta": "Commencer Aujourd'hui",
-    "learnMore": "En Savoir Plus",
-    "metaAds": {
-      "title": "Configuration Meta Ads",
-      "description": "Campagnes publicitaires professionnelles Facebook et Instagram, y compris l'intégration WhatsApp Ads pour une portée et un engagement maximums.",
-      "features": ["Stratégie de Campagne", "Conception Créative d'Annonces", "Intégration WhatsApp", "Suivi des Performances"]
-    },
-    "shopify": {
-      "title": "Développement Shopify",
-      "description": "Boutiques Shopify personnalisées qui convertissent les visiteurs en clients avec une expérience utilisateur optimisée et des processus de checkout transparents.",
-      "features": ["Design Personnalisé", "Intégration de Paiement", "Optimisation SEO", "Mobile Responsive"]
-    },
-    "website": {
-      "title": "Développement Web", 
-      "description": "Sites web modernes et responsifs pour les petites entreprises qui établissent la crédibilité et stimulent la croissance.",
-      "features": ["Design Responsif", "Chargement Rapide", "Prêt pour le SEO", "Gestion de Contenu"]
-    },
-    "wordpress": {
-      "title": "Développement WordPress",
-      "description": "Sites web WordPress personnalisés avec des fonctionnalités avancées et des systèmes de gestion de contenu faciles.",
-      "features": ["Développement de Thèmes Personnalisés", "Intégration de Plugins", "Configuration WooCommerce", "Optimisation SEO"]
-    },
-    "squarespace": {
-      "title": "Développement Squarespace",
-      "description": "Beaux sites web Squarespace avec un design personnalisé et des fonctionnalités améliorées pour les entreprises modernes.",
-      "features": ["Personnalisation de Modèles", "Intégration E-commerce", "Optimisation Mobile", "Configuration SEO"]
-    },
-    "platforms": {
-      "title": "Développement Multi-Plateformes",
-      "description": "Sites web professionnels sur Wix, Webflow et autres plateformes populaires de gestion de contenu.",
-      "features": ["Migration de Plateformes", "Design Personnalisé", "Intégration d'Applications", "Amélioration des Performances"]
-    },
-    "pinterest": {
-      "title": "Configuration Pinterest",
-      "description": "Configuration stratégique de présence Pinterest pour augmenter le trafic et améliorer la visibilité de la marque grâce à un contenu visuel engageant.",
-      "features": ["Optimisation de Profil", "Stratégie de Tableau", "Design de Pins", "Configuration Analytics"]
-    },
-    "adsStrategy": {
-      "title": "Stratégie et Lancement de Publicités",
-      "description": "Développement de stratégie publicitaire complète et gestion de campagnes sur plusieurs plateformes numériques.",
-      "features": ["Recherche de Marché", "Ciblage d'Audience", "Gestion de Campagnes", "Optimisation ROI"]
+    "badge": "Fait Confiance par 50+ Entreprises dans le Monde",
+    "title": "Nous Créons des Sites Web Qui",
+    "titleHighlight": "Transforment les Visiteurs en Clients",
+    "subtitle": "Gideon Media aide les petites entreprises, startups et marques e-commerce à croître en ligne avec des sites web à haute conversion et du marketing digital orienté résultats.",
+    "trust1": "Design Axé sur la Conversion",
+    "trust2": "Prêt pour le SEO Dès le Départ",
+    "trust3": "Rapide et Optimisé pour Mobile",
+    "cta": "Obtenez Votre Appel Stratégique Gratuit",
+    "ctaSub": "Sans engagement • Réponse sous 24 heures",
+    "stats": {
+      "projects": "Projets Réalisés",
+      "clients": "Clients Satisfaits",
+      "roi": "ROI Moyen",
+      "satisfaction": "Satisfaction Client"
     }
   },
-  "about": {
-    "title": "À propos de Gideon Media",
-    "subtitle": "Votre partenaire de confiance pour la croissance numérique",
-    "description": "Nous sommes une équipe passionnée d'experts numériques dédiés à aider les entreprises à prospérer en ligne.",
-    "mission": {
-      "title": "Notre Mission",
-      "description": "Aider les entreprises à prospérer à l'ère numérique en fournissant des solutions innovantes et un service exceptionnel."
+  "problem": {
+    "badge": "Ça Vous Dit Quelque Chose ?",
+    "title": "Votre Entreprise Perd-elle des Clients en Ligne ?",
+    "subtitle": "La plupart des entreprises luttent avec ces problèmes — et ils vous coûtent de l'argent chaque jour.",
+    "items": {
+      "outdated": {
+        "title": "Votre Site Web a l'Air Dépassé",
+        "description": "Les premières impressions comptent. Un site web vieux et maladroit fait fuir les visiteurs en quelques secondes."
+      },
+      "noConvert": {
+        "title": "Votre Site Web Ne Convertit Pas",
+        "description": "Vous avez du trafic mais pas de leads, pas de ventes. Votre site web ne fait pas son travail."
+      },
+      "noVisibility": {
+        "title": "Vous Avez Zéro Visibilité en Ligne",
+        "description": "Les clients potentiels ne vous trouvent pas sur Google. Vos concurrents apparaissent — et vous êtes invisible."
+      },
+      "struggling": {
+        "title": "Vous Luttez pour Obtenir des Clients en Ligne",
+        "description": "Vous savez que le marketing digital fonctionne, mais vous n'avez pas le temps, les compétences ou la stratégie."
+      }
     },
-    "vision": {
-      "title": "Notre Vision",
-      "description": "Devenir l'agence numérique leader reconnue pour ses résultats commerciaux transformateurs et la satisfaction client."
+    "cta": "Si cela vous ressemble —",
+    "ctaHighlight": "nous pouvons résoudre ça."
+  },
+  "services": {
+    "badge": "Service Principal",
+    "title": "Des Sites Web Qui Travaillent Aussi Dur Que Vous",
+    "subtitle": "Nous ne construisons pas juste des sites web — nous construisons des moteurs de croissance. Chaque site est conçu pour attirer, convaincre et convertir.",
+    "cta": "Discutez de Votre Projet Web",
+    "items": {
+      "shopify": {
+        "title": "Sites E-commerce Shopify",
+        "description": "Des boutiques Shopify personnalisées construites pour vendre. Chaque élément conçu pour maximiser les conversions.",
+        "features": ["Design de Boutique Personnalisé", "Configuration Paiements et Livraison", "Optimisation du Catalogue", "Checkout Mobile Optimisé"]
+      },
+      "smallBusiness": {
+        "title": "Sites Web pour Petites Entreprises",
+        "description": "Des sites web professionnels qui établissent la crédibilité, capturent des leads et transforment votre présence en ligne.",
+        "features": ["Formulaires de Capture de Leads", "Design Professionnel", "Gestion de Contenu", "Intégration Analytics"]
+      },
+      "conversion": {
+        "title": "Design Axé sur la Conversion",
+        "description": "Chaque page, bouton et mise en page est stratégiquement conçu pour guider les visiteurs vers l'action.",
+        "features": ["Mises en Page Stratégiques", "Appels à l'Action Clairs", "Éléments de Confiance", "Templates A/B Testés"]
+      },
+      "mobile": {
+        "title": "Sites Web Rapides et Mobile-Friendly",
+        "description": "Plus de 60% du trafic vient du mobile. Votre site sera parfait sur chaque appareil.",
+        "features": ["Design Responsive", "Chargement en Moins de 3s", "Navigation Tactile", "Approche Mobile-First"]
+      },
+      "seo": {
+        "title": "Structure Prête pour le SEO",
+        "description": "Construit de zéro avec les moteurs de recherche en tête. Votre site sera structuré pour mieux se classer.",
+        "features": ["Configuration SEO Technique", "Balisage Schema", "Méta Tags Optimisés", "Optimisation de Vitesse"]
+      },
+      "migration": {
+        "title": "Migration et Optimisation Web",
+        "description": "Vous changez de plateforme ? Nous migrons votre site sans problème et l'optimisons.",
+        "features": ["Migration de Plateforme", "Préservation SEO", "Amélioration de Vitesse", "Optimisation de Conversion"]
+      }
     },
-    "story": {
-      "title": "Notre Histoire",
-      "description": "Fondée avec la vision d'autonomiser les entreprises grâce à l'innovation numérique, nous avons aidé des centaines d'entreprises à atteindre leurs objectifs en ligne."
+    "learnMore": "En Savoir Plus",
+    "getStarted": "Commencer Aujourd'hui"
+  },
+  "marketing": {
+    "badge": "Générez Plus de Trafic et de Ventes",
+    "title": "Marketing Digital Qui Livre des Résultats",
+    "subtitle": "Un excellent site web a besoin d'un excellent marketing. Nous dirigeons du trafic ciblé vers votre site et le convertissons en revenus.",
+    "cta": "Obtenez une Stratégie Marketing",
+    "items": {
+      "metaAds": {
+        "title": "Meta Ads (Facebook et Instagram)",
+        "description": "Des campagnes publicitaires ciblées qui placent votre entreprise devant les bonnes personnes au bon moment.",
+        "features": ["Stratégie et Configuration de Campagne", "Recherche et Ciblage d'Audience", "Création d'Annonces", "Optimisation et Reporting"]
+      },
+      "social": {
+        "title": "Marketing sur les Réseaux Sociaux",
+        "description": "Construisez une audience fidèle et une présence de marque cohérente sur les réseaux sociaux.",
+        "features": ["Stratégie et Calendrier de Contenu", "Gestion d'Engagement", "Cohérence de Marque", "Analytics de Croissance"]
+      },
+      "pinterest": {
+        "title": "Marketing Pinterest",
+        "description": "Exploitez l'audience à forte intention de Pinterest pour générer un trafic organique massif.",
+        "features": ["Optimisation Profil et Tableaux", "Design et Stratégie de Pins", "SEO Pinterest", "Suivi Trafic et Conversion"]
+      },
+      "adStrategy": {
+        "title": "Stratégie Publicitaire et Lancement",
+        "description": "Pas sûr par où commencer ? Nous créons une stratégie publicitaire personnalisée adaptée à vos objectifs.",
+        "features": ["Analyse de Marché et Concurrence", "Planification du Budget", "Stratégie Multi-Plateforme", "Lancement et Optimisation"]
+      }
+    }
+  },
+  "process": {
+    "badge": "Simple et Transparent",
+    "title": "Comment Nous Travaillons",
+    "subtitle": "Commencer est facile. Nous gérons tout pour que vous puissiez vous concentrer sur votre entreprise.",
+    "steps": {
+      "strategy": {
+        "step": "01",
+        "title": "Stratégie et Planification",
+        "description": "Nous commençons par comprendre votre entreprise, vos objectifs et votre audience. Puis nous créons une feuille de route claire."
+      },
+      "design": {
+        "step": "02",
+        "title": "Design et Développement",
+        "description": "Nous concevons et construisons votre site web avec la conversion en tête — rapide, mobile et performant."
+      },
+      "launch": {
+        "step": "03",
+        "title": "Lancement et Croissance",
+        "description": "Nous lançons votre projet, surveillons les performances et optimisons continuellement pour plus de trafic et ventes."
+      }
+    }
+  },
+  "socialProof": {
+    "title": "Les Chiffres Ne Mentent Pas",
+    "subtitle": "Nous laissons nos résultats parler. Voici ce que nous avons accompli pour des entreprises comme la vôtre.",
+    "stats": {
+      "projects": {
+        "number": "100+",
+        "label": "Projets Réalisés",
+        "description": "Sites web et campagnes livrés dans diverses industries"
+      },
+      "clients": {
+        "number": "50+",
+        "label": "Clients Satisfaits",
+        "description": "Entreprises qui font confiance à Gideon Media"
+      },
+      "roi": {
+        "number": "2x",
+        "label": "ROI Moyen",
+        "description": "Nos clients voient des retours réels et mesurables"
+      },
+      "satisfaction": {
+        "number": "95%",
+        "label": "Satisfaction Client",
+        "description": "Parce que les résultats parlent plus fort que les promesses"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Résultats Réels",
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Ne nous croyez pas sur parole. Voici comment nous avons aidé de vraies entreprises à croître."
+  },
+  "portfolio": {
+    "badge": "Notre Travail",
+    "title": "Histoires de Succès",
+    "subtitle": "Des entreprises réelles. Des résultats réels. Découvrez comment nous avons aidé des entreprises comme la vôtre.",
+    "results": "Résultats :"
+  },
+  "guarantee": {
+    "title": "Notre Garantie Pour Vous",
+    "quote": "Nous garantissons des résultats — ou nous continuons à travailler jusqu'à atteindre des",
+    "quoteHighlight": "améliorations mesurables",
+    "quoteEnd": "pour votre entreprise.",
+    "description": "Nous ne sommes pas intéressés à prendre votre argent et disparaître. Nous réussissons quand vous réussissez.",
+    "cta": "Réservez Votre Appel Stratégique Gratuit"
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "subtitle": "Des questions ? Nous avons les réponses.",
+    "items": {
+      "q1": {
+        "question": "Combien de temps faut-il pour créer un site web ?",
+        "answer": "La plupart des sites web sont terminés en 1-3 semaines. Les boutiques Shopify prennent 1-2 semaines, les sites personnalisés 2-3 semaines."
+      },
+      "q2": {
+        "question": "Combien coûte un site web ?",
+        "answer": "Nos sites commencent à partir de 500$ pour les petites entreprises et 800$+ pour les boutiques Shopify. Devis transparents et fixes."
+      },
+      "q3": {
+        "question": "Offrez-vous un support continu après le lancement ?",
+        "answer": "Oui ! Chaque projet inclut un support post-lancement. Nous proposons aussi des forfaits de maintenance mensuels."
+      },
+      "q4": {
+        "question": "Pouvez-vous aider avec le site web ET le marketing ?",
+        "answer": "Absolument — c'est notre spécialité. Nous construisons des sites conçus pour convertir, puis dirigeons du trafic ciblé."
+      },
+      "q5": {
+        "question": "Et si j'ai déjà un site qui ne donne pas de résultats ?",
+        "answer": "Nous pouvons auditer votre site, identifier ce qui le freine et l'optimiser ou le reconstruire."
+      },
+      "q6": {
+        "question": "Garantissez-vous des résultats ?",
+        "answer": "Oui. Nous garantissons des résultats — ou nous continuons à travailler jusqu'à obtenir des améliorations mesurables."
+      },
+      "q7": {
+        "question": "Sur quelles plateformes construisez-vous ?",
+        "answer": "Nous construisons sur Shopify, WordPress, Squarespace, Wix, Webflow et des solutions sur mesure."
+      },
+      "q8": {
+        "question": "Comment commencer ?",
+        "answer": "Réservez simplement un appel stratégique gratuit. Nous discuterons de vos objectifs et vous donnerons un devis clair."
+      }
     }
   },
   "contact": {
-    "title": "Contactez-nous",
-    "subtitle": "Prêt à démarrer votre prochain projet ? Parlons-en !",
-    "name": "Nom",
-    "email": "Email",
-    "message": "Message",
+    "badge": "Parlons",
+    "title": "Prêt à Développer Votre Entreprise en Ligne ?",
+    "subtitle": "Réservez un appel stratégique gratuit et discutons de comment nous pouvons vous créer un site web et une stratégie marketing qui génèrent de vrais résultats.",
+    "formTitle": "Parlez-nous de Votre Projet",
+    "fullName": "Nom Complet",
+    "email": "Adresse Email",
+    "phone": "Numéro de Téléphone",
+    "company": "Nom de l'Entreprise",
+    "service": "De quoi avez-vous besoin ?",
+    "selectService": "Sélectionnez un service",
+    "projectDetails": "Détails du Projet",
+    "projectPlaceholder": "Parlez-nous de votre projet, objectifs et calendrier...",
     "send": "Envoyer le Message",
-    "phone": "Téléphone",
-    "address": "Adresse",
-    "hours": "Heures d'ouverture"
+    "sending": "Envoi en cours...",
+    "whatsappInstead": "WhatsApp à la Place",
+    "services": {
+      "shopify": "Site E-commerce Shopify",
+      "smallBiz": "Site Web Petite Entreprise",
+      "redesign": "Refonte / Optimisation de Site",
+      "metaAds": "Meta Ads (Facebook et Instagram)",
+      "socialMedia": "Marketing Réseaux Sociaux",
+      "pinterest": "Marketing Pinterest",
+      "fullPackage": "Pack Complet Site + Marketing"
+    },
+    "info": {
+      "email": "Écrivez-nous",
+      "call": "Appelez-nous",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Discutez avec nous instantanément"
+    },
+    "preferTalk": "Préférez-vous parler ?",
+    "preferTalkDesc": "Réservez un appel stratégique gratuit de 15 min. Sans engagement.",
+    "bookFreeCall": "Réserver un Appel Gratuit",
+    "success": "Message envoyé !",
+    "successDesc": "Nous vous répondrons sous 24 heures.",
+    "error": "Un problème est survenu. Veuillez réessayer.",
+    "formSubtitle": "Remplissez le formulaire et nous vous répondrons sous 24 heures.",
+    "contactMethods": {
+      "email": "Écrivez-nous",
+      "phone": "Appelez-nous",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Discutez avec nous instantanément"
+    },
+    "businessHours": {
+      "title": "Heures d'Ouverture",
+      "subtitle": "Nous sommes là pour vous aider",
+      "monday": "Lundi - Vendredi",
+      "mondayTime": "9h00 - 18h00",
+      "saturday": "Samedi",
+      "saturdayTime": "10h00 - 16h00",
+      "sunday": "Dimanche",
+      "sundayTime": "Fermé"
+    },
+    "guarantee": {
+      "title": "Garantie de Réponse Rapide",
+      "description": "Nous répondons à toutes les demandes sous 24 heures. Besoin plus rapide ? Utilisez notre WhatsApp !"
+    }
+  },
+  "footer": {
+    "description": "Nous créons des sites web qui convertissent et du marketing qui fait croître votre entreprise. Votre partenaire pour des résultats réels en ligne.",
+    "quickLinks": "Liens Rapides",
+    "ourServices": "Nos Services",
+    "connectWithUs": "Connectez-vous Avec Nous",
+    "whatsappUs": "WhatsApp",
+    "emailUs": "Email",
+    "worldwide": "Mondial — Équipe à Distance",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "about": {
+    "title": "À Propos de Gideon Media",
+    "subtitle": "Votre partenaire de confiance pour la croissance digitale et le succès en ligne",
+    "description": "Nous sommes une équipe passionnée d'experts en marketing digital et développeurs web dédiés à aider les entreprises à prospérer.",
+    "description1": "Nous sommes passionnés par la transformation des entreprises grâce à des solutions digitales innovantes.",
+    "description2": "Notre équipe combine créativité et stratégies basées sur les données pour des résultats exceptionnels.",
+    "achievements": {
+      "clients": "Clients Satisfaits",
+      "clientsDesc": "Entreprises que nous avons aidées à croître",
+      "projects": "Projets Réalisés",
+      "projectsDesc": "Campagnes réussies livrées",
+      "roi": "ROI Moyen",
+      "roiDesc": "Retour sur investissement pour nos clients"
+    },
+    "trustBadges": {
+      "certified": "Experts Certifiés",
+      "certifiedDesc": "Équipe certifiée Google et Meta",
+      "reviews": "Avis 5 Étoiles",
+      "reviewsDesc": "Satisfaction client constante",
+      "support": "Support 24/7",
+      "supportDesc": "Toujours là quand vous avez besoin"
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Donner aux entreprises des solutions digitales exceptionnelles qui stimulent la croissance et créent un succès durable."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Devenir l'agence digitale leader reconnue pour des résultats transformateurs et une satisfaction client inégalée."
+    },
+    "story": {
+      "title": "Notre Histoire",
+      "description": "Fondée en 2020, Gideon Media est passée d'une petite startup à un partenaire de confiance pour plus de 120+ entreprises dans le monde."
+    },
+    "expertise": {
+      "title": "Notre Expertise",
+      "description": "Nous combinons technologie de pointe et stratégies marketing éprouvées pour des solutions digitales complètes."
+    },
+    "approach": {
+      "title": "Notre Approche",
+      "description": "Nous croyons aux stratégies basées sur les données, la communication transparente et les partenariats à long terme."
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Rester en avance sur les tendances digitales"
+      },
+      "quality": {
+        "title": "Qualité",
+        "description": "Livrer un travail exceptionnel qui dépasse les attentes"
+      },
+      "partnership": {
+        "title": "Partenariat",
+        "description": "Construire des relations à long terme basées sur la confiance"
+      }
+    },
+    "coreValues": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "Rester en avance sur les tendances digitales"
+      },
+      "quality": {
+        "title": "Qualité",
+        "description": "Livrer un travail exceptionnel qui dépasse les attentes"
+      },
+      "partnership": {
+        "title": "Partenariat",
+        "description": "Construire des relations à long terme basées sur la confiance"
+      }
+    },
+    "whyChoose": {
+      "title": "Pourquoi Choisir Gideon Media ?",
+      "point1": "Historique prouvé avec 180+ projets réussis et 400% de ROI moyen",
+      "point2": "Agence digitale à service complet avec des solutions de bout en bout",
+      "point3": "Tarification transparente et communication claire",
+      "point4": "Équipe certifiée en Meta Ads, Google Ads et Shopify",
+      "point5": "Support 24/7 et optimisation continue",
+      "point6": "Stratégies personnalisées pour vos objectifs spécifiques"
+    }
   },
   "help": {
-    "title": "Comment Pouvons-nous Vous Aider?",
+    "title": "Comment Pouvons-nous Vous Aider ?",
     "subtitle": "Obtenez du support et des réponses à vos questions",
     "subject": "Sujet",
     "description": "Description",
@@ -106,62 +394,13 @@
     "title": "Ce Que Disent Nos Clients",
     "writeReview": "Écrire un Avis"
   },
-  "common": {
-    "back": "Retour",
-    "learnMore": "En savoir plus",
-    "getStarted": "Commencer",
-    "viewAll": "Voir tout"
-  },
   "notifications": {
     "justPurchased": "vient d'acheter"
   },
-  "about": {
-    "title": "À Propos de Gideon Media",
-    "subtitle": "Votre agence partenaire de confiance pour le marketing digital et le développement web",
-    "description": "Chez Gideon Media, nous nous spécialisons dans l'aide aux entreprises pour croître et prospérer grâce au marketing digital stratégique et au développement web professionnel.",
-    "mission": {
-      "title": "Notre Mission",
-      "description": "Permettre aux entreprises de réaliser leur plein potentiel numérique en fournissant des stratégies marketing innovantes et des services de développement web de premier plan qui génèrent des résultats mesurables."
-    },
-    "vision": {
-      "title": "Notre Vision",
-      "description": "Devenir l'agence numérique leader reconnue pour ses résultats exceptionnels, sa communication transparente et ses partenariats à long terme avec nos clients."
-    },
-    "story": {
-      "title": "Notre Histoire",
-      "description": "Gideon Media a été fondée avec la vision de combler le fossé entre le marketing traditionnel et le paysage numérique en évolution rapide. Ce qui a commencé comme une petite équipe d'experts numériques passionnés a évolué en une agence complète servant des entreprises de toutes tailles."
-    },
-    "expertise": {
-      "title": "Notre Expertise",
-      "description": "Nous combinons la technologie de pointe avec des stratégies marketing éprouvées pour fournir des solutions numériques complètes incluant le développement web, la gestion des publicités Meta, les boutiques Shopify et le marketing Pinterest."
-    },
-    "approach": {
-      "title": "Notre Approche",
-      "description": "Nous croyons aux stratégies basées sur les données, à la communication transparente et à la construction de partenariats à long terme avec nos clients. Chaque projet est adapté pour répondre aux objectifs commerciaux spécifiques et générer un ROI maximal."
-    },
-    "values": {
-      "title": "Nos Valeurs Fondamentales",
-      "innovation": {
-        "title": "Innovation",
-        "description": "Rester en avance sur les tendances numériques pour fournir des solutions de pointe"
-      },
-      "quality": {
-        "title": "Qualité",
-        "description": "Livrer un travail exceptionnel qui dépasse les attentes des clients"
-      },
-      "partnership": {
-        "title": "Partenariat",
-        "description": "Construire des relations à long terme basées sur la confiance et les résultats"
-      }
-    },
-    "whyChoose": {
-      "title": "Pourquoi Choisir Gideon Media ?",
-      "point1": "Historique prouvé avec 180+ projets réussis et 400% de ROI moyen",
-      "point2": "Agence numérique à service complet offrant des solutions de bout en bout",
-      "point3": "Tarification transparente et communication claire tout au long des projets",
-      "point4": "Équipe d'experts certifiée en publicités Meta, Google Ads et développement Shopify",
-      "point5": "Support 24/7 et optimisation continue pour un succès à long terme",
-      "point6": "Stratégies personnalisées adaptées à vos objectifs commerciaux spécifiques et à votre industrie"
-    }
+  "common": {
+    "back": "Retour",
+    "learnMore": "En Savoir Plus",
+    "getStarted": "Commencer",
+    "viewAll": "Voir Tout"
   }
 }

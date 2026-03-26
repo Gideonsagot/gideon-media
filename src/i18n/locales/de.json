@@ -1,129 +1,385 @@
 {
   "header": {
     "home": "Startseite",
-    "about": "Über uns",
+    "about": "Über Uns",
     "services": "Dienstleistungen",
     "portfolio": "Portfolio",
     "blog": "Blog",
     "testimonials": "Referenzen",
     "contact": "Kontakt",
     "help": "Hilfe",
-    "getQuote": "Angebot Anfordern"
+    "getQuote": "Angebot Anfordern",
+    "freeCall": "Kostenloses Strategiegespräch"
   },
   "hero": {
-    "title": "Transformieren Sie Ihre Digitale Präsenz",
-    "subtitle": "Professionelle Webentwicklung und digitale Marketing-Lösungen, die Ergebnisse erzielen",
-    "cta": "Loslegen",
-    "description": "Wir erstellen beeindruckende Websites und führen gezielte Marketingkampagnen durch, die echte Geschäftsergebnisse liefern."
+    "badge": "Vertraut von 50+ Unternehmen Weltweit",
+    "title": "Wir Bauen Websites, Die",
+    "titleHighlight": "Besucher in Kunden Verwandeln",
+    "subtitle": "Gideon Media hilft kleinen Unternehmen, Startups und E-Commerce-Marken online zu wachsen mit hochkonvertierenden Websites und ergebnisorientierten Digital Marketing.",
+    "trust1": "Konversionsoptimiertes Design",
+    "trust2": "SEO-Bereit Ab Tag Eins",
+    "trust3": "Schnell & Mobiloptimiert",
+    "cta": "Kostenloses Strategiegespräch Buchen",
+    "ctaSub": "Ohne Verpflichtung • Antwort innerhalb von 24 Stunden",
+    "stats": {
+      "projects": "Abgeschlossene Projekte",
+      "clients": "Zufriedene Kunden",
+      "roi": "Durchschnittlicher ROI",
+      "satisfaction": "Kundenzufriedenheit"
+    }
+  },
+  "problem": {
+    "badge": "Kommt Ihnen Das Bekannt Vor?",
+    "title": "Verliert Ihr Unternehmen Kunden Online?",
+    "subtitle": "Die meisten Unternehmen kämpfen mit diesen Problemen — und sie kosten Sie jeden Tag Geld.",
+    "items": {
+      "outdated": {
+        "title": "Ihre Website Sieht Veraltet Aus",
+        "description": "Der erste Eindruck zählt. Eine alte, umständliche Website lässt Besucher in Sekunden abspringen."
+      },
+      "noConvert": {
+        "title": "Ihre Website Konvertiert Nicht",
+        "description": "Sie haben Traffic, aber keine Leads, keine Verkäufe. Ihre Website erfüllt nicht ihren Zweck."
+      },
+      "noVisibility": {
+        "title": "Sie Haben Null Online-Sichtbarkeit",
+        "description": "Potenzielle Kunden finden Sie nicht bei Google. Ihre Konkurrenten erscheinen — und Sie sind unsichtbar."
+      },
+      "struggling": {
+        "title": "Sie Kämpfen Um Online-Kunden",
+        "description": "Sie wissen, dass Digital Marketing funktioniert, aber Sie haben keine Zeit, Fähigkeiten oder Strategie."
+      }
+    },
+    "cta": "Wenn sich das nach Ihnen anhört —",
+    "ctaHighlight": "wir können das beheben."
   },
   "services": {
-    "title": "Unsere Dienstleistungen",
-    "subtitle": "Umfassende digitale Lösungen für Ihr Unternehmenswachstum",
-    "cta": "Heute Loslegen",
+    "badge": "Hauptdienstleistung",
+    "title": "Websites, Die So Hart Arbeiten Wie Sie",
+    "subtitle": "Wir bauen nicht nur Websites — wir bauen Wachstumsmotoren. Jede Website ist darauf ausgelegt, Besucher anzuziehen, Vertrauen aufzubauen und sie in Kunden zu verwandeln.",
+    "cta": "Besprechen Sie Ihr Web-Projekt",
+    "items": {
+      "shopify": {
+        "title": "Shopify E-Commerce Websites",
+        "description": "Maßgeschneiderte Shopify-Shops zum Verkaufen gebaut. Jedes Element für maximale Konversion optimiert.",
+        "features": ["Individuelles Shop-Design", "Zahlungs- & Versandkonfiguration", "Katalogoptimierung", "Mobiloptimierter Checkout"]
+      },
+      "smallBusiness": {
+        "title": "Websites für Kleine Unternehmen",
+        "description": "Professionelle Websites, die Glaubwürdigkeit schaffen, Leads erfassen und Ihre Online-Präsenz in Ihren besten Verkäufer verwandeln.",
+        "features": ["Lead-Erfassungsformulare", "Professionelles Design", "Content-Management", "Analytics-Integration"]
+      },
+      "conversion": {
+        "title": "Konversionsoptimiertes Design",
+        "description": "Jede Seite, jeder Button und jedes Layout ist strategisch gestaltet, um Besucher zur Aktion zu führen.",
+        "features": ["Strategische Seitenlayouts", "Klare Handlungsaufforderungen", "Vertrauensbildende Elemente", "A/B-Getestete Templates"]
+      },
+      "mobile": {
+        "title": "Schnelle, Mobilfreundliche Websites",
+        "description": "Über 60% des Traffics kommt von Mobilgeräten. Ihre Website wird auf jedem Gerät perfekt aussehen und funktionieren.",
+        "features": ["Responsives Design", "Ladezeit unter 3s", "Touch-Optimierte Navigation", "Mobile-First Ansatz"]
+      },
+      "seo": {
+        "title": "SEO-Bereite Struktur",
+        "description": "Von Grund auf mit Suchmaschinen im Blick gebaut. Ihre Website wird für besseres Ranking strukturiert sein.",
+        "features": ["Technisches SEO-Setup", "Schema-Markup", "Optimierte Meta-Tags", "Geschwindigkeitsoptimierung"]
+      },
+      "migration": {
+        "title": "Website-Migration & Optimierung",
+        "description": "Plattformwechsel? Wir migrieren Ihre Website nahtlos und optimieren sie für bessere Performance.",
+        "features": ["Plattform-Migration", "SEO-Erhaltung", "Geschwindigkeitsverbesserung", "Konversionsoptimierung"]
+      }
+    },
     "learnMore": "Mehr Erfahren",
-    "metaAds": {
-      "title": "Meta Ads Setup",
-      "description": "Professionelle Facebook- und Instagram-Werbekampagnen, einschließlich WhatsApp Ads-Integration für maximale Reichweite und Engagement.",
-      "features": ["Kampagnenstrategie", "Anzeigenkreation", "WhatsApp-Integration", "Performance-Tracking"]
-    },
-    "shopify": {
-      "title": "Shopify-Entwicklung",
-      "description": "Maßgeschneiderte Shopify-Shops, die Besucher in Kunden verwandeln mit optimierter Benutzererfahrung und nahtlosen Checkout-Prozessen.",
-      "features": ["Custom Design", "Payment Integration", "SEO-Optimierung", "Mobile Responsive"]
-    },
-    "website": {
-      "title": "Webentwicklung", 
-      "description": "Moderne, responsive Websites für kleine Unternehmen, die Glaubwürdigkeit schaffen und Wachstum fördern.",
-      "features": ["Responsives Design", "Schnelles Laden", "SEO-bereit", "Content-Management"]
-    },
-    "wordpress": {
-      "title": "WordPress-Entwicklung",
-      "description": "Maßgeschneiderte WordPress-Websites mit erweiterten Funktionen und einfachen Content-Management-Systemen.",
-      "features": ["Individuelle Theme-Entwicklung", "Plugin-Integration", "WooCommerce-Setup", "SEO-Optimierung"]
-    },
-    "squarespace": {
-      "title": "Squarespace-Entwicklung",
-      "description": "Schöne Squarespace-Websites mit individuellem Design und erweiterten Funktionen für moderne Unternehmen.",
-      "features": ["Template-Anpassung", "E-Commerce-Integration", "Mobile Optimierung", "SEO-Setup"]
-    },
-    "platforms": {
-      "title": "Multi-Plattform-Entwicklung",
-      "description": "Professionelle Websites auf Wix, Webflow und anderen beliebten Content-Management-Plattformen.",
-      "features": ["Plattform-Migration", "Individuelles Design", "App-Integration", "Performance-Verbesserung"]
-    },
-    "pinterest": {
-      "title": "Pinterest-Setup",
-      "description": "Strategische Pinterest-Präsenz-Setup zur Steigerung des Traffics und Erhöhung der Markensichtbarkeit durch ansprechende visuelle Inhalte.",
-      "features": ["Profil-Optimierung", "Board-Strategie", "Pin-Design", "Analytics-Setup"]
-    },
-    "adsStrategy": {
-      "title": "Anzeigenstrategie & Launch",
-      "description": "Umfassende Werbeanzeigen-Strategieentwicklung und Kampagnenmanagement auf mehreren digitalen Plattformen.",
-      "features": ["Marktforschung", "Zielgruppen-Targeting", "Kampagnenmanagement", "ROI-Optimierung"]
+    "getStarted": "Heute Starten"
+  },
+  "marketing": {
+    "badge": "Mehr Traffic & Umsatz Generieren",
+    "title": "Digital Marketing, Das Ergebnisse Liefert",
+    "subtitle": "Eine großartige Website braucht großartiges Marketing. Wir bringen gezielten Traffic auf Ihre Website und verwandeln ihn in Umsatz.",
+    "cta": "Marketing-Strategie Erhalten",
+    "items": {
+      "metaAds": {
+        "title": "Meta Ads (Facebook & Instagram)",
+        "description": "Gezielte Werbekampagnen, die Ihr Unternehmen vor den richtigen Menschen zur richtigen Zeit platzieren.",
+        "features": ["Kampagnenstrategie & Setup", "Zielgruppen-Recherche & Targeting", "Anzeigen-Kreation", "Performance-Optimierung & Reporting"]
+      },
+      "social": {
+        "title": "Social Media Marketing",
+        "description": "Bauen Sie eine treue Zielgruppe und konsistente Markenpräsenz auf sozialen Plattformen auf.",
+        "features": ["Content-Strategie & Kalender", "Engagement & Community Management", "Markenkonsistenz", "Wachstums-Analytics"]
+      },
+      "pinterest": {
+        "title": "Pinterest Marketing",
+        "description": "Nutzen Sie Pinterests kaufbereites Publikum für massiven organischen Traffic auf Ihrer Website.",
+        "features": ["Profil- & Board-Optimierung", "Pin-Design & Strategie", "Pinterest SEO", "Traffic- & Konversions-Tracking"]
+      },
+      "adStrategy": {
+        "title": "Werbestrategie & Kampagnenstart",
+        "description": "Unsicher wo anfangen? Wir erstellen eine maßgeschneiderte Werbestrategie für Ihre Ziele.",
+        "features": ["Markt- & Wettbewerbsanalyse", "Budgetplanung & -verteilung", "Multi-Plattform-Strategie", "Start & Optimierung"]
+      }
     }
+  },
+  "process": {
+    "badge": "Einfach & Transparent",
+    "title": "Wie Wir Arbeiten",
+    "subtitle": "Der Start ist einfach. Wir kümmern uns um alles, damit Sie sich auf Ihr Geschäft konzentrieren können.",
+    "steps": {
+      "strategy": {
+        "step": "01",
+        "title": "Strategie & Planung",
+        "description": "Wir beginnen damit, Ihr Unternehmen, Ihre Ziele und Ihre Zielgruppe zu verstehen. Dann erstellen wir eine klare Roadmap."
+      },
+      "design": {
+        "step": "02",
+        "title": "Design & Entwicklung",
+        "description": "Wir gestalten und bauen Ihre Website mit Konversion im Fokus — schnell, mobil und leistungsbereit."
+      },
+      "launch": {
+        "step": "03",
+        "title": "Start & Wachstum",
+        "description": "Wir starten Ihr Projekt, überwachen die Performance und optimieren kontinuierlich für mehr Traffic und Umsatz."
+      }
+    }
+  },
+  "socialProof": {
+    "title": "Zahlen Lügen Nicht",
+    "subtitle": "Wir lassen unsere Ergebnisse sprechen. Hier ist, was wir für Unternehmen wie Ihres erreicht haben.",
+    "stats": {
+      "projects": {
+        "number": "100+",
+        "label": "Abgeschlossene Projekte",
+        "description": "Websites und Kampagnen branchenübergreifend geliefert"
+      },
+      "clients": {
+        "number": "50+",
+        "label": "Zufriedene Kunden",
+        "description": "Unternehmen, die Gideon Media für ihr Wachstum vertrauen"
+      },
+      "roi": {
+        "number": "2x",
+        "label": "Durchschnittlicher ROI",
+        "description": "Unsere Kunden sehen echte, messbare Renditen"
+      },
+      "satisfaction": {
+        "number": "95%",
+        "label": "Kundenzufriedenheit",
+        "description": "Weil Ergebnisse lauter sprechen als Versprechen"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Echte Ergebnisse",
+    "title": "Was Unsere Kunden Sagen",
+    "subtitle": "Nehmen Sie nicht nur unser Wort. So haben wir echten Unternehmen beim Wachstum geholfen."
+  },
+  "portfolio": {
+    "badge": "Unsere Arbeit",
+    "title": "Erfolgsgeschichten",
+    "subtitle": "Echte Unternehmen. Echte Ergebnisse. Sehen Sie, wie wir Unternehmen wie Ihrem geholfen haben.",
+    "results": "Ergebnisse:"
+  },
+  "guarantee": {
+    "title": "Unsere Garantie an Sie",
+    "quote": "Wir garantieren Ergebnisse — oder wir arbeiten weiter bis wir",
+    "quoteHighlight": "messbare Verbesserungen",
+    "quoteEnd": "für Ihr Unternehmen erzielen.",
+    "description": "Wir sind nicht daran interessiert, Ihr Geld zu nehmen und zu verschwinden. Wir haben Erfolg, wenn Sie Erfolg haben.",
+    "cta": "Kostenloses Strategiegespräch Buchen"
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "subtitle": "Fragen? Wir haben Antworten.",
+    "items": {
+      "q1": {
+        "question": "Wie lange dauert es, eine Website zu erstellen?",
+        "answer": "Die meisten Websites werden in 1-3 Wochen fertiggestellt. Shopify-Shops dauern 1-2 Wochen, individuelle Websites 2-3 Wochen."
+      },
+      "q2": {
+        "question": "Was kostet eine Website?",
+        "answer": "Unsere Websites starten ab 500$ für kleine Unternehmen und 800$+ für Shopify-Shops. Transparente Festpreise."
+      },
+      "q3": {
+        "question": "Bieten Sie laufenden Support nach dem Launch?",
+        "answer": "Ja! Jedes Projekt beinhaltet Post-Launch-Support. Wir bieten auch monatliche Wartungspakete an."
+      },
+      "q4": {
+        "question": "Können Sie bei Website UND Marketing helfen?",
+        "answer": "Absolut — das ist unsere Stärke. Wir bauen konversionsoptimierte Websites und bringen dann gezielten Traffic."
+      },
+      "q5": {
+        "question": "Was, wenn ich schon eine Website habe, die keine Ergebnisse bringt?",
+        "answer": "Wir können Ihre bestehende Website auditieren, Probleme identifizieren und sie optimieren oder neu aufbauen."
+      },
+      "q6": {
+        "question": "Garantieren Sie Ergebnisse?",
+        "answer": "Ja. Wir garantieren Ergebnisse — oder wir arbeiten weiter bis wir messbare Verbesserungen erzielen."
+      },
+      "q7": {
+        "question": "Auf welchen Plattformen bauen Sie?",
+        "answer": "Wir bauen auf Shopify, WordPress, Squarespace, Wix, Webflow und maßgeschneiderten Lösungen."
+      },
+      "q8": {
+        "question": "Wie fange ich an?",
+        "answer": "Buchen Sie einfach ein kostenloses Strategiegespräch. Wir besprechen Ihre Ziele und geben ein klares Angebot."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Lassen Sie Uns Reden",
+    "title": "Bereit, Ihr Unternehmen Online Zu Wachsen?",
+    "subtitle": "Buchen Sie ein kostenloses Strategiegespräch und besprechen wir, wie wir Ihnen eine Website und Marketingstrategie bauen können, die echte Ergebnisse liefert.",
+    "formTitle": "Erzählen Sie Uns Von Ihrem Projekt",
+    "fullName": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "company": "Firmenname",
+    "service": "Was brauchen Sie?",
+    "selectService": "Dienst auswählen",
+    "projectDetails": "Projektdetails",
+    "projectPlaceholder": "Erzählen Sie uns von Ihrem Projekt, Zielen und Zeitplan...",
+    "send": "Nachricht Senden",
+    "sending": "Wird gesendet...",
+    "whatsappInstead": "Lieber WhatsApp",
+    "services": {
+      "shopify": "Shopify E-Commerce Website",
+      "smallBiz": "Website für Kleine Unternehmen",
+      "redesign": "Website-Redesign / Optimierung",
+      "metaAds": "Meta Ads (Facebook & Instagram)",
+      "socialMedia": "Social Media Marketing",
+      "pinterest": "Pinterest Marketing",
+      "fullPackage": "Komplettpaket Website + Marketing"
+    },
+    "info": {
+      "email": "Schreiben Sie Uns",
+      "call": "Rufen Sie Uns An",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Chatten Sie sofort mit uns"
+    },
+    "preferTalk": "Lieber sprechen?",
+    "preferTalkDesc": "Buchen Sie ein kostenloses 15-Min Strategiegespräch. Ohne Verpflichtung.",
+    "bookFreeCall": "Kostenlosen Anruf Buchen",
+    "success": "Nachricht gesendet!",
+    "successDesc": "Wir melden uns innerhalb von 24 Stunden.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "formSubtitle": "Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden.",
+    "contactMethods": {
+      "email": "Schreiben Sie Uns",
+      "phone": "Rufen Sie Uns An",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Chatten Sie sofort mit uns"
+    },
+    "businessHours": {
+      "title": "Geschäftszeiten",
+      "subtitle": "Wir sind hier um zu helfen",
+      "monday": "Montag - Freitag",
+      "mondayTime": "9:00 - 18:00",
+      "saturday": "Samstag",
+      "saturdayTime": "10:00 - 16:00",
+      "sunday": "Sonntag",
+      "sundayTime": "Geschlossen"
+    },
+    "guarantee": {
+      "title": "Schnelle Antwort Garantie",
+      "description": "Wir antworten auf alle Anfragen innerhalb von 24 Stunden. Schneller nötig? Nutzen Sie WhatsApp!"
+    }
+  },
+  "footer": {
+    "description": "Wir bauen Websites, die konvertieren und Marketing, das Ihr Unternehmen wachsen lässt. Ihr Partner für echte, messbare Online-Ergebnisse.",
+    "quickLinks": "Schnelllinks",
+    "ourServices": "Unsere Dienste",
+    "connectWithUs": "Verbinden Sie Sich Mit Uns",
+    "whatsappUs": "WhatsApp",
+    "emailUs": "E-Mail",
+    "worldwide": "Weltweit — Remote-Team",
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen"
   },
   "about": {
     "title": "Über Gideon Media",
     "subtitle": "Ihr vertrauenswürdiger Partner für digitales Wachstum und Online-Erfolg",
-    "description": "Wir sind ein leidenschaftliches Team von digitalen Marketing-Experten und Webentwicklern, das sich darauf spezialisiert hat, Unternehmen beim Online-Erfolg zu helfen. Mit jahrelanger Erfahrung verwandeln wir Ihre Online-Präsenz in eine kraftvolle Wachstumsmaschine.",
+    "description": "Wir sind ein leidenschaftliches Team von Digital-Marketing-Experten und Webentwicklern, das Unternehmen beim Online-Erfolg hilft.",
+    "description1": "Wir transformieren Unternehmen leidenschaftlich durch innovative digitale Lösungen, die echte Ergebnisse liefern.",
+    "description2": "Unser Expertenteam kombiniert Kreativität mit datengesteuerten Strategien für außergewöhnliche Ergebnisse.",
+    "achievements": {
+      "clients": "Zufriedene Kunden",
+      "clientsDesc": "Unternehmen, denen wir beim Wachstum geholfen haben",
+      "projects": "Abgeschlossene Projekte",
+      "projectsDesc": "Erfolgreiche Kampagnen geliefert",
+      "roi": "Durchschnittlicher ROI",
+      "roiDesc": "Rendite für unsere Kunden"
+    },
+    "trustBadges": {
+      "certified": "Zertifizierte Experten",
+      "certifiedDesc": "Google & Meta zertifiziertes Team",
+      "reviews": "5-Sterne-Bewertungen",
+      "reviewsDesc": "Konstante Kundenzufriedenheit",
+      "support": "24/7 Support",
+      "supportDesc": "Immer da, wenn Sie uns brauchen"
+    },
     "mission": {
       "title": "Unsere Mission",
-      "description": "Unternehmen mit außergewöhnlichen digitalen Lösungen zu stärken, die Wachstum fördern, Markensichtbarkeit erhöhen und dauerhaften Erfolg im wettbewerbsintensiven Online-Markt schaffen."
+      "description": "Unternehmen mit außergewöhnlichen digitalen Lösungen zu stärken, die Wachstum fördern und dauerhaften Erfolg schaffen."
     },
     "vision": {
       "title": "Unsere Vision",
-      "description": "Die führende Digitalagentur zu werden, die für transformative Geschäftsergebnisse, innovative Lösungen und unübertroffene Kundenzufriedenheit anerkannt ist."
+      "description": "Die führende Digitalagentur zu werden, anerkannt für transformative Ergebnisse und unübertroffene Kundenzufriedenheit."
     },
     "story": {
       "title": "Unsere Geschichte",
-      "description": "2020 mit der Vision gegründet, digitales Marketing für Unternehmen jeder Größe zu demokratisieren, ist Gideon Media von einem kleinen Startup zu einem vertrauenswürdigen Partner für über 120+ Unternehmen weltweit gewachsen."
+      "description": "2020 gegründet, ist Gideon Media von einem kleinen Startup zu einem vertrauenswürdigen Partner für über 120+ Unternehmen weltweit gewachsen."
     },
     "expertise": {
       "title": "Unsere Expertise",
-      "description": "Wir kombinieren modernste Technologie mit bewährten Marketing-Strategien, um umfassende digitale Lösungen einschließlich Webentwicklung, Meta Ads Management, Shopify-Stores und Pinterest-Marketing zu liefern."
+      "description": "Wir kombinieren modernste Technologie mit bewährten Marketing-Strategien für umfassende digitale Lösungen."
     },
     "approach": {
       "title": "Unser Ansatz",
-      "description": "Wir glauben an datengesteuerte Strategien, transparente Kommunikation und den Aufbau langfristiger Partnerschaften mit unseren Kunden. Jedes Projekt wird auf spezifische Geschäftsziele zugeschnitten."
+      "description": "Wir glauben an datengesteuerte Strategien, transparente Kommunikation und langfristige Partnerschaften."
     },
     "values": {
       "title": "Unsere Grundwerte",
       "innovation": {
         "title": "Innovation",
-        "description": "Immer einen Schritt voraus bei digitalen Trends für modernste Lösungen"
+        "description": "Digitalen Trends voraus sein für modernste Lösungen"
       },
       "quality": {
         "title": "Qualität",
-        "description": "Außergewöhnliche Arbeit liefern, die Kundenerwartungen übertrifft"
+        "description": "Außergewöhnliche Arbeit liefern, die Erwartungen übertrifft"
       },
       "partnership": {
         "title": "Partnerschaft",
-        "description": "Langfristige Beziehungen aufbauen, die auf Vertrauen und Ergebnissen basieren"
+        "description": "Langfristige Beziehungen auf Vertrauen und Ergebnissen aufbauen"
+      }
+    },
+    "coreValues": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "Digitalen Trends voraus sein für modernste Lösungen"
+      },
+      "quality": {
+        "title": "Qualität",
+        "description": "Außergewöhnliche Arbeit liefern, die Erwartungen übertrifft"
+      },
+      "partnership": {
+        "title": "Partnerschaft",
+        "description": "Langfristige Beziehungen auf Vertrauen und Ergebnissen aufbauen"
       }
     },
     "whyChoose": {
-      "title": "Warum Gideon Media wählen?",
-      "point1": "Bewährte Erfolgsbilanz mit 120+ erfolgreichen Projekten und 350% durchschnittlichem ROI",
+      "title": "Warum Gideon Media Wählen?",
+      "point1": "Bewährte Erfolgsbilanz mit 180+ erfolgreichen Projekten und 400% durchschnittlichem ROI",
       "point2": "Full-Service Digitalagentur mit End-to-End-Lösungen",
-      "point3": "Transparente Preisgestaltung und klare Kommunikation während der Projekte",
-      "point4": "Expertenteam zertifiziert in Meta Ads, Google Ads und Shopify-Entwicklung",
-      "point5": "24/7 Support und kontinuierliche Optimierung für langfristigen Erfolg",
+      "point3": "Transparente Preise und klare Kommunikation",
+      "point4": "Expertenteam zertifiziert in Meta Ads, Google Ads und Shopify",
+      "point5": "24/7 Support und kontinuierliche Optimierung",
       "point6": "Maßgeschneiderte Strategien für Ihre spezifischen Geschäftsziele"
     }
   },
-  "contact": {
-    "title": "Kontaktieren Sie uns",
-    "subtitle": "Bereit, Ihr nächstes Projekt zu starten? Lassen Sie uns sprechen!",
-    "name": "Name",
-    "email": "E-Mail",
-    "message": "Nachricht",
-    "send": "Nachricht Senden",
-    "phone": "Telefon",
-    "address": "Adresse",
-    "hours": "Geschäftszeiten"
-  },
   "help": {
-    "title": "Wie können wir Ihnen helfen?",
+    "title": "Wie Können Wir Ihnen Helfen?",
     "subtitle": "Erhalten Sie Unterstützung und Antworten auf Ihre Fragen",
     "subject": "Betreff",
     "description": "Beschreibung",
@@ -135,65 +391,16 @@
     "send": "Senden"
   },
   "reviews": {
-    "title": "Was unsere Kunden sagen",
-    "writeReview": "Bewertung schreiben"
-  },
-  "common": {
-    "back": "Zurück",
-    "learnMore": "Mehr erfahren",
-    "getStarted": "Loslegen",
-    "viewAll": "Alle anzeigen"
+    "title": "Was Unsere Kunden Sagen",
+    "writeReview": "Bewertung Schreiben"
   },
   "notifications": {
     "justPurchased": "hat gerade gekauft"
   },
-  "about": {
-    "title": "Über Gideon Media",
-    "subtitle": "Ihre vertrauenswürdige Partneragentur für digitales Marketing und Webentwicklung",
-    "description": "Bei Gideon Media sind wir darauf spezialisiert, Unternehmen dabei zu helfen, durch strategisches digitales Marketing und professionelle Webentwicklung zu wachsen und zu gedeihen.",
-    "mission": {
-      "title": "Unsere Mission",
-      "description": "Unternehmen dabei zu befähigen, ihr volles digitales Potenzial auszuschöpfen, indem wir innovative Marketingstrategien und erstklassige Webentwicklungsdienste bereitstellen, die zu messbaren Ergebnissen führen."
-    },
-    "vision": {
-      "title": "Unsere Vision",
-      "description": "Die führende digitale Agentur zu werden, die für außergewöhnliche Ergebnisse, transparente Kommunikation und langfristige Partnerschaften mit unseren Kunden bekannt ist."
-    },
-    "story": {
-      "title": "Unsere Geschichte",
-      "description": "Gideon Media wurde mit der Vision gegründet, die Lücke zwischen traditionellem Marketing und der sich schnell entwickelnden digitalen Landschaft zu schließen. Was als kleines Team leidenschaftlicher Digitalexperten begann, hat sich zu einer umfassenden Agentur entwickelt, die Unternehmen jeder Größe bedient."
-    },
-    "expertise": {
-      "title": "Unsere Expertise",
-      "description": "Wir kombinieren modernste Technologie mit bewährten Marketingstrategien, um umfassende digitale Lösungen einschließlich Webentwicklung, Meta Ads-Management, Shopify-Stores und Pinterest-Marketing zu liefern."
-    },
-    "approach": {
-      "title": "Unser Ansatz",
-      "description": "Wir glauben an datengetriebene Strategien, transparente Kommunikation und den Aufbau langfristiger Partnerschaften mit unseren Kunden. Jedes Projekt wird individuell auf spezifische Geschäftsziele zugeschnitten und liefert maximalen ROI."
-    },
-    "values": {
-      "title": "Unsere Grundwerte",
-      "innovation": {
-        "title": "Innovation",
-        "description": "Den digitalen Trends voraus sein, um innovative Lösungen zu bieten"
-      },
-      "quality": {
-        "title": "Qualität",
-        "description": "Außergewöhnliche Arbeit liefern, die Kundenerwartungen übertrifft"
-      },
-      "partnership": {
-        "title": "Partnerschaft",
-        "description": "Langfristige Beziehungen aufbauen, die auf Vertrauen und Ergebnissen basieren"
-      }
-    },
-    "whyChoose": {
-      "title": "Warum Gideon Media wählen?",
-      "point1": "Bewährte Erfolgsbilanz mit 180+ erfolgreichen Projekten und 400% durchschnittlichem ROI",
-      "point2": "Full-Service-Digitalagentur mit End-to-End-Lösungen",
-      "point3": "Transparente Preisgestaltung und klare Kommunikation während der gesamten Projekte",
-      "point4": "Expertenteam zertifiziert in Meta Ads, Google Ads und Shopify-Entwicklung",
-      "point5": "24/7-Support und kontinuierliche Optimierung für langfristigen Erfolg",
-      "point6": "Maßgeschneiderte Strategien für Ihre spezifischen Geschäftsziele und Branche"
-    }
+  "common": {
+    "back": "Zurück",
+    "learnMore": "Mehr Erfahren",
+    "getStarted": "Loslegen",
+    "viewAll": "Alle Anzeigen"
   }
 }

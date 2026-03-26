@@ -208,7 +208,7 @@ const BrandVideo = () => {
             </p>
             <Button 
               size="lg"
-              onClick={() => window.open('https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20start%20my%20free%20strategy%20call%20with%20Gideon%20Media', '_blank')}
+              onClick={() => window.open('https://wa.me/15485998101?text=Hi%2C%20I%27d%20like%20to%20start%20my%20free%20strategy%20call%20with%20Gideon%20Media', '_blank')}
               className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               Start Your Free Strategy Call
