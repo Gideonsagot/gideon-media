@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { Facebook, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 import UpworkIcon from './UpworkIcon';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -28,7 +28,6 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: 'https://www.facebook.com/share/1CpvVeypZy/', label: 'Facebook' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/elakpa-gideon-0675112b9', label: 'LinkedIn' },
     { icon: UpworkIcon, href: 'https://www.upwork.com/freelancers/~0168e372c5f516c460', label: 'Upwork Profile' }
   ];
 
