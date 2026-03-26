@@ -23,8 +23,8 @@ const ContactSection = () => {
 
   const contactInfo = [
     { icon: Mail, titleKey: 'contact.info.email', content: 'Gideonmedia@hotmail.com', action: 'mailto:Gideonmedia@hotmail.com' },
-    { icon: Phone, titleKey: 'contact.info.call', content: '+234 706 713 3828', action: 'tel:+2347067133828' },
-    { icon: MessageCircle, titleKey: 'contact.info.whatsapp', content: t('contact.info.whatsappDesc'), action: 'https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20Gideon%20Media', external: true },
+    { icon: Phone, titleKey: 'contact.info.call', content: '+234 706 713 3828', action: 'tel:+15485998101' },
+    { icon: MessageCircle, titleKey: 'contact.info.whatsapp', content: t('contact.info.whatsappDesc'), action: 'https://wa.me/15485998101?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20Gideon%20Media', external: true },
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -50,7 +50,7 @@ const ContactSection = () => {
     const message = encodeURIComponent(
       `Hi Gideon Media! I'm interested in: ${formData.service || 'your services'}. ${formData.message || ''}`
     );
-    window.open(`https://wa.me/2347067133828?text=${message}`, '_blank');
+    window.open(`https://wa.me/15485998101?text=${message}`, '_blank');
   };
 
   return (
@@ -171,7 +171,7 @@ const ContactSection = () => {
                 <h3 className="text-lg font-bold mb-2">{t('contact.preferTalk')}</h3>
                 <p className="text-sm text-primary-foreground/80 mb-4">{t('contact.preferTalkDesc')}</p>
                 <Button
-                  onClick={() => window.open('https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call', '_blank')}
+                  onClick={() => window.open('https://wa.me/15485998101?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call', '_blank')}
                   className="bg-white text-primary hover:bg-white/90 font-semibold w-full"
                 >
                   <Phone className="mr-2 h-4 w-4" />

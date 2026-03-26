@@ -76,7 +76,7 @@ const UpworkBanner = () => {
             <Button
               size="lg"
               variant="outline"
-              onClick={() => window.open('https://wa.me/2347067133828?text=Hi%2C%20I%20saw%20your%20Upwork%20profile%20and%20would%20like%20to%20discuss%20a%20project', '_blank')}
+              onClick={() => window.open('https://wa.me/15485998101?text=Hi%2C%20I%20saw%20your%20Upwork%20profile%20and%20would%20like%20to%20discuss%20a%20project', '_blank')}
               className="border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300"
             >
               Contact Me Directly

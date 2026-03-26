@@ -16,7 +16,7 @@ const ServicesSection = () => {
   const { ref: gridRef, getItemStyle } = useStaggerAnimation(serviceKeys.length);
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20website%20project%20with%20Gideon%20Media', '_blank');
+    window.open('https://wa.me/15485998101?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20website%20project%20with%20Gideon%20Media', '_blank');
   };
 
   return (

@@ -104,7 +104,7 @@ const Footer = () => {
 
             <div className="flex flex-col gap-3">
               <a
-                href="https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project"
+                href="https://wa.me/15485998101?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all hover:shadow-lg inline-flex items-center justify-center"

@@ -52,7 +52,7 @@ const Header = () => {
             <ThemeToggle />
             <LanguageSelector />
             <Button 
-              onClick={() => window.open('https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call', '_blank')}
+              onClick={() => window.open('https://wa.me/15485998101?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call', '_blank')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2 rounded-lg font-semibold text-sm"
             >
               <Phone className="mr-2 h-4 w-4" />
@@ -89,7 +89,7 @@ const Header = () => {
               </button>
             ))}
             <Button 
-              onClick={() => window.open('https://wa.me/2347067133828?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call', '_blank')}
+              onClick={() => window.open('https://wa.me/15485998101?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call', '_blank')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground w-full mt-2"
             >
               <Phone className="mr-2 h-4 w-4" />
