@@ -23,7 +23,7 @@ const ContactSection = () => {
 
   const contactInfo = [
     { icon: Mail, titleKey: 'contact.info.email', content: 'Gideonmedia@hotmail.com', action: 'mailto:Gideonmedia@hotmail.com' },
-    { icon: Phone, titleKey: 'contact.info.call', content: '+234 706 713 3828', action: 'tel:+15485998101' },
+    { icon: Phone, titleKey: 'contact.info.call', content: '+1 (548) 599-8101', action: 'tel:+15485998101' },
     { icon: MessageCircle, titleKey: 'contact.info.whatsapp', content: t('contact.info.whatsappDesc'), action: 'https://wa.me/15485998101?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20Gideon%20Media', external: true },
   ];
 
