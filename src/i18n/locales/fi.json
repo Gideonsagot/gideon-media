@@ -8,89 +8,375 @@
     "testimonials": "Suositukset",
     "contact": "Yhteystiedot",
     "help": "Apua",
-    "getQuote": "Pyydä Tarjous"
+    "getQuote": "Pyydä Tarjous",
+    "freeCall": "Ilmainen Strategiapuhelu"
   },
   "hero": {
-    "title": "Muunna Digitaalinen Läsnäolosi",
-    "subtitle": "Ammattimaiset web-kehitys ja digitaalinen markkinointi ratkaisut, jotka tuottavat tuloksia",
-    "cta": "Aloita Nyt",
-    "description": "Luomme upeat verkkosivut ja toteutamme kohdennettuja markkinointikampanjoita, jotka tuottavat todellisia liiketuloksia."
+    "badge": "Yli 50 Yrityksen Luottama Maailmanlaajuisesti",
+    "title": "Rakennamme Verkkosivuja, Jotka",
+    "titleHighlight": "Muuttavat Kävijät Asiakkaiksi",
+    "subtitle": "Gideon Media auttaa pieniä yrityksiä, startupeja ja verkkokauppamerkkejä kasvamaan verkossa korkean konversion verkkosivuilla ja tuloslähtöisellä digitaalisella markkinoinnilla.",
+    "trust1": "Konversiokeskeinen Suunnittelu",
+    "trust2": "SEO-valmis Ensimmäisestä Päivästä",
+    "trust3": "Nopea ja Mobiilioptimoitu",
+    "cta": "Varaa Ilmainen Strategiapuhelu",
+    "ctaSub": "Ei sitoumuksia • Vastaus 24 tunnin sisällä",
+    "stats": {
+      "projects": "Valmistuneet Projektit",
+      "clients": "Tyytyväiset Asiakkaat",
+      "roi": "Keskimääräinen ROI",
+      "satisfaction": "Asiakastyytyväisyys"
+    }
+  },
+  "problem": {
+    "badge": "Kuulostaako Tutulta?",
+    "title": "Menettääkö Yrityksesi Asiakkaita Verkossa?",
+    "subtitle": "Useimmat yritykset kamppailevat näiden ongelmien kanssa — ja ne maksavat sinulle rahaa joka päivä.",
+    "items": {
+      "outdated": {
+        "title": "Verkkosivusi Näyttävät Vanhanaikaisilta",
+        "description": "Ensivaikutelmat merkitsevät. Vanha, kömpelö verkkosivu saa kävijät poistumaan sekunneissa."
+      },
+      "noConvert": {
+        "title": "Verkkosivusi Eivät Konvertoi",
+        "description": "Sinulla on liikennettä mutta ei liidejä, ei myyntiä. Verkkosivusi eivät tee työtään."
+      },
+      "noVisibility": {
+        "title": "Sinulla On Nolla Näkyvyyttä Verkossa",
+        "description": "Potentiaaliset asiakkaat eivät löydä sinua Googlesta. Kilpailijasi näkyvät — ja sinä olet näkymätön."
+      },
+      "struggling": {
+        "title": "Kamppailet Asiakkaiden Saamisessa Verkossa",
+        "description": "Tiedät, että digitaalinen markkinointi toimii, mutta sinulla ei ole aikaa, taitoja tai strategiaa."
+      }
+    },
+    "cta": "Jos jokin näistä kuulostaa tutulta —",
+    "ctaHighlight": "voimme korjata sen."
   },
   "services": {
-    "title": "Palvelumme",
-    "subtitle": "Kattavat digitaaliset ratkaisut yrityksesi kasvuun",
-    "webDev": {
-      "title": "Web-kehitys",
-      "description": "Modernit, responsiiviset verkkosivut, jotka toimivat täydellisesti kaikilla laitteilla"
+    "badge": "Pääpalvelu",
+    "title": "Verkkosivut, Jotka Työskentelevät Yhtä Kovaa Kuin Sinä",
+    "subtitle": "Emme vain rakenna verkkosivuja — rakennamme kasvumoottoreita. Jokainen sivusto on suunniteltu houkuttelemaan, vakuuttamaan ja konvertoimaan.",
+    "cta": "Keskustele Verkkoprojektistasi",
+    "items": {
+      "shopify": {
+        "title": "Shopify-verkkokaupat",
+        "description": "Räätälöidyt Shopify-kaupat myyntiin rakennettuina. Jokainen elementti suunniteltu konversioiden maksimointiin.",
+        "features": ["Räätälöity Kauppasuunnittelu", "Maksu- ja Toimitusasetukset", "Tuoteluettelon Optimointi", "Mobiilioptimoitu Kassa"]
+      },
+      "smallBusiness": {
+        "title": "Pienyrityssivustot",
+        "description": "Ammattimaiset verkkosivut, jotka rakentavat uskottavuutta, keräävät liidejä ja muuttavat verkkonäkyvyytesi parhaaksi myyjäksesi.",
+        "features": ["Liidien Keräyslomakkeet", "Ammattimainen Suunnittelu", "Sisällönhallinta", "Analytics-integraatio"]
+      },
+      "conversion": {
+        "title": "Konversiokeskeinen Suunnittelu",
+        "description": "Jokainen sivu, painike ja asettelu on strategisesti suunniteltu ohjaamaan kävijöitä toimintaan.",
+        "features": ["Strategiset Sivuasettelut", "Selkeät Toimintakehotukset", "Luottamusta Rakentavat Elementit", "A/B-testatut Mallit"]
+      },
+      "mobile": {
+        "title": "Nopeat, Mobiiliystävälliset Sivustot",
+        "description": "Yli 60% liikenteestä tulee mobiilista. Sivustosi näyttää ja toimii täydellisesti jokaisella laitteella.",
+        "features": ["Responsiivinen Suunnittelu", "Alle 3s Latausaika", "Kosketusoptimoitu Navigaatio", "Mobile-First Lähestymistapa"]
+      },
+      "seo": {
+        "title": "SEO-valmis Rakenne",
+        "description": "Rakennettu alusta alkaen hakukoneet mielessä. Sivustosi on rakenteellisesti optimoitu parempaan sijoitukseen.",
+        "features": ["Tekninen SEO-asennus", "Schema-merkinnät", "Optimoidut Meta-tagit", "Nopeusoptimointi"]
+      },
+      "migration": {
+        "title": "Sivustomuutto ja Optimointi",
+        "description": "Vaihdatko alustaa? Muutamme sivustosi saumattomasti ja optimoimme sen parempaan suorituskykyyn.",
+        "features": ["Alustamuutto", "SEO-säilytys", "Nopeuden Parannus", "Konversion Optimointi"]
+      }
     },
-    "digitalMarketing": {
-      "title": "Digitaalinen Markkinointi",
-      "description": "Kohdennetut mainoskampanjat, jotka tuottavat laadukkaita liidejä ja myyntejä"
-    },
-    "ecommerce": {
-      "title": "E-kauppa Ratkaisut",
-      "description": "Täydelliset Shopify-kaupat maksujen käsittelyllä ja varastonhallinnalla"
+    "learnMore": "Lue Lisää",
+    "getStarted": "Aloita Tänään"
+  },
+  "marketing": {
+    "badge": "Lisää Liikennettä ja Myyntiä",
+    "title": "Digitaalinen Markkinointi, Joka Tuottaa Tuloksia",
+    "subtitle": "Loistava verkkosivu tarvitsee loistavan markkinoinnin. Ohjaamme kohdennettua liikennettä sivustollesi ja muutamme sen tuloiksi.",
+    "cta": "Hanki Markkinointistrategia",
+    "items": {
+      "metaAds": {
+        "title": "Meta-mainokset (Facebook ja Instagram)",
+        "description": "Kohdennettuja mainoskampanjoita, jotka tuovat yrityksesi oikeiden ihmisten eteen oikeaan aikaan.",
+        "features": ["Kampanjastrategia ja Asennus", "Yleisötutkimus ja Kohdentaminen", "Mainosmateriaalin Luominen", "Suorituskyvyn Optimointi ja Raportointi"]
+      },
+      "social": {
+        "title": "Sosiaalisen Median Markkinointi",
+        "description": "Rakenna uskollinen yleisö ja johdonmukainen brändinäkyvyys sosiaalisen median alustoilla.",
+        "features": ["Sisältöstrategia ja Kalenteri", "Sitoutumisen Hallinta", "Brändin Johdonmukaisuus", "Kasvuanalytiikka"]
+      },
+      "pinterest": {
+        "title": "Pinterest-markkinointi",
+        "description": "Hyödynnä Pinterestin korkean ostoaikomuksen yleisöä massiiviseen orgaaniseen liikenteeseen.",
+        "features": ["Profiilin ja Taulujen Optimointi", "Pin-suunnittelu ja Strategia", "Pinterest SEO", "Liikenteen ja Konversion Seuranta"]
+      },
+      "adStrategy": {
+        "title": "Mainosstrategia ja Kampanjan Käynnistys",
+        "description": "Etkö tiedä mistä aloittaa? Luomme räätälöidyn mainosstrategian tavoitteisiisi.",
+        "features": ["Markkina- ja Kilpailija-analyysi", "Budjettisuunnittelu", "Monialustastrategia", "Käynnistys ja Optimointi"]
+      }
     }
+  },
+  "process": {
+    "badge": "Yksinkertainen ja Läpinäkyvä",
+    "title": "Miten Työskentelemme",
+    "subtitle": "Aloittaminen on helppoa. Hoidamme kaiken, jotta voit keskittyä liiketoimintaasi.",
+    "steps": {
+      "strategy": {
+        "step": "01",
+        "title": "Strategia ja Suunnittelu",
+        "description": "Aloitamme ymmärtämällä yrityksesi, tavoitteesi ja kohderyhmäsi. Sitten luomme selkeän tiekartan."
+      },
+      "design": {
+        "step": "02",
+        "title": "Suunnittelu ja Kehitys",
+        "description": "Suunnittelemme ja rakennamme verkkosivusi konversio mielessä — nopea, mobiili ja tehokas."
+      },
+      "launch": {
+        "step": "03",
+        "title": "Käynnistys ja Kasvu",
+        "description": "Käynnistämme projektisi, seuraamme suorituskykyä ja optimoimme jatkuvasti lisää liikennettä ja myyntiä varten."
+      }
+    }
+  },
+  "socialProof": {
+    "title": "Numerot Eivät Valehtele",
+    "subtitle": "Annamme tulostemme puhua. Tässä on mitä olemme saavuttaneet yrityksille kuten sinun.",
+    "stats": {
+      "projects": {
+        "number": "100+",
+        "label": "Valmistuneet Projektit",
+        "description": "Verkkosivuja ja kampanjoita toimitettu eri toimialoille"
+      },
+      "clients": {
+        "number": "50+",
+        "label": "Tyytyväiset Asiakkaat",
+        "description": "Yritykset, jotka luottavat Gideon Mediaan"
+      },
+      "roi": {
+        "number": "2x",
+        "label": "Keskimääräinen ROI",
+        "description": "Asiakkaamme näkevät todellisia, mitattavia tuottoja"
+      },
+      "satisfaction": {
+        "number": "95%",
+        "label": "Asiakastyytyväisyys",
+        "description": "Koska tulokset puhuvat lupauksia kovemmin"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Todellisia Tuloksia",
+    "title": "Mitä Asiakkaamme Sanovat",
+    "subtitle": "Älä usko vain meitä. Näin olemme auttaneet todellisia yrityksiä kasvamaan."
+  },
+  "portfolio": {
+    "badge": "Työmme",
+    "title": "Menestystarinoita",
+    "subtitle": "Todellisia yrityksiä. Todellisia tuloksia. Katso miten olemme auttaneet yrityksiä kuten sinun.",
+    "results": "Tulokset:"
+  },
+  "guarantee": {
+    "title": "Takuumme Sinulle",
+    "quote": "Takaamme tulokset — tai jatkamme työskentelyä kunnes saavutamme",
+    "quoteHighlight": "mitattavia parannuksia",
+    "quoteEnd": "yrityksellesi.",
+    "description": "Emme ole kiinnostuneita ottamaan rahojasi ja katoamaan. Menestymmme, kun sinä menestyt.",
+    "cta": "Varaa Ilmainen Strategiapuhelu"
+  },
+  "faq": {
+    "title": "Usein Kysytyt Kysymykset",
+    "subtitle": "Kysyttävää? Meillä on vastaukset.",
+    "items": {
+      "q1": {
+        "question": "Kuinka kauan verkkosivun rakentaminen kestää?",
+        "answer": "Useimmat verkkosivut valmistuvat 1-3 viikossa. Shopify-kaupat kestävät 1-2 viikkoa, räätälöidyt sivustot 2-3 viikkoa."
+      },
+      "q2": {
+        "question": "Paljonko verkkosivu maksaa?",
+        "answer": "Verkkosivumme alkavat 500$:sta pienyrityksille ja 800$+ Shopify-kaupoille. Läpinäkyvät kiinteät hinnat."
+      },
+      "q3": {
+        "question": "Tarjoatteko jatkuvaa tukea julkaisun jälkeen?",
+        "answer": "Kyllä! Jokainen projekti sisältää julkaisun jälkeisen tuen. Tarjoamme myös kuukausittaisia ylläpitopaketteja."
+      },
+      "q4": {
+        "question": "Voitteko auttaa sekä verkkosivujen ETTÄ markkinoinnin kanssa?",
+        "answer": "Ehdottomasti — se on vahvuutemme. Rakennamme konvertoivia sivustoja ja tuomme sitten kohdennettua liikennettä."
+      },
+      "q5": {
+        "question": "Entä jos minulla on jo sivusto, joka ei tuota tuloksia?",
+        "answer": "Voimme auditoida sivustosi, tunnistaa ongelmat ja optimoida tai rakentaa sen uudelleen."
+      },
+      "q6": {
+        "question": "Takaatteko tuloksia?",
+        "answer": "Kyllä. Takaamme tulokset — tai jatkamme työskentelyä kunnes saavutamme mitattavia parannuksia."
+      },
+      "q7": {
+        "question": "Mille alustoille rakennatte?",
+        "answer": "Rakennamme Shopifylle, WordPressille, Squarespacelle, Wixille, Webflowlle ja räätälöidyille ratkaisuille."
+      },
+      "q8": {
+        "question": "Miten aloitan?",
+        "answer": "Varaa ilmainen strategiapuhelu. Keskustelemme tavoitteistasi ja annamme selkeän tarjouksen."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Keskustellaan",
+    "title": "Valmis Kasvattamaan Yritystäsi Verkossa?",
+    "subtitle": "Varaa ilmainen strategiapuhelu ja keskustellaan, miten voimme rakentaa sinulle verkkosivut ja markkinointistrategian, joka tuottaa todellisia tuloksia.",
+    "formTitle": "Kerro Meille Projektistasi",
+    "fullName": "Koko Nimi",
+    "email": "Sähköpostiosoite",
+    "phone": "Puhelinnumero",
+    "company": "Yrityksen Nimi",
+    "service": "Mitä tarvitset?",
+    "selectService": "Valitse palvelu",
+    "projectDetails": "Projektin Tiedot",
+    "projectPlaceholder": "Kerro projektistasi, tavoitteistasi ja aikataulustasi...",
+    "send": "Lähetä Viesti",
+    "sending": "Lähetetään...",
+    "whatsappInstead": "Kirjoita WhatsAppissa",
+    "services": {
+      "shopify": "Shopify-verkkokauppa",
+      "smallBiz": "Pienyrityssivusto",
+      "redesign": "Sivuston Uudistus / Optimointi",
+      "metaAds": "Meta-mainokset (Facebook ja Instagram)",
+      "socialMedia": "Sosiaalisen Median Markkinointi",
+      "pinterest": "Pinterest-markkinointi",
+      "fullPackage": "Kokonaispakett Sivusto + Markkinointi"
+    },
+    "info": {
+      "email": "Kirjoita Meille",
+      "call": "Soita Meille",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Keskustele kanssamme heti"
+    },
+    "preferTalk": "Haluatko puhua?",
+    "preferTalkDesc": "Varaa ilmainen 15 min strategiapuhelu. Ei sitoumuksia.",
+    "bookFreeCall": "Varaa Ilmainen Puhelu",
+    "success": "Viesti lähetetty!",
+    "successDesc": "Vastaamme 24 tunnin sisällä.",
+    "error": "Jokin meni pieleen. Yritä uudelleen.",
+    "formSubtitle": "Täytä lomake ja vastaamme 24 tunnin sisällä.",
+    "contactMethods": {
+      "email": "Kirjoita Meille",
+      "phone": "Soita Meille",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Keskustele kanssamme heti"
+    },
+    "businessHours": {
+      "title": "Aukioloajat",
+      "subtitle": "Olemme täällä auttaaksemme",
+      "monday": "Maanantai - Perjantai",
+      "mondayTime": "9:00 - 18:00",
+      "saturday": "Lauantai",
+      "saturdayTime": "10:00 - 16:00",
+      "sunday": "Sunnuntai",
+      "sundayTime": "Suljettu"
+    },
+    "guarantee": {
+      "title": "Nopean Vastauksen Takuu",
+      "description": "Vastaamme kaikkiin tiedusteluihin 24 tunnin sisällä. Tarvitsetko nopeammin? Käytä WhatsAppia!"
+    }
+  },
+  "footer": {
+    "description": "Rakennamme verkkosivuja, jotka konvertoivat ja markkinointia, joka kasvattaa yritystäsi. Kumppanisi todellisiin tuloksiin verkossa.",
+    "quickLinks": "Pikalinkit",
+    "ourServices": "Palvelumme",
+    "connectWithUs": "Yhteystiedot",
+    "whatsappUs": "WhatsApp",
+    "emailUs": "Sähköposti",
+    "worldwide": "Maailmanlaajuinen — Etätiimi",
+    "rights": "Kaikki oikeudet pidätetään.",
+    "privacy": "Tietosuojakäytäntö",
+    "terms": "Käyttöehdot"
   },
   "about": {
     "title": "Tietoa Gideon Mediasta",
-    "subtitle": "Luotettava kumppaniorganisaatiosi digitaaliseen markkinointiin ja web-kehitykseen",
-    "description": "Gideon Mediassa erikoistumme auttamaan yrityksiä kasvamaan ja menestymään strategisen digitaalisen markkinoinnin ja ammattimaisen web-kehityksen avulla.",
+    "subtitle": "Luotettava kumppanisi digitaaliseen kasvuun ja verkossa menestymiseen",
+    "description": "Olemme intohimoinen tiimi digitaalisen markkinoinnin asiantuntijoita ja web-kehittäjiä, jotka auttavat yrityksiä menestymään.",
+    "description1": "Olemme intohimoisia yritysten muuttamisessa innovatiivisilla digitaalisilla ratkaisuilla, jotka tuottavat todellisia tuloksia.",
+    "description2": "Asiantuntijatiimimme yhdistää luovuuden datapohjaistiin strategioihin poikkeuksellisten tulosten saavuttamiseksi.",
+    "achievements": {
+      "clients": "Tyytyväiset Asiakkaat",
+      "clientsDesc": "Yritykset, joita olemme auttaneet kasvamaan",
+      "projects": "Valmistuneet Projektit",
+      "projectsDesc": "Onnistuneita kampanjoita toimitettu",
+      "roi": "Keskimääräinen ROI",
+      "roiDesc": "Sijoitetun pääoman tuotto asiakkaillemme"
+    },
+    "trustBadges": {
+      "certified": "Sertifioidut Asiantuntijat",
+      "certifiedDesc": "Googlen ja Metan sertifioima tiimi",
+      "reviews": "5 Tähden Arvostelut",
+      "reviewsDesc": "Johdonmukainen asiakastyytyväisyys",
+      "support": "24/7 Tuki",
+      "supportDesc": "Aina täällä kun tarvitset"
+    },
     "mission": {
       "title": "Missiomme",
-      "description": "Auttaa yrityksiä toteuttamaan täyden digitaalisen potentiaalinsa tarjoamalla innovatiivisia markkinointistrategioita ja huippuluokan web-kehityspalveluita, jotka tuottavat mitattavia tuloksia."
+      "description": "Vahvistaa yrityksiä poikkeuksellisilla digitaalisilla ratkaisuilla, jotka edistävät kasvua ja luovat kestävää menestystä."
     },
     "vision": {
       "title": "Visiomme",
-      "description": "Tulla johtavaksi digitaaliseksi toimistoksi, joka tunnetaan poikkeuksellisista tuloksista, läpinäkyvästä viestinnästä ja pitkäaikaisista kumppanuuksista asiakkaidemme kanssa."
+      "description": "Tulla johtavaksi digitaaliseksi toimistoksi, joka tunnetaan muutosvoimaisista tuloksista ja vertaansa vailla olevasta asiakastyytyväisyydestä."
     },
     "story": {
-      "title": "Tarinaamme",
-      "description": "Gideon Media perustettiin visiolla kuroa umpeen perinteisen markkinoinnin ja nopeasti kehittyvän digitaalisen maiseman välinen kuilu. Se, mikä alkoi pienena intohimoisten digitaalisten asiantuntijoiden tiiminä, on kehittynyt kattavaksi toimistoksi, joka palvelee kaiken kokoisia yrityksiä."
+      "title": "Tarinamme",
+      "description": "Vuonna 2020 perustettu Gideon Media on kasvanut pienestä startupista luotettavaksi kumppaniksi yli 120+ yritykselle maailmanlaajuisesti."
     },
     "expertise": {
       "title": "Asiantuntemuksemme",
-      "description": "Yhdistämme huippuluokan teknologian todistettuihin markkinointistrategioihin tarjotaksemme kattavia digitaalisia ratkaisuja, mukaan lukien web-kehitys, Meta Ads -hallinta, Shopify-kaupat ja Pinterest-markkinointi."
+      "description": "Yhdistämme huipputeknologian todistettuihin markkinointistrategioihin kattavien digitaalisten ratkaisujen toimittamiseksi."
     },
     "approach": {
       "title": "Lähestymistapamme",
-      "description": "Uskomme datapohjaisiin strategioihin, läpinäkyvään viestintään ja pitkäaikaisten kumppanuuksien rakentamiseen asiakkaidemme kanssa. Jokainen projekti räätälöidään vastaamaan tiettyjä liiketoimintatavoitteita ja tuottamaan maksimaalinen ROI."
+      "description": "Uskomme datapohjaistiin strategioihin, läpinäkyvään viestintään ja pitkäaikaisten kumppanuuksien rakentamiseen."
     },
     "values": {
       "title": "Ydinarvomme",
       "innovation": {
         "title": "Innovaatio",
-        "description": "Pysyminen digitaalisten trendien edellä tarjotaksemme huippuluokan ratkaisuja"
+        "description": "Pysyminen digitaalisten trendien edellä"
       },
       "quality": {
         "title": "Laatu",
-        "description": "Poikkeuksellisen työn toimittaminen, joka ylittää asiakkaiden odotukset"
+        "description": "Poikkeuksellisen työn toimittaminen, joka ylittää odotukset"
       },
       "partnership": {
         "title": "Kumppanuus",
-        "description": "Pitkäaikaisten suhteiden rakentaminen luottamuksen ja tulosten pohjalta"
+        "description": "Pitkäaikaisten suhteiden rakentaminen luottamuksen pohjalta"
+      }
+    },
+    "coreValues": {
+      "innovation": {
+        "title": "Innovaatio",
+        "description": "Pysyminen digitaalisten trendien edellä"
+      },
+      "quality": {
+        "title": "Laatu",
+        "description": "Poikkeuksellisen työn toimittaminen, joka ylittää odotukset"
+      },
+      "partnership": {
+        "title": "Kumppanuus",
+        "description": "Pitkäaikaisten suhteiden rakentaminen luottamuksen pohjalta"
       }
     },
     "whyChoose": {
       "title": "Miksi Valita Gideon Media?",
       "point1": "Todistettu historia 180+ onnistuneella projektilla ja 400% keskimääräisellä ROI:lla",
-      "point2": "Täyden palvelun digitaalinen toimisto, joka tarjoaa päästä päähän -ratkaisuja",
-      "point3": "Läpinäkyvä hinnoittelu ja selkeä viestintä koko projektin ajan",
-      "point4": "Meta Ads-, Google Ads- ja Shopify-kehityksessä sertifioitu asiantuntijatiimi",
-      "point5": "24/7-tuki ja jatkuva optimointi pitkäaikaiseen menestykseen",
-      "point6": "Räätälöidyt strategiat, jotka on suunniteltu erityisiin liiketoimintatavoitteisiisi ja toimialaasi"
+      "point2": "Täyden palvelun digitaalinen toimisto päästä päähän -ratkaisuilla",
+      "point3": "Läpinäkyvä hinnoittelu ja selkeä viestintä",
+      "point4": "Meta Ads-, Google Ads- ja Shopify-sertifioitu asiantuntijatiimi",
+      "point5": "24/7-tuki ja jatkuva optimointi",
+      "point6": "Räätälöidyt strategiat erityisiin liiketoimintatavoitteisiisi"
     }
-  },
-  "contact": {
-    "title": "Ota Yhteyttä",
-    "subtitle": "Valmis aloittamaan seuraavan projektisi? Keskustellaan!",
-    "name": "Nimi",
-    "email": "Sähköposti",
-    "message": "Viesti",
-    "send": "Lähetä Viesti",
-    "phone": "Puhelin",
-    "address": "Osoite",
-    "hours": "Aukioloajat"
   },
   "help": {
     "title": "Kuinka Voimme Auttaa?",
@@ -108,13 +394,13 @@
     "title": "Mitä Asiakkaamme Sanovat",
     "writeReview": "Kirjoita Arvostelu"
   },
+  "notifications": {
+    "justPurchased": "juuri osti"
+  },
   "common": {
     "back": "Takaisin",
     "learnMore": "Lue Lisää",
     "getStarted": "Aloita Nyt",
     "viewAll": "Näytä Kaikki"
-  },
-  "notifications": {
-    "justPurchased": "juuri osti"
   }
 }
